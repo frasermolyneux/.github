@@ -45,14 +45,12 @@ jobs:
         env:
           FORCE_SYNC: ${{ github.event.inputs.force-sync }}
         run: |
-          if [ "$FORCE_SYNC" = "true" ]; then
-            echo "Forced sync requested; marking as changed"
-            echo "changed=true" >> $GITHUB_OUTPUT
-          elif git status --porcelain | grep .; then
+          if git status --porcelain | grep .; then
             echo "changed=true" >> $GITHUB_OUTPUT
           else
             echo "changed=false" >> $GITHUB_OUTPUT
           fi
+          echo "force=${FORCE_SYNC:-false}" >> $GITHUB_OUTPUT
 
       - name: Commit changes
         if: steps.diff.outputs.changed == 'true'
@@ -71,14 +69,17 @@ jobs:
 
       - name: Open/update Estate sync issue
         id: issue
-        if: steps.diff.outputs.changed == 'true'
+        if: steps.diff.outputs.changed == 'true' || steps.diff.outputs.force == 'true'
         uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const title = "Estate sync";
-            const body = `Automated estate sync ran and updated docs/estate/workloads.md.\n\nPlease review and merge.`;
+            const body = `Automated estate sync ran${process.env.CHANGED === 'true' ? ' and updated docs/estate/workloads.md' : ' (no doc changes detected)'}.\n\nPlease review and merge.`;
             const assignees = ["copilot"];
+
+            const changed = process.env.CHANGED === 'true';
+            const forced = process.env.FORCE_SYNC === 'true';
 
             const {data: issues} = await github.rest.issues.listForRepo({owner: context.repo.owner, repo: context.repo.repo, state: 'open', per_page: 100});
             const existing = issues.find(i => i.title === title);
