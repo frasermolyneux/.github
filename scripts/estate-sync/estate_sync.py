@@ -135,8 +135,8 @@ def render_pipelines(categories: Dict[str, List[Dict]], repos: Dict[str, List[st
         "",
         "All workflow badges per workload. Badges link to the workflow definitions.",
         "",
-        "| Workload | Repository | Workflows |",
-        "| --- | --- | --- |",
+        "| Workload | Workflows |",
+        "| --- | --- |",
     ]
 
     workloads = []
@@ -146,9 +146,9 @@ def render_pipelines(categories: Dict[str, List[Dict]], repos: Dict[str, List[st
     for workload in sorted(workloads, key=lambda w: w["name"].lower()):
         repo_name = workload["repo"]
         badges = repos.get(repo_name, [])
-        repo_link = f"[{OWNER}/{repo_name}](https://github.com/{OWNER}/{repo_name})"
+        repo_link = f"[{workload['name']}](https://github.com/{OWNER}/{repo_name})"
         badge_list = "<br>".join(badges) if badges else "No workflows found"
-        lines.append(f"| {workload['name']} | {repo_link} | {badge_list} |")
+        lines.append(f"| {repo_link} | {badge_list} |")
 
     lines.append("")
     lines.append("---")
