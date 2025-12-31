@@ -3,7 +3,12 @@ name: estate-sync
 on:
   schedule:
     - cron: "30 3 * * *"
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      force-sync:
+        description: "Run even if no file changes are detected"
+        required: false
+        default: "false"
 
 permissions:
   contents: write
@@ -33,8 +38,13 @@ jobs:
 
       - name: Detect changes
         id: diff
+        env:
+          FORCE_SYNC: ${{ github.event.inputs.force-sync }}
         run: |
-          if git status --porcelain | grep .; then
+          if [ "$FORCE_SYNC" = "true" ]; then
+            echo "Forced sync requested; marking as changed"
+            echo "changed=true" >> $GITHUB_OUTPUT
+          elif git status --porcelain | grep .; then
             echo "changed=true" >> $GITHUB_OUTPUT
           else
             echo "changed=false" >> $GITHUB_OUTPUT
