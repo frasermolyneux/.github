@@ -3,6 +3,7 @@ import os
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import quote
 from typing import Dict, List, Optional, Tuple
 
 import requests
@@ -79,9 +80,13 @@ def ado_pipeline_badges(repo: str, project: str) -> List[str]:
         pipeline_id = pipeline.get("id")
         if not pipeline_id or not name.startswith(prefix):
             continue
-        badge_url = f"{AZDO_ORG}/{project}/_apis/pipelines/{pipeline_id}/badge?api-version=7.0&branchName=main"
-        link_url = f"{AZDO_ORG}/{project}/_build?definitionId={pipeline_id}"
         label = pipeline.get("name", repo)
+        encoded_name = quote(label, safe="")
+        badge_url = (
+            f"{AZDO_ORG}/{project}/_apis/build/status/{encoded_name}?branchName=main"
+            f"&repoName=frasermolyneux%2F{repo}"
+        )
+        link_url = f"{AZDO_ORG}/{project}/_build/latest?definitionId={pipeline_id}&branchName=main"
         badges.append(f"[![{label}]({badge_url})]({link_url})")
     log(f"Repo {repo} (project {project}) matched {len(badges)} ADO pipelines")
     return badges
