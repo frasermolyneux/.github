@@ -60,11 +60,13 @@ def github_file(repo: str, path: str) -> Optional[str]:
     url = f"https://api.github.com/repos/{OWNER}/{repo}/contents/{path}"
     resp = session.get(url)
     if resp.status_code == 404:
+        log(f"Workflow file not found: {repo}/{path}")
         return None
     resp.raise_for_status()
     payload = resp.json()
     download_url = payload.get("download_url")
     if not download_url:
+        log(f"No download_url for workflow: {repo}/{path}")
         return None
     raw = session.get(download_url)
     raw.raise_for_status()
@@ -75,6 +77,7 @@ def list_workflow_files(repo: str) -> List[str]:
     url = f"https://api.github.com/repos/{OWNER}/{repo}/contents/.github/workflows"
     resp = session.get(url)
     if resp.status_code == 404:
+        log(f"No workflows directory for repo {repo}")
         return []
     resp.raise_for_status()
     payload = resp.json()
@@ -84,6 +87,7 @@ def list_workflow_files(repo: str) -> List[str]:
             path = entry.get("path")
             if path:
                 paths.append(path)
+    log(f"Repo {repo} has {len(paths)} workflow files")
     return paths
 
 
@@ -173,6 +177,7 @@ def workflow_badges(repo: str, workflows: List[Dict]) -> List[str]:
 
 def next_run_from_cron(cron_expr: str, now: datetime) -> Optional[str]:
     if not croniter:
+        log("croniter not installed; cannot compute next run")
         return None
     try:
         itr = croniter(cron_expr, now)
@@ -233,6 +238,8 @@ def extract_github_schedule(repo: str, wf: Dict, now: datetime) -> List[Dict]:
             "next": next_run or "-",
             "link": f"https://github.com/{OWNER}/{repo}/actions/workflows/{path}",
         })
+    if entries:
+        log(f"Repo {repo} workflow {path} has schedules: {', '.join(crons)}")
     return entries
 
 
@@ -265,6 +272,8 @@ def extract_ado_schedule(repo: str, project: str, pipeline: Dict, now: datetime)
             "next": next_run or "-",
             "link": f"{AZDO_ORG}/{project}/_build/latest?definitionId={pipeline_id}",
         })
+    if entries:
+        log(f"Repo {repo} ADO pipeline {pipeline.get('name')} schedules: {', '.join(cron_entries)}")
     return entries
 
 
@@ -417,6 +426,7 @@ def main() -> None:
         workflows = fetch_workflows(repo)
         workflow_paths = list_workflow_files(repo)
         wf_name_lookup = {wf.get("path"): (wf.get("name") or wf.get("path")) for wf in workflows if wf.get("path")}
+        log(f"Repo {repo} workflows API returned {len(workflows)} entries; files found {len(workflow_paths)}")
         release_badge = find_badge(repo, workflows, ["release-to-production.yml", "release-to-production.yaml"])
         ci_badge = find_badge(repo, workflows, ["ci.yml", "ci.yaml", "build.yml", "build.yaml", "tests.yml", "tests.yaml"])
         repo_badges.append((repo, release_badge, ci_badge))
@@ -434,6 +444,7 @@ def main() -> None:
             if project not in project_pipeline_cache:
                 project_pipeline_cache[project] = fetch_ado_pipelines(project)
             pipelines = project_pipeline_cache[project]
+            log(f"Repo {repo} using ADO project {project} with {len(pipelines)} pipelines")
             combined.extend(ado_pipeline_badges(repo, project, pipelines))
             for pipeline in pipelines:
                 schedule_entries.extend(extract_ado_schedule(repo, project, pipeline, now))
