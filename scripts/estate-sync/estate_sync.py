@@ -84,7 +84,7 @@ def ado_pipeline_badges(repo: str, project: str) -> List[str]:
         encoded_name = quote(label, safe="")
         badge_url = (
             f"{AZDO_ORG}/{project}/_apis/build/status/{encoded_name}?branchName=main"
-            f"&repoName=frasermolyneux%2F{repo}"
+            f"&repoName=frasermolyneux%2F{repo}&label={encoded_name}"
         )
         link_url = f"{AZDO_ORG}/{project}/_build/latest?definitionId={pipeline_id}&branchName=main"
         badges.append(f"[![{label}]({badge_url})]({link_url})")
