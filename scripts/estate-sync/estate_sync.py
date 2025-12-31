@@ -5,11 +5,14 @@ from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
 import requests
+from base64 import b64encode
 
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN")
 OWNER = "frasermolyneux"
 REPO = "platform-workloads"
 WORKLOADS_PATH = "terraform/workloads"
+AZDO_ORG = os.environ.get("AZDO_ORG", "https://dev.azure.com/frasermolyneux")
+AZDO_PAT = os.environ.get("AZDO_PAT")
 
 ROOT = Path(__file__).resolve().parents[2]
 WORKLOADS_OUT = ROOT / "docs" / "estate" / "workloads.md"
@@ -18,6 +21,15 @@ PIPELINES_OUT = ROOT / "docs" / "estate" / "pipelines.md"
 
 session = requests.Session()
 session.headers.update({"Authorization": f"Bearer {GITHUB_TOKEN}", "Accept": "application/vnd.github+json"})
+
+ado_session: Optional[requests.Session] = None
+if AZDO_PAT:
+    ado_session = requests.Session()
+    token = b64encode(f":{AZDO_PAT}".encode()).decode()
+    ado_session.headers.update({
+        "Authorization": f"Basic {token}",
+        "Accept": "application/json"
+    })
 
 
 def github_contents(path: str) -> List[Dict]:
@@ -35,6 +47,34 @@ def fetch_workflows(repo: str) -> List[Dict]:
     resp.raise_for_status()
     payload = resp.json()
     return payload.get("workflows", [])
+
+
+def fetch_ado_pipelines(project: str) -> List[Dict]:
+    if not ado_session:
+        return []
+    url = f"{AZDO_ORG}/{project}/_apis/pipelines?api-version=7.0"
+    resp = ado_session.get(url)
+    if resp.status_code == 404:
+        return []
+    resp.raise_for_status()
+    payload = resp.json()
+    return payload.get("value", [])
+
+
+def ado_pipeline_badges(repo: str, project: str) -> List[str]:
+    pipelines = fetch_ado_pipelines(project)
+    badges: List[str] = []
+    prefix = f"{repo.lower()}."
+    for pipeline in pipelines:
+        name = pipeline.get("name", "").lower()
+        pipeline_id = pipeline.get("id")
+        if not pipeline_id or not name.startswith(prefix):
+            continue
+        badge_url = f"{AZDO_ORG}/{project}/_apis/pipelines/{pipeline_id}/badge?api-version=7.0&branchName=main"
+        link_url = f"{AZDO_ORG}/{project}/_build?definitionId={pipeline_id}"
+        label = pipeline.get("name", repo)
+        badges.append(f"[![{label}]({badge_url})]({link_url})")
+    return badges
 
 
 def find_badge(repo: str, workflows: List[Dict], candidates: List[str]) -> Optional[str]:
@@ -75,11 +115,13 @@ def load_workloads() -> Dict[str, List[Dict]]:
             raw.raise_for_status()
             payload = json.loads(raw.text)
             environments = payload.get("environments", [])
+            devops_projects = list({env.get("devops_project") for env in environments if env.get("devops_project")})
             categories[category].append({
                 "name": payload.get("name", file_entry["name"].replace(".json", "")),
                 "repo": payload.get("name", file_entry["name"].replace(".json", "")),
                 "environments": [env.get("name") for env in environments if env.get("name")],
                 "subscriptions": list({env.get("subscription") for env in environments if env.get("subscription")}),
+                "devops_projects": devops_projects,
             })
     return categories
 
@@ -162,6 +204,11 @@ def main() -> None:
     repo_names = sorted({w["repo"] for values in categories.values() for w in values})
     repo_badges: List[Tuple[str, Optional[str], Optional[str]]] = []
     repo_workflow_badges: Dict[str, List[str]] = {}
+    repo_ado_projects: Dict[str, str] = {}
+    for values in categories.values():
+        for workload in values:
+            if workload["devops_projects"]:
+                repo_ado_projects[workload["repo"]] = workload["devops_projects"][0]
     for repo in repo_names:
         workflows = fetch_workflows(repo)
         release_badge = find_badge(repo, workflows, ["release-to-production.yml", "release-to-production.yaml"])
@@ -169,12 +216,20 @@ def main() -> None:
         repo_badges.append((repo, release_badge, ci_badge))
         repo_workflow_badges[repo] = workflow_badges(repo, workflows)
 
+    repo_all_badges: Dict[str, List[str]] = {}
+    for repo, badges in repo_workflow_badges.items():
+        combined = list(badges)
+        project = repo_ado_projects.get(repo)
+        if project:
+            combined.extend(ado_pipeline_badges(repo, project))
+        repo_all_badges[repo] = combined
+
     repo_lookup = {name: (release, ci) for name, release, ci in repo_badges}
 
     WORKLOADS_OUT.parent.mkdir(parents=True, exist_ok=True)
     WORKLOADS_OUT.write_text(render_workloads(categories), encoding="utf-8")
     ROUTE_OUT.write_text(render_route_to_production(repo_badges), encoding="utf-8")
-    PIPELINES_OUT.write_text(render_pipelines(categories, repo_workflow_badges), encoding="utf-8")
+    PIPELINES_OUT.write_text(render_pipelines(categories, repo_all_badges), encoding="utf-8")
 
 
 if __name__ == "__main__":
