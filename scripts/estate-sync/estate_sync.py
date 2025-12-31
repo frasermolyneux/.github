@@ -208,17 +208,7 @@ def extract_github_schedule(repo: str, wf: Dict, now: datetime) -> List[Dict]:
         try:
             data = yaml.safe_load(content)
             on_block = data.get("on") if isinstance(data, dict) else None
-            schedules = []
-            if isinstance(on_block, dict):
-                schedules = on_block.get("schedule", [])
-            elif isinstance(on_block, list):
-                # Some workflows use list syntax; schedule would be a dict entry
-                schedules = [entry.get("schedule", []) for entry in on_block if isinstance(entry, dict)]
-                flattened = []
-                for item in schedules:
-                    if isinstance(item, list):
-                        flattened.extend(item)
-                schedules = flattened or schedules
+            schedules = on_block.get("schedule", []) if isinstance(on_block, dict) else []
             for schedule in schedules or []:
                 if isinstance(schedule, dict) and "cron" in schedule:
                     crons.append(str(schedule["cron"]))
@@ -268,8 +258,6 @@ def extract_ado_yaml_schedule(repo: str, project: str, path: str, now: datetime)
             data = yaml.safe_load(content)
             if isinstance(data, dict):
                 schedules = data.get("schedules") or []
-                if isinstance(schedules, dict):
-                    schedules = schedules.get("cron") or schedules.get("schedule") or schedules.get("schedules") or []
                 for sched in schedules or []:
                     if isinstance(sched, dict) and "cron" in sched:
                         crons.append(str(sched["cron"]))
