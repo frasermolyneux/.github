@@ -5,6 +5,7 @@ This repository is the home for organization-wide visibility: which repositories
 ## Quick Links
 - [Route to Production](docs/estate/route-to-production.md) — live badges for the primary release pipelines across the tenant.
 - [Workload Catalog](docs/estate/workloads.md) — source-of-truth map from `platform-workloads` JSON to repositories and environments.
+- [Pipeline Badges](docs/estate/pipelines.md) — consolidated release and CI badges per workload.
 
 ## What This Aims to Solve
 - One place to see pipeline breakage without opening every repository.
