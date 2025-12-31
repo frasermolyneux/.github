@@ -2,6 +2,7 @@ import json
 import os
 import sys
 from datetime import datetime, timezone
+import re
 from pathlib import Path
 from urllib.parse import quote
 from typing import Dict, List, Optional, Tuple
@@ -219,13 +220,18 @@ def extract_github_schedule(repo: str, wf: Dict, now: datetime) -> List[Dict]:
             log(f"YAML parse failed for {repo}/{path}: {exc}")
 
     if not crons:
-        # Fallback: best-effort regex style scan
+        # Fallback 1: best-effort regex per-line
         for line in content.splitlines():
             line = line.strip()
             if line.startswith("cron:"):
                 cron_expr = line.split("cron:", 1)[1].strip().strip('"').strip("'")
                 if cron_expr:
                     crons.append(cron_expr)
+
+    if not crons:
+        # Fallback 2: regex across file to catch wrapped strings
+        matches = re.findall(r"cron:\s*['\"]?([^'\"\n]+)", content, flags=re.IGNORECASE)
+        crons.extend([m.strip() for m in matches if m.strip()])
 
     entries: List[Dict] = []
     for cron_expr in crons:
