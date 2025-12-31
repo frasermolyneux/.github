@@ -1,5 +1,14 @@
 title: Engineering Estate
 description: Org-wide view of repos, pipelines, and dependencies
-remote_theme: pages-themes/minimal@v0.2.0
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin: default
 plugins:
   - jekyll-remote-theme
+  - jekyll-include-cache
+permalink: pretty
+header_pages:
+  - index.md
+  - estate/pipelines.md
+  - estate/pipeline-scheduling.md
+  - estate/workloads.md
+  - estate/route-to-production.md
