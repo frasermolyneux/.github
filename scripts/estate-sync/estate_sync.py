@@ -193,7 +193,7 @@ def next_run_from_cron(cron_expr: str, now: datetime) -> Optional[str]:
     try:
         itr = croniter(cron_expr, now)
         nxt = itr.get_next(datetime)
-        return nxt.strftime("%Y-%m-%d %H:%M UTC")
+        return nxt.strftime("%d/%m/%Y %H:%M UTC")
     except Exception as exc:  # pragma: no cover - defensive
         log(f"Failed to compute next run for cron '{cron_expr}': {exc}")
         return None
@@ -434,24 +434,37 @@ def render_scheduling(schedules: List[Dict], timestamp: datetime) -> str:
         "",
         "# Pipeline Scheduling",
         "",
-        "Workflows and pipelines with cron-based schedules.",
+        "Workflows and pipelines with cron-based schedules, grouped by workload category.",
         "",
-        "| Type | Repository | Name | Cron | Next run (UTC) | Link |",
-        "| --- | --- | --- | --- | --- | --- |",
     ]
-    if schedules:
-        for entry in sorted(schedules, key=lambda s: (s.get("repo", ""), s.get("name", ""))):
+
+    if not schedules:
+        lines.append("No schedules detected.")
+        lines.append("")
+        lines.extend(footer_lines(timestamp))
+        return "\n".join(lines)
+
+    grouped: Dict[str, List[Dict]] = defaultdict(list)
+    for entry in schedules:
+        grouped[entry.get("category", "Uncategorised")].append(entry)
+
+    for category in sorted(grouped.keys(), key=lambda c: c.lower()):
+        lines.append(f"## {category}")
+        lines.append("")
+        lines.append("| Type | Repository | Name | Cron | Next run (UTC) |")
+        lines.append("| --- | --- | --- | --- | --- |")
+        for entry in sorted(grouped[category], key=lambda s: (s.get("cron", ""), s.get("name", ""))):
             repo_name = entry.get("repo", "-")
             repo_link = f"[{repo_name}](https://github.com/{OWNER}/{repo_name})" if repo_name != "-" else "-"
+            name_val = entry.get("name", "-")
+            link = entry.get("link")
+            name_cell = f"[🧾 {name_val}]({link})" if link else f"🧾 {name_val}"
             lines.append(
-                f"| ⏱️ {entry.get('type', '-')} | 📁 {repo_link} | 🧾 {entry.get('name', '-')} | "
-                f"🕒 {entry.get('cron', '-')} | 📅 {entry.get('next', '-')} | "
-                f"[link]({entry.get('link', '#')}) |"
+                f"| ⏱️ {entry.get('type', '-')} | 📁 {repo_link} | {name_cell} | "
+                f"🕒 {entry.get('cron', '-')} | 📅 {entry.get('next', '-')} |"
             )
-    else:
-        lines.append("| - | - | - | - | - | - |")
+        lines.append("")
 
-    lines.append("")
     lines.extend(footer_lines(timestamp))
     return "\n".join(lines)
 
@@ -613,9 +626,11 @@ def main() -> None:
     now = datetime.now(timezone.utc)
 
     repo_meta: Dict[str, Dict] = {}
-    for values in categories.values():
+    repo_category: Dict[str, str] = {}
+    for category_name, values in categories.items():
         for workload in values:
             repo = workload["repo"]
+            repo_category[repo] = category_name
             if repo not in repo_meta:
                 repo_meta[repo] = {
                     "environments": set(),
@@ -673,6 +688,9 @@ def main() -> None:
             log(f"Repo {repo} has no ADO project; only GitHub workflows included")
             repo_ado_pipelines[repo] = []
         repo_workflow_badges[repo] = combined_badges
+
+    for entry in schedule_entries:
+        entry["category"] = repo_category.get(entry.get("repo"), "Uncategorised")
 
     repo_details = gather_repo_details(repo_meta, workflow_file_entries, schedule_entries, repo_workflow_badges, repo_ado_pipelines)
 
