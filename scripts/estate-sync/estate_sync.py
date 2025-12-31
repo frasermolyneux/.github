@@ -240,6 +240,8 @@ def extract_github_schedule(repo: str, wf: Dict, now: datetime) -> List[Dict]:
         })
     if entries:
         log(f"Repo {repo} workflow {path} has schedules: {', '.join(crons)}")
+    else:
+        log(f"Repo {repo} workflow {path} has no cron schedule detected")
     return entries
 
 
@@ -255,6 +257,12 @@ def extract_ado_schedule(repo: str, project: str, pipeline: Dict, now: datetime)
         return []
 
     schedules = definition.get("schedules", [])
+    # Also inspect triggers for schedule blocks (YAML pipelines expose cron there)
+    triggers = definition.get("triggers", [])
+    for trigger in triggers:
+        if isinstance(trigger, dict) and trigger.get("type", "").lower() == "schedule":
+            schedules.extend(trigger.get("schedules", []))
+
     cron_entries: List[str] = []
     for sched in schedules:
         cron_expr = sched.get("cron") or sched.get("schedule")
@@ -274,6 +282,8 @@ def extract_ado_schedule(repo: str, project: str, pipeline: Dict, now: datetime)
         })
     if entries:
         log(f"Repo {repo} ADO pipeline {pipeline.get('name')} schedules: {', '.join(cron_entries)}")
+    else:
+        log(f"Repo {repo} ADO pipeline {pipeline.get('name')} has no cron schedule detected")
     return entries
 
 
@@ -457,6 +467,8 @@ def main() -> None:
     ROUTE_OUT.write_text(render_route_to_production(repo_badges, now), encoding="utf-8")
     PIPELINES_OUT.write_text(render_pipelines(categories, repo_all_badges, now), encoding="utf-8")
     PIPELINE_SCHED_OUT.write_text(render_scheduling(schedule_entries, now), encoding="utf-8")
+
+    log(f"Total schedule entries: {len(schedule_entries)}")
 
 
 if __name__ == "__main__":
