@@ -345,8 +345,8 @@ def _page_link(path: str) -> str:
 
 def nav_line(home: str, workloads: str, pipelines: str, scheduling: str, repos_index: str) -> str:
     return (
-        f"[Home]({_page_link(home)}) | [Workloads]({_page_link(workloads)}) | [Pipelines]({_page_link(pipelines)}) | "
-        f"[Scheduling]({_page_link(scheduling)}) | [Repos]({_page_link(repos_index)})"
+        f"🏠 [Home]({_page_link(home)}) | 📦 [Workloads]({_page_link(workloads)}) | 🧪 [Pipelines]({_page_link(pipelines)}) | "
+        f"⏰ [Scheduling]({_page_link(scheduling)}) | 📚 [Repos]({_page_link(repos_index)})"
     )
 
 
@@ -368,7 +368,8 @@ def render_workloads(categories: Dict[str, List[Dict]], timestamp: datetime) -> 
             envs = ", ".join(workload["environments"]) if workload["environments"] else "-"
             subs = ", ".join(sorted(filter(None, workload["subscriptions"]))) or "-"
             repo_link = f"[{workload['repo']}](https://github.com/{OWNER}/{workload['repo']})"
-            lines.append(f"| {repo_link} | {envs} | {subs} |")
+            detail_link = _page_link(f"./repos/{workload['repo']}.md")
+            lines.append(f"| 📁 {repo_link} ([Detail]({detail_link})) | 🌍 {envs} | 🔑 {subs} |")
         lines.append("")
     lines.extend(footer_lines(timestamp))
     return "\n".join(lines)
@@ -391,7 +392,8 @@ def render_route_to_production(repos: List[Tuple[str, Optional[str], Optional[st
         release = release_badge or "Not configured"
         ci = ci_badge or "Not found"
         repo_link = f"[{name}](https://github.com/{OWNER}/{name})"
-        lines.append(f"| {repo_link} | {release} | {ci} |")
+        detail_link = _page_link(f"./repos/{name}.md")
+        lines.append(f"| 📁 {repo_link} ([Detail]({detail_link})) | 📦 {release} | ✅ {ci} |")
     lines.append("")
     lines.extend(footer_lines(timestamp))
     return "\n".join(lines)
@@ -418,7 +420,8 @@ def render_pipelines(categories: Dict[str, List[Dict]], repos: Dict[str, List[st
         badges = repos.get(repo_name, [])
         repo_link = f"[{workload['name']}](https://github.com/{OWNER}/{repo_name})"
         badge_list = " ".join(badges) if badges else "No workflows found"
-        lines.append(f"| {repo_link} | {badge_list} |")
+        detail_link = _page_link(f"./repos/{repo_name}.md")
+        lines.append(f"| 📁 {repo_link} ([Detail]({detail_link})) | 🏷️ {badge_list} |")
 
     lines.append("")
     lines.extend(footer_lines(timestamp))
@@ -438,9 +441,11 @@ def render_scheduling(schedules: List[Dict], timestamp: datetime) -> str:
     ]
     if schedules:
         for entry in sorted(schedules, key=lambda s: (s.get("repo", ""), s.get("name", ""))):
+            repo_name = entry.get("repo", "-")
+            repo_link = f"[{repo_name}](https://github.com/{OWNER}/{repo_name})" if repo_name != "-" else "-"
             lines.append(
-                f"| {entry.get('type', '-')} | {entry.get('repo', '-')} | {entry.get('name', '-')} | "
-                f"{entry.get('cron', '-')} | {entry.get('next', '-')} | "
+                f"| ⏱️ {entry.get('type', '-')} | 📁 {repo_link} | 🧾 {entry.get('name', '-')} | "
+                f"🕒 {entry.get('cron', '-')} | 📅 {entry.get('next', '-')} | "
                 f"[link]({entry.get('link', '#')}) |"
             )
     else:
@@ -461,13 +466,16 @@ def render_repo_detail(repo: str, detail: Dict, timestamp: datetime) -> str:
 
     repo_link = f"https://github.com/{OWNER}/{repo}"
     ado_project = detail.get("ado_project")
-    lines.append(f"Repository: [{repo}]({repo_link})")
+    lines.append("Summary:")
+    lines.append(f"- 📁 GitHub: [{repo}]({repo_link})")
     if ado_project:
-        lines.append(f"Azure DevOps project: {ado_project}")
+        lines.append(f"- 🏢 Azure DevOps project: [{ado_project}]({AZDO_ORG}/{ado_project})")
     if detail.get("environments"):
-        lines.append(f"Environments: {', '.join(detail['environments'])}")
+        lines.append(f"- 🌍 Environments: {', '.join(detail['environments'])}")
     if detail.get("subscriptions"):
-        lines.append(f"Subscriptions: {', '.join(sorted(detail['subscriptions']))}")
+        lines.append(f"- 🔑 Subscriptions: {', '.join(sorted(detail['subscriptions']))}")
+    lines.append(f"- 🗂️ Workflows: https://github.com/{OWNER}/{repo}/tree/main/.github/workflows")
+    lines.append(f"- 🗂️ Azure Pipelines YAML: https://github.com/{OWNER}/{repo}/tree/main/.azure-pipelines")
 
     lines.append("")
     lines.append("## Badges")
@@ -530,7 +538,7 @@ def render_repos_index(repos: Dict[str, Dict], timestamp: datetime) -> str:
         "",
         "All repositories with links to their detail pages.",
         "",
-        "| Repository | Environments | Subscriptions | Detail |",
+        "| Repository | ADO Project | Environments | Subscriptions |",
         "| --- | --- | --- | --- |",
     ]
     for name, detail in sorted(repos.items(), key=lambda i: i[0].lower()):
@@ -538,7 +546,9 @@ def render_repos_index(repos: Dict[str, Dict], timestamp: datetime) -> str:
         subs = ", ".join(sorted(detail.get("subscriptions", []))) or "-"
         detail_link = _page_link(f"./{name}.md")
         repo_link = f"[{name}](https://github.com/{OWNER}/{name})"
-        lines.append(f"| {repo_link} | {envs} | {subs} | [Detail]({detail_link}) |")
+        ado_project = detail.get("ado_project") or "-"
+        ado_link = f"[{ado_project}]({AZDO_ORG}/{ado_project})" if ado_project != "-" else "-"
+        lines.append(f"| 📁 {repo_link} ([Detail]({detail_link})) | 🏢 {ado_link} | 🌍 {envs} | 🔑 {subs} |")
 
     lines.append("")
     lines.extend(footer_lines(timestamp))
@@ -555,8 +565,8 @@ def render_category_pages(categories: Dict[str, List[Dict]], repo_details: Dict[
             "",
             "Workloads in this category.",
             "",
-            "| Workload | Environments | Subscriptions | Detail |",
-            "| --- | --- | --- | --- |",
+            "| Workload | Environments | Subscriptions |",
+            "| --- | --- | --- |",
         ]
         for workload in sorted(items, key=lambda w: w["name"].lower()):
             name = workload["name"]
@@ -564,7 +574,7 @@ def render_category_pages(categories: Dict[str, List[Dict]], repo_details: Dict[
             subs = ", ".join(sorted(filter(None, workload["subscriptions"]))) or "-"
             detail_link = _page_link(f"../repos/{workload['repo']}.md")
             repo_link = f"[{name}](https://github.com/{OWNER}/{workload['repo']})"
-            lines.append(f"| {repo_link} | {envs} | {subs} | [Detail]({detail_link}) |")
+            lines.append(f"| 📁 {repo_link} ([Detail]({detail_link})) | 🌍 {envs} | 🔑 {subs} |")
 
         lines.append("")
         lines.extend(footer_lines(timestamp))
