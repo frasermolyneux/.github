@@ -2,6 +2,7 @@ import json
 import os
 import sys
 from datetime import datetime, timezone
+from collections import defaultdict
 import re
 from pathlib import Path
 from urllib.parse import quote
@@ -32,6 +33,9 @@ WORKLOADS_OUT = ROOT / "docs" / "estate" / "workloads.md"
 ROUTE_OUT = ROOT / "docs" / "estate" / "route-to-production.md"
 PIPELINES_OUT = ROOT / "docs" / "estate" / "pipelines.md"
 PIPELINE_SCHED_OUT = ROOT / "docs" / "estate" / "pipeline-scheduling.md"
+REPOS_INDEX_OUT = ROOT / "docs" / "estate" / "repos" / "index.md"
+CATEGORIES_DIR = ROOT / "docs" / "estate" / "categories"
+REPO_PAGES_DIR = ROOT / "docs" / "estate" / "repos"
 
 session = requests.Session()
 session.headers.update({"Authorization": f"Bearer {GITHUB_TOKEN}", "Accept": "application/vnd.github+json"})
@@ -327,8 +331,22 @@ def footer_lines(timestamp: datetime) -> List[str]:
     ]
 
 
+def write_markdown(path: Path, content: str) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(content, encoding="utf-8")
+
+
+def nav_line(home: str, workloads: str, pipelines: str, scheduling: str, repos_index: str) -> str:
+    return (
+        f"[Home]({home}) | [Workloads]({workloads}) | [Pipelines]({pipelines}) | "
+        f"[Scheduling]({scheduling}) | [Repos]({repos_index})"
+    )
+
+
 def render_workloads(categories: Dict[str, List[Dict]], timestamp: datetime) -> str:
     lines = [
+        nav_line("../index.md", "./workloads.md", "./pipelines.md", "./pipeline-scheduling.md", "./repos/index.md"),
+        "",
         "# Workload Catalog",
         "",
         "Generated from platform-workloads/terraform/workloads (excluding examples).",
@@ -351,6 +369,8 @@ def render_workloads(categories: Dict[str, List[Dict]], timestamp: datetime) -> 
 
 def render_route_to_production(repos: List[Tuple[str, Optional[str], Optional[str]]], timestamp: datetime) -> str:
     lines = [
+        nav_line("../index.md", "./workloads.md", "./pipelines.md", "./pipeline-scheduling.md", "./repos/index.md"),
+        "",
         "# Route to Production",
         "",
         "This page is generated from repository workflows. Badges link to the owning workflow so you can jump straight to failing runs.",
@@ -370,32 +390,10 @@ def render_route_to_production(repos: List[Tuple[str, Optional[str], Optional[st
     return "\n".join(lines)
 
 
-def render_scheduling(schedules: List[Dict], timestamp: datetime) -> str:
-    lines = [
-        "# Pipeline Scheduling",
-        "",
-        "Workflows and pipelines with cron-based schedules.",
-        "",
-        "| Type | Repository | Name | Cron | Next run (UTC) | Link |",
-        "| --- | --- | --- | --- | --- | --- |",
-    ]
-    if schedules:
-        for entry in sorted(schedules, key=lambda s: (s.get("repo", ""), s.get("name", ""))):
-            lines.append(
-                f"| {entry.get('type', '-')} | {entry.get('repo', '-')} | {entry.get('name', '-')} | "
-                f"{entry.get('cron', '-')} | {entry.get('next', '-')} | "
-                f"[link]({entry.get('link', '#')}) |"
-            )
-    else:
-        lines.append("| - | - | - | - | - | - |")
-
-    lines.append("")
-    lines.extend(footer_lines(timestamp))
-    return "\n".join(lines)
-
-
 def render_pipelines(categories: Dict[str, List[Dict]], repos: Dict[str, List[str]], timestamp: datetime) -> str:
     lines = [
+        nav_line("../index.md", "./workloads.md", "./pipelines.md", "./pipeline-scheduling.md", "./repos/index.md"),
+        "",
         "# Pipeline Badges",
         "",
         "All workflow badges per workload. Badges link to the workflow definitions.",
@@ -420,60 +418,258 @@ def render_pipelines(categories: Dict[str, List[Dict]], repos: Dict[str, List[st
     return "\n".join(lines)
 
 
+def render_scheduling(schedules: List[Dict], timestamp: datetime) -> str:
+    lines = [
+        nav_line("../index.md", "./workloads.md", "./pipelines.md", "./pipeline-scheduling.md", "./repos/index.md"),
+        "",
+        "# Pipeline Scheduling",
+        "",
+        "Workflows and pipelines with cron-based schedules.",
+        "",
+        "| Type | Repository | Name | Cron | Next run (UTC) | Link |",
+        "| --- | --- | --- | --- | --- | --- |",
+    ]
+    if schedules:
+        for entry in sorted(schedules, key=lambda s: (s.get("repo", ""), s.get("name", ""))):
+            lines.append(
+                f"| {entry.get('type', '-')} | {entry.get('repo', '-')} | {entry.get('name', '-')} | "
+                f"{entry.get('cron', '-')} | {entry.get('next', '-')} | "
+                f"[link]({entry.get('link', '#')}) |"
+            )
+    else:
+        lines.append("| - | - | - | - | - | - |")
+
+    lines.append("")
+    lines.extend(footer_lines(timestamp))
+    return "\n".join(lines)
+
+
+def render_repo_detail(repo: str, detail: Dict, timestamp: datetime) -> str:
+    lines = [
+        nav_line("../../index.md", "../workloads.md", "../pipelines.md", "../pipeline-scheduling.md", "./index.md"),
+        "",
+        f"# {repo}",
+        "",
+    ]
+
+    repo_link = f"https://github.com/{OWNER}/{repo}"
+    ado_project = detail.get("ado_project")
+    lines.append(f"Repository: [{repo}]({repo_link})")
+    if ado_project:
+        lines.append(f"Azure DevOps project: {ado_project}")
+    if detail.get("environments"):
+        lines.append(f"Environments: {', '.join(detail['environments'])}")
+    if detail.get("subscriptions"):
+        lines.append(f"Subscriptions: {', '.join(sorted(detail['subscriptions']))}")
+
+    lines.append("")
+    lines.append("## Badges")
+    lines.append("")
+    badges = detail.get("badges", [])
+    lines.append(" ".join(badges) if badges else "No badges found")
+
+    lines.append("")
+    lines.append("## Scheduling")
+    lines.append("")
+    schedules = detail.get("schedules", [])
+    lines.append("| Type | Cron | Next run (UTC) | Link |")
+    lines.append("| --- | --- | --- | --- |")
+    if schedules:
+        for entry in sorted(schedules, key=lambda s: (s.get("type", ""), s.get("cron", ""))):
+            lines.append(
+                f"| {entry.get('type', '-')} | {entry.get('cron', '-')} | {entry.get('next', '-')} | "
+                f"[link]({entry.get('link', '#')}) |"
+            )
+    else:
+        lines.append("| - | - | - | - |")
+
+    lines.append("")
+    lines.append("## Workflows")
+    lines.append("")
+    workflows = detail.get("workflows", [])
+    lines.append("| Name | Path | Link |")
+    lines.append("| --- | --- | --- |")
+    if workflows:
+        for wf in workflows:
+            lines.append(
+                f"| {wf.get('name', wf.get('path', '-'))} | {wf.get('path', '-')} | "
+                f"[view]({wf.get('link', '#')}) |"
+            )
+    else:
+        lines.append("| - | - | - |")
+
+    lines.append("")
+    lines.append("## Azure Pipelines")
+    lines.append("")
+    ado_pipes = detail.get("ado_pipelines", [])
+    lines.append("| Name | Link |")
+    lines.append("| --- | --- |")
+    if ado_pipes:
+        for pipe in ado_pipes:
+            lines.append(f"| {pipe.get('name', '-')} | [view]({pipe.get('link', '#')}) |")
+    else:
+        lines.append("| - | - |")
+
+    lines.append("")
+    lines.extend(footer_lines(timestamp))
+    return "\n".join(lines)
+
+
+def render_repos_index(repos: Dict[str, Dict], timestamp: datetime) -> str:
+    lines = [
+        nav_line("../../index.md", "../workloads.md", "../pipelines.md", "../pipeline-scheduling.md", "./index.md"),
+        "",
+        "# Repositories",
+        "",
+        "All repositories with links to their detail pages.",
+        "",
+        "| Repository | Environments | Subscriptions | Detail |",
+        "| --- | --- | --- | --- |",
+    ]
+    for name, detail in sorted(repos.items(), key=lambda i: i[0].lower()):
+        envs = ", ".join(detail.get("environments", [])) or "-"
+        subs = ", ".join(sorted(detail.get("subscriptions", []))) or "-"
+        detail_link = f"./{name}.md"
+        repo_link = f"[{name}](https://github.com/{OWNER}/{name})"
+        lines.append(f"| {repo_link} | {envs} | {subs} | [Detail]({detail_link}) |")
+
+    lines.append("")
+    lines.extend(footer_lines(timestamp))
+    return "\n".join(lines)
+
+
+def render_category_pages(categories: Dict[str, List[Dict]], repo_details: Dict[str, Dict], timestamp: datetime) -> Dict[str, str]:
+    pages: Dict[str, str] = {}
+    for category, items in categories.items():
+        lines = [
+            nav_line("../../index.md", "../workloads.md", "../pipelines.md", "../pipeline-scheduling.md", "../repos/index.md"),
+            "",
+            f"# {category}",
+            "",
+            "Workloads in this category.",
+            "",
+            "| Workload | Environments | Subscriptions | Detail |",
+            "| --- | --- | --- | --- |",
+        ]
+        for workload in sorted(items, key=lambda w: w["name"].lower()):
+            name = workload["name"]
+            envs = ", ".join(workload["environments"]) if workload["environments"] else "-"
+            subs = ", ".join(sorted(filter(None, workload["subscriptions"]))) or "-"
+            detail_link = f"../repos/{workload['repo']}.md"
+            repo_link = f"[{name}](https://github.com/{OWNER}/{workload['repo']})"
+            lines.append(f"| {repo_link} | {envs} | {subs} | [Detail]({detail_link}) |")
+
+        lines.append("")
+        lines.extend(footer_lines(timestamp))
+        pages[category] = "\n".join(lines)
+
+    return pages
+
+
+def gather_repo_details(
+    repo_meta: Dict[str, Dict],
+    workflow_files: Dict[str, List[Dict]],
+    schedules: List[Dict],
+    badge_sets: Dict[str, List[str]],
+    repo_ado_pipelines: Dict[str, List[Dict]],
+) -> Dict[str, Dict]:
+    details: Dict[str, Dict] = {}
+    schedule_by_repo: Dict[str, List[Dict]] = defaultdict(list)
+    for sched in schedules:
+        schedule_by_repo[sched.get("repo", "")].append(sched)
+
+    for repo, meta in repo_meta.items():
+        details[repo] = {
+            "ado_project": meta.get("ado_project"),
+            "environments": sorted(meta.get("environments", [])),
+            "subscriptions": sorted(meta.get("subscriptions", [])),
+            "badges": badge_sets.get(repo, []),
+            "workflows": workflow_files.get(repo, []),
+            "ado_pipelines": repo_ado_pipelines.get(repo, []),
+            "schedules": schedule_by_repo.get(repo, []),
+        }
+    return details
+
+
 def main() -> None:
     categories = load_workloads()
     now = datetime.now(timezone.utc)
 
-    repo_names = sorted({w["repo"] for values in categories.values() for w in values})
-    repo_badges: List[Tuple[str, Optional[str], Optional[str]]] = []
-    repo_workflow_badges: Dict[str, List[str]] = {}
-    repo_ado_projects: Dict[str, str] = {}
-    project_pipeline_cache: Dict[str, List[Dict]] = {}
-    schedule_entries: List[Dict] = []
+    repo_meta: Dict[str, Dict] = {}
     for values in categories.values():
         for workload in values:
-            if workload["devops_projects"]:
-                repo_ado_projects[workload["repo"]] = workload["devops_projects"][0]
-            else:
-                log(f"Repo {workload['repo']} has no devops_project; skipping ADO")
+            repo = workload["repo"]
+            if repo not in repo_meta:
+                repo_meta[repo] = {
+                    "environments": set(),
+                    "subscriptions": set(),
+                    "ado_project": None,
+                }
+            repo_meta[repo]["environments"].update(workload["environments"])
+            repo_meta[repo]["subscriptions"].update(filter(None, workload["subscriptions"]))
+            if workload["devops_projects"] and not repo_meta[repo]["ado_project"]:
+                repo_meta[repo]["ado_project"] = workload["devops_projects"][0]
+
+    repo_names = sorted(repo_meta.keys())
+    repo_badges: List[Tuple[str, Optional[str], Optional[str]]] = []
+    repo_workflow_badges: Dict[str, List[str]] = {}
+    project_pipeline_cache: Dict[str, List[Dict]] = {}
+    schedule_entries: List[Dict] = []
+    workflow_file_entries: Dict[str, List[Dict]] = {}
+    repo_ado_pipelines: Dict[str, List[Dict]] = {}
+
     for repo in repo_names:
         workflows = fetch_workflows(repo)
         workflow_paths = list_workflow_files(repo)
         wf_name_lookup = {wf.get("path"): (wf.get("name") or wf.get("path")) for wf in workflows if wf.get("path")}
         log(f"Repo {repo} workflows API returned {len(workflows)} entries; files found {len(workflow_paths)}")
+
         release_badge = find_badge(repo, workflows, ["release-to-production.yml", "release-to-production.yaml"])
         ci_badge = find_badge(repo, workflows, ["ci.yml", "ci.yaml", "build.yml", "build.yaml", "tests.yml", "tests.yaml"])
         repo_badges.append((repo, release_badge, ci_badge))
         repo_workflow_badges[repo] = workflow_badges(repo, workflows)
-        # Inspect all workflow files (not just those returned by the workflows API) to capture schedules reliably
-        for path in workflow_paths:
-            wf = {"path": path, "name": wf_name_lookup.get(path)}
-            schedule_entries.extend(extract_github_schedule(repo, wf, now))
 
-    repo_all_badges: Dict[str, List[str]] = {}
-    for repo, badges in repo_workflow_badges.items():
-        combined = list(badges)
-        project = repo_ado_projects.get(repo)
+        workflow_file_entries[repo] = []
+        for path in workflow_paths:
+            wf_entry = {"path": path, "name": wf_name_lookup.get(path), "link": f"https://github.com/{OWNER}/{repo}/blob/main/{path}"}
+            workflow_file_entries[repo].append(wf_entry)
+            schedule_entries.extend(extract_github_schedule(repo, {"path": path, "name": wf_entry["name"]}, now))
+
+        combined_badges = list(repo_workflow_badges[repo])
+        project = repo_meta[repo].get("ado_project")
         if project:
             if project not in project_pipeline_cache:
                 project_pipeline_cache[project] = fetch_ado_pipelines(project)
             pipelines = project_pipeline_cache[project]
             log(f"Repo {repo} using ADO project {project} with {len(pipelines)} pipelines")
-            combined.extend(ado_pipeline_badges(repo, project, pipelines))
+            combined_badges.extend(ado_pipeline_badges(repo, project, pipelines))
 
-            # Parse ADO pipeline YAML files in repo for schedules
             ado_files = list_ado_pipeline_files(repo)
+            repo_ado_pipelines[repo] = [
+                {"name": p.get("name", "unknown"), "link": f"{AZDO_ORG}/{project}/_build?definitionId={p.get('id')}"}
+                for p in pipelines
+                if str(p.get("name", "")).lower().startswith(f"{repo.lower()}.")
+            ]
             for path in ado_files:
                 schedule_entries.extend(extract_ado_yaml_schedule(repo, project, path, now))
         else:
             log(f"Repo {repo} has no ADO project; only GitHub workflows included")
-        repo_all_badges[repo] = combined
+            repo_ado_pipelines[repo] = []
+        repo_workflow_badges[repo] = combined_badges
 
-    WORKLOADS_OUT.parent.mkdir(parents=True, exist_ok=True)
-    WORKLOADS_OUT.write_text(render_workloads(categories, now), encoding="utf-8")
-    ROUTE_OUT.write_text(render_route_to_production(repo_badges, now), encoding="utf-8")
-    PIPELINES_OUT.write_text(render_pipelines(categories, repo_all_badges, now), encoding="utf-8")
-    PIPELINE_SCHED_OUT.write_text(render_scheduling(schedule_entries, now), encoding="utf-8")
+    repo_details = gather_repo_details(repo_meta, workflow_file_entries, schedule_entries, repo_workflow_badges, repo_ado_pipelines)
+
+    write_markdown(WORKLOADS_OUT, render_workloads(categories, now))
+    write_markdown(ROUTE_OUT, render_route_to_production(repo_badges, now))
+    write_markdown(PIPELINES_OUT, render_pipelines(categories, repo_workflow_badges, now))
+    write_markdown(PIPELINE_SCHED_OUT, render_scheduling(schedule_entries, now))
+
+    write_markdown(REPOS_INDEX_OUT, render_repos_index(repo_details, now))
+    category_pages = render_category_pages(categories, repo_details, now)
+    for category, content in category_pages.items():
+        write_markdown(CATEGORIES_DIR / f"{category}.md", content)
+    for name, detail in repo_details.items():
+        write_markdown(REPO_PAGES_DIR / f"{name}.md", render_repo_detail(name, detail, now))
 
     log(f"Total schedule entries: {len(schedule_entries)}")
 
