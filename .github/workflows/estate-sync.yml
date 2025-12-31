@@ -9,6 +9,10 @@ on:
         description: "Run even if no file changes are detected"
         required: false
         default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
 
 permissions:
   contents: write
