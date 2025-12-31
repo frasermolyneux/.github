@@ -1,18 +1,31 @@
 # Visualizations
 
+## Badge Wall
+
+- [![Release to Production](https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/release-to-production.yml/badge.svg)](https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/release-to-production.yml)
+- [![Release to Production](https://github.com/frasermolyneux/geo-location-environments/actions/workflows/.github/workflows/release-to-production.yml/badge.svg)](https://github.com/frasermolyneux/geo-location-environments/actions/workflows/.github/workflows/release-to-production.yml)
+- [![Release to Production](https://github.com/frasermolyneux/invision-api-client/actions/workflows/.github/workflows/release-to-production.yml/badge.svg)](https://github.com/frasermolyneux/invision-api-client/actions/workflows/.github/workflows/release-to-production.yml)
+- [![Release to Production](https://github.com/frasermolyneux/molyneux-me/actions/workflows/.github/workflows/release-to-production.yml/badge.svg)](https://github.com/frasermolyneux/molyneux-me/actions/workflows/.github/workflows/release-to-production.yml)
+- [![Release to Production](https://github.com/frasermolyneux/personal-finances/actions/workflows/.github/workflows/release-to-production.yml/badge.svg)](https://github.com/frasermolyneux/personal-finances/actions/workflows/.github/workflows/release-to-production.yml)
+- [![Release to Production](https://github.com/frasermolyneux/platform-monitoring/actions/workflows/.github/workflows/release-to-production.yml/badge.svg)](https://github.com/frasermolyneux/platform-monitoring/actions/workflows/.github/workflows/release-to-production.yml)
+- [![Release to Production](https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/.github/workflows/release-to-production.yml/badge.svg)](https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/.github/workflows/release-to-production.yml)
+- [![Release to Production](https://github.com/frasermolyneux/portal-common-messaging/actions/workflows/.github/workflows/release-to-production.yml/badge.svg)](https://github.com/frasermolyneux/portal-common-messaging/actions/workflows/.github/workflows/release-to-production.yml)
+- [![Release to Production](https://github.com/frasermolyneux/portal-core/actions/workflows/.github/workflows/release-to-production.yml/badge.svg)](https://github.com/frasermolyneux/portal-core/actions/workflows/.github/workflows/release-to-production.yml)
+- [![Release to Production](https://github.com/frasermolyneux/portal-environments/actions/workflows/.github/workflows/release-to-production.yml/badge.svg)](https://github.com/frasermolyneux/portal-environments/actions/workflows/.github/workflows/release-to-production.yml)
+- [![Release to Production](https://github.com/frasermolyneux/portal-event-ingest/actions/workflows/.github/workflows/release-to-production.yml/badge.svg)](https://github.com/frasermolyneux/portal-event-ingest/actions/workflows/.github/workflows/release-to-production.yml)
+- [![Release to Production](https://github.com/frasermolyneux/portal-repository/actions/workflows/.github/workflows/release-to-production.yml/badge.svg)](https://github.com/frasermolyneux/portal-repository/actions/workflows/.github/workflows/release-to-production.yml)
+- [![Release to Production](https://github.com/frasermolyneux/portal-repository-func/actions/workflows/.github/workflows/release-to-production.yml/badge.svg)](https://github.com/frasermolyneux/portal-repository-func/actions/workflows/.github/workflows/release-to-production.yml)
+- [![Release to Production](https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/.github/workflows/release-to-production.yml/badge.svg)](https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/.github/workflows/release-to-production.yml)
+- [![Release to Production](https://github.com/frasermolyneux/portal-sync/actions/workflows/.github/workflows/release-to-production.yml/badge.svg)](https://github.com/frasermolyneux/portal-sync/actions/workflows/.github/workflows/release-to-production.yml)
+- [![Release to Production](https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/release-to-production.yml/badge.svg)](https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/release-to-production.yml)
+- [![Release to Production](https://github.com/frasermolyneux/twenty-one/actions/workflows/.github/workflows/release-to-production.yml/badge.svg)](https://github.com/frasermolyneux/twenty-one/actions/workflows/.github/workflows/release-to-production.yml)
+
 ## Dependency Graph (concept)
 
 ```mermaid
 graph TD
-  PlatformWorkloads[platform-workloads] -->|provisions| PortalCore[portal-core]
-  PlatformWorkloads --> PortalEnvironments[portal-environments]
-  PortalEnvironments -->|shared app config| PortalCore
-  PortalCore -->|API client| PortalRepository[portal-repository]
+  PlatformWorkloads[platform-workloads] --> Workloads[Estate workloads]
 ```
 
-- Replace the placeholders with generated nodes/edges from `platform-workloads` once the automation is in place.
-- Mermaid works well for quick sketches; for pipeline status overlays, embed live badge links next to nodes in the Markdown surrounding the diagram.
-
-## Badge Wall (idea)
-
-Use a generated grid of badges (one per release pipeline) as a quick failure heatmap. This can live in [route-to-production](route-to-production.md) or alongside the GitHub Pages landing view.
+---
+Generated by scripts/estate-sync/estate_sync.py
