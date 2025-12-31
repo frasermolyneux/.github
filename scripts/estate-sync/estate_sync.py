@@ -6,6 +6,16 @@ from pathlib import Path
 from urllib.parse import quote
 from typing import Dict, List, Optional, Tuple
 
+try:
+    import yaml  # type: ignore
+except ImportError:  # pragma: no cover - optional dependency
+    yaml = None
+
+try:
+    from croniter import croniter  # type: ignore
+except ImportError:  # pragma: no cover - optional dependency
+    croniter = None
+
 import requests
 from base64 import b64encode
 
@@ -45,6 +55,21 @@ def github_contents(path: str) -> List[Dict]:
     return resp.json()
 
 
+def github_file(repo: str, path: str) -> Optional[str]:
+    url = f"https://api.github.com/repos/{OWNER}/{repo}/contents/{path}"
+    resp = session.get(url)
+    if resp.status_code == 404:
+        return None
+    resp.raise_for_status()
+    payload = resp.json()
+    download_url = payload.get("download_url")
+    if not download_url:
+        return None
+    raw = session.get(download_url)
+    raw.raise_for_status()
+    return raw.text
+
+
 def fetch_workflows(repo: str) -> List[Dict]:
     url = f"https://api.github.com/repos/{OWNER}/{repo}/actions/workflows"
     resp = session.get(url)
@@ -71,8 +96,21 @@ def fetch_ado_pipelines(project: str) -> List[Dict]:
     return pipelines
 
 
-def ado_pipeline_badges(repo: str, project: str) -> List[str]:
-    pipelines = fetch_ado_pipelines(project)
+def fetch_ado_pipeline_definition(project: str, pipeline_id: int) -> Optional[Dict]:
+    if not ado_session:
+        return None
+    url = f"{AZDO_ORG}/{project}/_apis/build/definitions/{pipeline_id}?api-version=7.0"
+    resp = ado_session.get(url)
+    if resp.status_code == 404:
+        log(f"ADO pipeline definition 404 for pipeline {pipeline_id} in project {project}")
+        return None
+    resp.raise_for_status()
+    return resp.json()
+
+
+def ado_pipeline_badges(repo: str, project: str, pipelines: Optional[List[Dict]] = None) -> List[str]:
+    if pipelines is None:
+        pipelines = fetch_ado_pipelines(project)
     badges: List[str] = []
     prefix = f"{repo.lower()}."
     for pipeline in pipelines:
@@ -114,6 +152,103 @@ def workflow_badges(repo: str, workflows: List[Dict]) -> List[str]:
         label = wf.get("name") or path
         badges.append(f"[![{label}]({badge_url})]({link_url})")
     return badges
+
+
+def next_run_from_cron(cron_expr: str, now: datetime) -> Optional[str]:
+    if not croniter:
+        return None
+    try:
+        itr = croniter(cron_expr, now)
+        nxt = itr.get_next(datetime)
+        return nxt.strftime("%Y-%m-%d %H:%M UTC")
+    except Exception as exc:  # pragma: no cover - defensive
+        log(f"Failed to compute next run for cron '{cron_expr}': {exc}")
+        return None
+
+
+def extract_github_schedule(repo: str, wf: Dict, now: datetime) -> List[Dict]:
+    path = wf.get("path")
+    if not path:
+        return []
+    content = github_file(repo, path)
+    if not content:
+        return []
+
+    crons: List[str] = []
+    if yaml:
+        try:
+            data = yaml.safe_load(content)
+            on_block = data.get("on") if isinstance(data, dict) else None
+            schedules = []
+            if isinstance(on_block, dict):
+                schedules = on_block.get("schedule", [])
+            elif isinstance(on_block, list):
+                # Some workflows use list syntax; schedule would be a dict entry
+                schedules = [entry.get("schedule", []) for entry in on_block if isinstance(entry, dict)]
+                flattened = []
+                for item in schedules:
+                    if isinstance(item, list):
+                        flattened.extend(item)
+                schedules = flattened or schedules
+            for schedule in schedules or []:
+                if isinstance(schedule, dict) and "cron" in schedule:
+                    crons.append(str(schedule["cron"]))
+        except Exception as exc:  # pragma: no cover - defensive
+            log(f"YAML parse failed for {repo}/{path}: {exc}")
+
+    if not crons:
+        # Fallback: best-effort regex style scan
+        for line in content.splitlines():
+            line = line.strip()
+            if line.startswith("cron:"):
+                cron_expr = line.split("cron:", 1)[1].strip().strip('"').strip("'")
+                if cron_expr:
+                    crons.append(cron_expr)
+
+    entries: List[Dict] = []
+    for cron_expr in crons:
+        next_run = next_run_from_cron(cron_expr, now)
+        entries.append({
+            "type": "GitHub Actions",
+            "repo": repo,
+            "name": wf.get("name") or path,
+            "cron": cron_expr,
+            "next": next_run or "-",
+            "link": f"https://github.com/{OWNER}/{repo}/actions/workflows/{path}",
+        })
+    return entries
+
+
+def extract_ado_schedule(repo: str, project: str, pipeline: Dict, now: datetime) -> List[Dict]:
+    pipeline_id = pipeline.get("id")
+    if not pipeline_id:
+        return []
+    name = pipeline.get("name", "").lower()
+    if not name.startswith(f"{repo.lower()}."):
+        return []
+    definition = fetch_ado_pipeline_definition(project, pipeline_id)
+    if not definition:
+        return []
+
+    schedules = definition.get("schedules", [])
+    cron_entries: List[str] = []
+    for sched in schedules:
+        cron_expr = sched.get("cron") or sched.get("schedule")
+        if cron_expr:
+            cron_entries.append(str(cron_expr))
+
+    entries: List[Dict] = []
+    for cron_expr in cron_entries:
+        next_run = next_run_from_cron(cron_expr, now)
+        entries.append({
+            "type": "Azure Pipelines",
+            "repo": repo,
+            "name": pipeline.get("name", str(pipeline_id)),
+            "cron": cron_expr,
+            "next": next_run or "-",
+            "link": f"{AZDO_ORG}/{project}/_build/latest?definitionId={pipeline_id}",
+        })
+    return entries
 
 
 def load_workloads() -> Dict[str, List[Dict]]:
@@ -194,15 +329,35 @@ def render_route_to_production(repos: List[Tuple[str, Optional[str], Optional[st
     return "\n".join(lines)
 
 
-def render_pipelines(categories: Dict[str, List[Dict]], repos: Dict[str, List[str]], timestamp: datetime) -> str:
+def render_pipelines(categories: Dict[str, List[Dict]], repos: Dict[str, List[str]], schedules: List[Dict], timestamp: datetime) -> str:
     lines = [
         "# Pipeline Badges",
         "",
         "All workflow badges per workload. Badges link to the workflow definitions.",
         "",
-        "| Workload | Workflows |",
-        "| --- | --- |",
     ]
+
+    lines.append("## Scheduling")
+    lines.append("")
+    lines.append("Workflows and pipelines with cron-based schedules.")
+    lines.append("")
+    lines.append("| Type | Repository | Name | Cron | Next run (UTC) | Link |")
+    lines.append("| --- | --- | --- | --- | --- | --- |")
+    if schedules:
+        for entry in sorted(schedules, key=lambda s: (s.get("repo", ""), s.get("name", ""))):
+            lines.append(
+                f"| {entry.get('type', '-')} | {entry.get('repo', '-')} | {entry.get('name', '-')} | "
+                f"{entry.get('cron', '-')} | {entry.get('next', '-')} | "
+                f"[link]({entry.get('link', '#')}) |"
+            )
+    else:
+        lines.append("| - | - | - | - | - | - |")
+
+    lines.append("")
+    lines.append("## Badges")
+    lines.append("")
+    lines.append("| Workload | Workflows |")
+    lines.append("| --- | --- |")
 
     workloads = []
     for category in categories.values():
@@ -228,6 +383,8 @@ def main() -> None:
     repo_badges: List[Tuple[str, Optional[str], Optional[str]]] = []
     repo_workflow_badges: Dict[str, List[str]] = {}
     repo_ado_projects: Dict[str, str] = {}
+    project_pipeline_cache: Dict[str, List[Dict]] = {}
+    schedule_entries: List[Dict] = []
     for values in categories.values():
         for workload in values:
             if workload["devops_projects"]:
@@ -240,23 +397,28 @@ def main() -> None:
         ci_badge = find_badge(repo, workflows, ["ci.yml", "ci.yaml", "build.yml", "build.yaml", "tests.yml", "tests.yaml"])
         repo_badges.append((repo, release_badge, ci_badge))
         repo_workflow_badges[repo] = workflow_badges(repo, workflows)
+        for wf in workflows:
+            schedule_entries.extend(extract_github_schedule(repo, wf, now))
 
     repo_all_badges: Dict[str, List[str]] = {}
     for repo, badges in repo_workflow_badges.items():
         combined = list(badges)
         project = repo_ado_projects.get(repo)
         if project:
-            combined.extend(ado_pipeline_badges(repo, project))
+            if project not in project_pipeline_cache:
+                project_pipeline_cache[project] = fetch_ado_pipelines(project)
+            pipelines = project_pipeline_cache[project]
+            combined.extend(ado_pipeline_badges(repo, project, pipelines))
+            for pipeline in pipelines:
+                schedule_entries.extend(extract_ado_schedule(repo, project, pipeline, now))
         else:
             log(f"Repo {repo} has no ADO project; only GitHub workflows included")
         repo_all_badges[repo] = combined
 
-    repo_lookup = {name: (release, ci) for name, release, ci in repo_badges}
-
     WORKLOADS_OUT.parent.mkdir(parents=True, exist_ok=True)
     WORKLOADS_OUT.write_text(render_workloads(categories, now), encoding="utf-8")
     ROUTE_OUT.write_text(render_route_to_production(repo_badges, now), encoding="utf-8")
-    PIPELINES_OUT.write_text(render_pipelines(categories, repo_all_badges, now), encoding="utf-8")
+    PIPELINES_OUT.write_text(render_pipelines(categories, repo_all_badges, schedule_entries, now), encoding="utf-8")
 
 
 if __name__ == "__main__":
