@@ -256,18 +256,30 @@ def extract_ado_schedule(repo: str, project: str, pipeline: Dict, now: datetime)
     if not definition:
         return []
 
-    schedules = definition.get("schedules", [])
+    schedules = definition.get("schedules", []) or []
     # Also inspect triggers for schedule blocks (YAML pipelines expose cron there)
-    triggers = definition.get("triggers", [])
+    triggers = definition.get("triggers", []) or []
     for trigger in triggers:
         if isinstance(trigger, dict) and trigger.get("type", "").lower() == "schedule":
             schedules.extend(trigger.get("schedules", []))
 
     cron_entries: List[str] = []
+    human_entries: List[str] = []
     for sched in schedules:
         cron_expr = sched.get("cron") or sched.get("schedule")
         if cron_expr:
             cron_entries.append(str(cron_expr))
+            continue
+        if "startHours" in sched and "startMinutes" in sched:
+            hours = sched.get("startHours", 0)
+            minutes = sched.get("startMinutes", 0)
+            tz = sched.get("timeZoneId") or "UTC"
+            days_val = sched.get("daysToBuild")
+            if isinstance(days_val, list):
+                days = ",".join(str(d) for d in days_val)
+            else:
+                days = str(days_val) if days_val is not None else "?"
+            human_entries.append(f"{hours:02d}:{minutes:02d} (days={days}, tz={tz})")
 
     entries: List[Dict] = []
     for cron_expr in cron_entries:
@@ -280,8 +292,18 @@ def extract_ado_schedule(repo: str, project: str, pipeline: Dict, now: datetime)
             "next": next_run or "-",
             "link": f"{AZDO_ORG}/{project}/_build/latest?definitionId={pipeline_id}",
         })
+    for human in human_entries:
+        entries.append({
+            "type": "Azure Pipelines",
+            "repo": repo,
+            "name": pipeline.get("name", str(pipeline_id)),
+            "cron": human,
+            "next": "-",
+            "link": f"{AZDO_ORG}/{project}/_build/latest?definitionId={pipeline_id}",
+        })
     if entries:
-        log(f"Repo {repo} ADO pipeline {pipeline.get('name')} schedules: {', '.join(cron_entries)}")
+        combined = cron_entries + human_entries
+        log(f"Repo {repo} ADO pipeline {pipeline.get('name')} schedules: {', '.join(combined)}")
     else:
         log(f"Repo {repo} ADO pipeline {pipeline.get('name')} has no cron schedule detected")
     return entries
