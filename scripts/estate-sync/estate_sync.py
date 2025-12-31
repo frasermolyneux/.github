@@ -146,7 +146,7 @@ def render_pipelines(categories: Dict[str, List[Dict]], repos: Dict[str, List[st
     for workload in sorted(workloads, key=lambda w: w["name"].lower()):
         repo_name = workload["repo"]
         badges = repos.get(repo_name, [])
-        repo_link = f"[{repo_name}](https://github.com/{OWNER}/{repo_name})"
+        repo_link = f"[{OWNER}/{repo_name}](https://github.com/{OWNER}/{repo_name})"
         badge_list = "<br>".join(badges) if badges else "No workflows found"
         lines.append(f"| {workload['name']} | {repo_link} | {badge_list} |")
 
