@@ -334,6 +334,7 @@ def footer_lines(timestamp: datetime) -> List[str]:
 def write_markdown(path: Path, content: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(content, encoding="utf-8")
+    log(f"Wrote {path}")
 
 
 def _page_link(path: str) -> str:
@@ -705,6 +706,8 @@ def main() -> None:
         write_markdown(CATEGORIES_DIR / f"{category}.md", content)
     for name, detail in repo_details.items():
         write_markdown(REPO_PAGES_DIR / f"{name}.md", render_repo_detail(name, detail, now))
+
+    log(f"Generated repo pages: {len(repo_details)}")
 
     log(f"Total schedule entries: {len(schedule_entries)}")
 
