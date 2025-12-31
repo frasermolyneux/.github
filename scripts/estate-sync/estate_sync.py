@@ -71,6 +71,22 @@ def github_file(repo: str, path: str) -> Optional[str]:
     return raw.text
 
 
+def list_workflow_files(repo: str) -> List[str]:
+    url = f"https://api.github.com/repos/{OWNER}/{repo}/contents/.github/workflows"
+    resp = session.get(url)
+    if resp.status_code == 404:
+        return []
+    resp.raise_for_status()
+    payload = resp.json()
+    paths: List[str] = []
+    for entry in payload:
+        if entry.get("type") == "file" and entry.get("name", "").lower().endswith((".yml", ".yaml")):
+            path = entry.get("path")
+            if path:
+                paths.append(path)
+    return paths
+
+
 def fetch_workflows(repo: str) -> List[Dict]:
     url = f"https://api.github.com/repos/{OWNER}/{repo}/actions/workflows"
     resp = session.get(url)
@@ -399,11 +415,15 @@ def main() -> None:
                 log(f"Repo {workload['repo']} has no devops_project; skipping ADO")
     for repo in repo_names:
         workflows = fetch_workflows(repo)
+        workflow_paths = list_workflow_files(repo)
+        wf_name_lookup = {wf.get("path"): (wf.get("name") or wf.get("path")) for wf in workflows if wf.get("path")}
         release_badge = find_badge(repo, workflows, ["release-to-production.yml", "release-to-production.yaml"])
         ci_badge = find_badge(repo, workflows, ["ci.yml", "ci.yaml", "build.yml", "build.yaml", "tests.yml", "tests.yaml"])
         repo_badges.append((repo, release_badge, ci_badge))
         repo_workflow_badges[repo] = workflow_badges(repo, workflows)
-        for wf in workflows:
+        # Inspect all workflow files (not just those returned by the workflows API) to capture schedules reliably
+        for path in workflow_paths:
+            wf = {"path": path, "name": wf_name_lookup.get(path)}
             schedule_entries.extend(extract_github_schedule(repo, wf, now))
 
     repo_all_badges: Dict[str, List[str]] = {}
