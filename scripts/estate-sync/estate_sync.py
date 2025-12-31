@@ -48,6 +48,19 @@ def find_badge(repo: str, workflows: List[Dict], candidates: List[str]) -> Optio
     return None
 
 
+def workflow_badges(repo: str, workflows: List[Dict]) -> List[str]:
+    badges: List[str] = []
+    for wf in workflows:
+        path = wf.get("path")
+        if not path:
+            continue
+        badge_url = f"https://github.com/{OWNER}/{repo}/actions/workflows/{path}/badge.svg"
+        link_url = f"https://github.com/{OWNER}/{repo}/actions/workflows/{path}"
+        label = wf.get("name") or path
+        badges.append(f"[![{label}]({badge_url})]({link_url})")
+    return badges
+
+
 def load_workloads() -> Dict[str, List[Dict]]:
     categories: Dict[str, List[Dict]] = {}
     for entry in github_contents(WORKLOADS_PATH):
@@ -116,14 +129,14 @@ def render_route_to_production(repos: List[Tuple[str, Optional[str], Optional[st
     return "\n".join(lines)
 
 
-def render_pipelines(categories: Dict[str, List[Dict]], repos: Dict[str, Tuple[Optional[str], Optional[str]]]) -> str:
+def render_pipelines(categories: Dict[str, List[Dict]], repos: Dict[str, List[str]]) -> str:
     lines = [
         "# Pipeline Badges",
         "",
-        "Simple view of release and CI badges per workload. Badges link to the workflow definitions.",
+        "All workflow badges per workload. Badges link to the workflow definitions.",
         "",
-        "| Workload | Repository | Release | CI/Main |",
-        "| --- | --- | --- | --- |",
+        "| Workload | Repository | Workflows |",
+        "| --- | --- | --- |",
     ]
 
     workloads = []
@@ -132,11 +145,10 @@ def render_pipelines(categories: Dict[str, List[Dict]], repos: Dict[str, Tuple[O
 
     for workload in sorted(workloads, key=lambda w: w["name"].lower()):
         repo_name = workload["repo"]
-        release_badge, ci_badge = repos.get(repo_name, (None, None))
+        badges = repos.get(repo_name, [])
         repo_link = f"[{repo_name}](https://github.com/{OWNER}/{repo_name})"
-        lines.append(
-            f"| {workload['name']} | {repo_link} | {release_badge or 'Not configured'} | {ci_badge or 'Not found'} |"
-        )
+        badge_list = "<br>".join(badges) if badges else "No workflows found"
+        lines.append(f"| {workload['name']} | {repo_link} | {badge_list} |")
 
     lines.append("")
     lines.append("---")
@@ -149,18 +161,20 @@ def main() -> None:
 
     repo_names = sorted({w["repo"] for values in categories.values() for w in values})
     repo_badges: List[Tuple[str, Optional[str], Optional[str]]] = []
+    repo_workflow_badges: Dict[str, List[str]] = {}
     for repo in repo_names:
         workflows = fetch_workflows(repo)
         release_badge = find_badge(repo, workflows, ["release-to-production.yml", "release-to-production.yaml"])
         ci_badge = find_badge(repo, workflows, ["ci.yml", "ci.yaml", "build.yml", "build.yaml", "tests.yml", "tests.yaml"])
         repo_badges.append((repo, release_badge, ci_badge))
+        repo_workflow_badges[repo] = workflow_badges(repo, workflows)
 
     repo_lookup = {name: (release, ci) for name, release, ci in repo_badges}
 
     WORKLOADS_OUT.parent.mkdir(parents=True, exist_ok=True)
     WORKLOADS_OUT.write_text(render_workloads(categories), encoding="utf-8")
     ROUTE_OUT.write_text(render_route_to_production(repo_badges), encoding="utf-8")
-    PIPELINES_OUT.write_text(render_pipelines(categories, repo_lookup), encoding="utf-8")
+    PIPELINES_OUT.write_text(render_pipelines(categories, repo_workflow_badges), encoding="utf-8")
 
 
 if __name__ == "__main__":
