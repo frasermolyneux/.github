@@ -31,6 +31,7 @@ jobs:
       - name: Generate estate docs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          AZDO_PAT: ${{ secrets.AZDO_PAT }}
         run: python scripts/estate-sync/estate_sync.py
 
       - name: Detect changes
