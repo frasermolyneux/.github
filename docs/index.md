@@ -4,10 +4,11 @@ Welcome to the org-wide view for the `frasermolyneux` tenant. Use the quick link
 
 ## Quick links
 
-- [Route to Production](estate/route-to-production.md) — release and CI badges for every managed repository.
-- [Workload Catalog](estate/workloads.md) — workloads, environments, and subscriptions sourced from `platform-workloads` JSON.
-- [Pipeline Badges](estate/pipelines.md) — consolidated release and CI badges per workload.
-- [Pipeline Scheduling](estate/pipeline-scheduling.md) — cron-based schedules and next runs for workflows and pipelines.
+- [Route to Production](estate/route-to-production.html) — release and CI badges for every managed repository.
+- [Workload Catalog](estate/workloads.html) — workloads, environments, and subscriptions sourced from `platform-workloads` JSON.
+- [Pipeline Badges](estate/pipelines.html) — consolidated release and CI badges per workload.
+- [Pipeline Scheduling](estate/pipeline-scheduling.html) — cron-based schedules and next runs for workflows and pipelines.
+- [Repositories](estate/repos/index.html) — per-repo detail pages with badges, schedules, workflows, and ADO pipelines.
 
 ## Notes
 

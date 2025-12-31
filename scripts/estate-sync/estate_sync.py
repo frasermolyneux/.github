@@ -336,10 +336,17 @@ def write_markdown(path: Path, content: str) -> None:
     path.write_text(content, encoding="utf-8")
 
 
+def _page_link(path: str) -> str:
+    # GitHub Pages serves .html; adjust markdown references to avoid 404s
+    if path.endswith(".md"):
+        return path[:-3] + ".html"
+    return path
+
+
 def nav_line(home: str, workloads: str, pipelines: str, scheduling: str, repos_index: str) -> str:
     return (
-        f"[Home]({home}) | [Workloads]({workloads}) | [Pipelines]({pipelines}) | "
-        f"[Scheduling]({scheduling}) | [Repos]({repos_index})"
+        f"[Home]({_page_link(home)}) | [Workloads]({_page_link(workloads)}) | [Pipelines]({_page_link(pipelines)}) | "
+        f"[Scheduling]({_page_link(scheduling)}) | [Repos]({_page_link(repos_index)})"
     )
 
 
@@ -529,7 +536,7 @@ def render_repos_index(repos: Dict[str, Dict], timestamp: datetime) -> str:
     for name, detail in sorted(repos.items(), key=lambda i: i[0].lower()):
         envs = ", ".join(detail.get("environments", [])) or "-"
         subs = ", ".join(sorted(detail.get("subscriptions", []))) or "-"
-        detail_link = f"./{name}.md"
+        detail_link = _page_link(f"./{name}.md")
         repo_link = f"[{name}](https://github.com/{OWNER}/{name})"
         lines.append(f"| {repo_link} | {envs} | {subs} | [Detail]({detail_link}) |")
 
@@ -555,7 +562,7 @@ def render_category_pages(categories: Dict[str, List[Dict]], repo_details: Dict[
             name = workload["name"]
             envs = ", ".join(workload["environments"]) if workload["environments"] else "-"
             subs = ", ".join(sorted(filter(None, workload["subscriptions"]))) or "-"
-            detail_link = f"../repos/{workload['repo']}.md"
+            detail_link = _page_link(f"../repos/{workload['repo']}.md")
             repo_link = f"[{name}](https://github.com/{OWNER}/{workload['repo']})"
             lines.append(f"| {repo_link} | {envs} | {subs} | [Detail]({detail_link}) |")
 
