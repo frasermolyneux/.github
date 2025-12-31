@@ -92,6 +92,24 @@ def list_workflow_files(repo: str) -> List[str]:
     return paths
 
 
+def list_ado_pipeline_files(repo: str) -> List[str]:
+    url = f"https://api.github.com/repos/{OWNER}/{repo}/contents/.azure-pipelines"
+    resp = session.get(url)
+    if resp.status_code == 404:
+        log(f"No .azure-pipelines directory for repo {repo}")
+        return []
+    resp.raise_for_status()
+    payload = resp.json()
+    paths: List[str] = []
+    for entry in payload:
+        if entry.get("type") == "file" and entry.get("name", "").lower().endswith((".yml", ".yaml")):
+            path = entry.get("path")
+            if path:
+                paths.append(path)
+    log(f"Repo {repo} has {len(paths)} ADO pipeline files")
+    return paths
+
+
 def fetch_workflows(repo: str) -> List[Dict]:
     url = f"https://api.github.com/repos/{OWNER}/{repo}/actions/workflows"
     resp = session.get(url)
@@ -116,18 +134,6 @@ def fetch_ado_pipelines(project: str) -> List[Dict]:
     pipelines = payload.get("value", [])
     log(f"Fetched {len(pipelines)} ADO pipelines for project {project}")
     return pipelines
-
-
-def fetch_ado_pipeline_definition(project: str, pipeline_id: int) -> Optional[Dict]:
-    if not ado_session:
-        return None
-    url = f"{AZDO_ORG}/{project}/_apis/build/definitions/{pipeline_id}?api-version=7.0"
-    resp = ado_session.get(url)
-    if resp.status_code == 404:
-        log(f"ADO pipeline definition 404 for pipeline {pipeline_id} in project {project}")
-        return None
-    resp.raise_for_status()
-    return resp.json()
 
 
 def ado_pipeline_badges(repo: str, project: str, pipelines: Optional[List[Dict]] = None) -> List[str]:
@@ -251,68 +257,50 @@ def extract_github_schedule(repo: str, wf: Dict, now: datetime) -> List[Dict]:
     return entries
 
 
-def extract_ado_schedule(repo: str, project: str, pipeline: Dict, now: datetime) -> List[Dict]:
-    pipeline_id = pipeline.get("id")
-    if not pipeline_id:
-        return []
-    name = pipeline.get("name", "").lower()
-    if not name.startswith(f"{repo.lower()}."):
-        return []
-    definition = fetch_ado_pipeline_definition(project, pipeline_id)
-    if not definition:
+def extract_ado_yaml_schedule(repo: str, project: str, path: str, now: datetime) -> List[Dict]:
+    content = github_file(repo, path)
+    if not content:
         return []
 
-    schedules = definition.get("schedules", []) or []
-    # Also inspect triggers for schedule blocks (YAML pipelines expose cron there)
-    triggers = definition.get("triggers", []) or []
-    for trigger in triggers:
-        if isinstance(trigger, dict) and trigger.get("type", "").lower() == "schedule":
-            schedules.extend(trigger.get("schedules", []))
+    crons: List[str] = []
+    if yaml:
+        try:
+            data = yaml.safe_load(content)
+            if isinstance(data, dict):
+                schedules = data.get("schedules") or []
+                if isinstance(schedules, dict):
+                    schedules = schedules.get("cron") or schedules.get("schedule") or schedules.get("schedules") or []
+                for sched in schedules or []:
+                    if isinstance(sched, dict) and "cron" in sched:
+                        crons.append(str(sched["cron"]))
+        except Exception as exc:  # pragma: no cover - defensive
+            log(f"YAML parse failed for ADO pipeline {repo}/{path}: {exc}")
 
-    cron_entries: List[str] = []
-    human_entries: List[str] = []
-    for sched in schedules:
-        cron_expr = sched.get("cron") or sched.get("schedule")
-        if cron_expr:
-            cron_entries.append(str(cron_expr))
-            continue
-        if "startHours" in sched and "startMinutes" in sched:
-            hours = sched.get("startHours", 0)
-            minutes = sched.get("startMinutes", 0)
-            tz = sched.get("timeZoneId") or "UTC"
-            days_val = sched.get("daysToBuild")
-            if isinstance(days_val, list):
-                days = ",".join(str(d) for d in days_val)
-            else:
-                days = str(days_val) if days_val is not None else "?"
-            human_entries.append(f"{hours:02d}:{minutes:02d} (days={days}, tz={tz})")
+    if not crons:
+        matches = re.findall(r"cron:\s*['\"]?([^'\"\n]+)", content, flags=re.IGNORECASE)
+        crons.extend([m.strip() for m in matches if m.strip()])
 
     entries: List[Dict] = []
-    for cron_expr in cron_entries:
+    for cron_expr in crons:
         next_run = next_run_from_cron(cron_expr, now)
         entries.append({
             "type": "Azure Pipelines",
             "repo": repo,
-            "name": pipeline.get("name", str(pipeline_id)),
+            "name": path.split("/")[-1],
             "cron": cron_expr,
             "next": next_run or "-",
-            "link": f"{AZDO_ORG}/{project}/_build/latest?definitionId={pipeline_id}",
-        })
-    for human in human_entries:
-        entries.append({
-            "type": "Azure Pipelines",
-            "repo": repo,
-            "name": pipeline.get("name", str(pipeline_id)),
-            "cron": human,
-            "next": "-",
-            "link": f"{AZDO_ORG}/{project}/_build/latest?definitionId={pipeline_id}",
+            "link": f"https://github.com/{OWNER}/{repo}/blob/main/{path}",
         })
     if entries:
-        combined = cron_entries + human_entries
-        log(f"Repo {repo} ADO pipeline {pipeline.get('name')} schedules: {', '.join(combined)}")
+        log(f"Repo {repo} ADO pipeline file {path} schedules: {', '.join(crons)}")
     else:
-        log(f"Repo {repo} ADO pipeline {pipeline.get('name')} has no cron schedule detected")
+        log(f"Repo {repo} ADO pipeline file {path} has no cron schedule detected")
     return entries
+
+
+def extract_ado_schedule(repo: str, project: str, pipeline: Dict, now: datetime) -> List[Dict]:
+    # Deprecated: ADO API schedule detection removed in favor of parsing YAML files in repo
+    return []
 
 
 def load_workloads() -> Dict[str, List[Dict]]:
@@ -484,8 +472,11 @@ def main() -> None:
             pipelines = project_pipeline_cache[project]
             log(f"Repo {repo} using ADO project {project} with {len(pipelines)} pipelines")
             combined.extend(ado_pipeline_badges(repo, project, pipelines))
-            for pipeline in pipelines:
-                schedule_entries.extend(extract_ado_schedule(repo, project, pipeline, now))
+
+            # Parse ADO pipeline YAML files in repo for schedules
+            ado_files = list_ado_pipeline_files(repo)
+            for path in ado_files:
+                schedule_entries.extend(extract_ado_yaml_schedule(repo, project, path, now))
         else:
             log(f"Repo {repo} has no ADO project; only GitHub workflows included")
         repo_all_badges[repo] = combined
