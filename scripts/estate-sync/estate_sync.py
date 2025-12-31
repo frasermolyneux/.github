@@ -1,5 +1,6 @@
 import json
 import os
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
@@ -32,6 +33,10 @@ if AZDO_PAT:
     })
 
 
+def log(msg: str) -> None:
+    print(msg, file=sys.stderr)
+
+
 def github_contents(path: str) -> List[Dict]:
     url = f"https://api.github.com/repos/{OWNER}/{REPO}/contents/{path}"
     resp = session.get(url)
@@ -51,14 +56,18 @@ def fetch_workflows(repo: str) -> List[Dict]:
 
 def fetch_ado_pipelines(project: str) -> List[Dict]:
     if not ado_session:
+        log("ADO disabled: AZDO_PAT not set")
         return []
     url = f"{AZDO_ORG}/{project}/_apis/pipelines?api-version=7.0"
     resp = ado_session.get(url)
     if resp.status_code == 404:
+        log(f"ADO pipelines 404 for project {project}")
         return []
     resp.raise_for_status()
     payload = resp.json()
-    return payload.get("value", [])
+    pipelines = payload.get("value", [])
+    log(f"Fetched {len(pipelines)} ADO pipelines for project {project}")
+    return pipelines
 
 
 def ado_pipeline_badges(repo: str, project: str) -> List[str]:
@@ -74,6 +83,7 @@ def ado_pipeline_badges(repo: str, project: str) -> List[str]:
         link_url = f"{AZDO_ORG}/{project}/_build?definitionId={pipeline_id}"
         label = pipeline.get("name", repo)
         badges.append(f"[![{label}]({badge_url})]({link_url})")
+    log(f"Repo {repo} (project {project}) matched {len(badges)} ADO pipelines")
     return badges
 
 
@@ -209,6 +219,8 @@ def main() -> None:
         for workload in values:
             if workload["devops_projects"]:
                 repo_ado_projects[workload["repo"]] = workload["devops_projects"][0]
+            else:
+                log(f"Repo {workload['repo']} has no devops_project; skipping ADO")
     for repo in repo_names:
         workflows = fetch_workflows(repo)
         release_badge = find_badge(repo, workflows, ["release-to-production.yml", "release-to-production.yaml"])
@@ -222,6 +234,8 @@ def main() -> None:
         project = repo_ado_projects.get(repo)
         if project:
             combined.extend(ado_pipeline_badges(repo, project))
+        else:
+            log(f"Repo {repo} has no ADO project; only GitHub workflows included")
         repo_all_badges[repo] = combined
 
     repo_lookup = {name: (release, ci) for name, release, ci in repo_badges}
