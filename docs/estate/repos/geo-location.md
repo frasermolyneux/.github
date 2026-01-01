@@ -12,14 +12,14 @@ Summary:
 
 ## Badges
 
-[![Dependency Review](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/dependency-review.yml/badge.svg)](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/dependency-review.yml) [![Dependabot Auto-Merge](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg)](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/dependabot-automerge.yml) [![Code Quality](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/codequality.yml/badge.svg)](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/codequality.yml) [![Dependabot Updates](https://github.com/frasermolyneux/geo-location/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg)](https://github.com/frasermolyneux/geo-location/actions/workflows/dynamic/dependabot/dependabot-updates) [![Automatic Dependency Submission](https://github.com/frasermolyneux/geo-location/actions/workflows/dynamic/dependency-graph/auto-submission/badge.svg)](https://github.com/frasermolyneux/geo-location/actions/workflows/dynamic/dependency-graph/auto-submission) [![Copilot Setup Steps](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg)](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/copilot-setup-steps.yml) [![geo-location.release-consumers-to-production](https://dev.azure.com/frasermolyneux/Molyneux.IO/_apis/build/status/geo-location.release-consumers-to-production?branchName=main&repoName=frasermolyneux%2Fgeo-location&label=geo-location.release-consumers-to-production)](https://dev.azure.com/frasermolyneux/Molyneux.IO/_build/latest?definitionId=255&branchName=main) [![geo-location.ReleaseToProduction](https://dev.azure.com/frasermolyneux/Molyneux.IO/_apis/build/status/geo-location.ReleaseToProduction?branchName=main&repoName=frasermolyneux%2Fgeo-location&label=geo-location.ReleaseToProduction)](https://dev.azure.com/frasermolyneux/Molyneux.IO/_build/latest?definitionId=254&branchName=main)
+[![Code Quality](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/codequality.yml/badge.svg)](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/codequality.yml) [![Copilot Setup Steps](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg)](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/copilot-setup-steps.yml) [![Dependabot Auto-Merge](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg)](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/dependabot-automerge.yml) [![Dependency Review](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/dependency-review.yml/badge.svg)](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/dependency-review.yml) [![Dependabot Updates](https://github.com/frasermolyneux/geo-location/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg)](https://github.com/frasermolyneux/geo-location/actions/workflows/dynamic/dependabot/dependabot-updates) [![Automatic Dependency Submission](https://github.com/frasermolyneux/geo-location/actions/workflows/dynamic/dependency-graph/auto-submission/badge.svg)](https://github.com/frasermolyneux/geo-location/actions/workflows/dynamic/dependency-graph/auto-submission) [![geo-location.destroy-development](https://dev.azure.com/frasermolyneux/Molyneux.IO/_apis/build/status/geo-location.destroy-development?branchName=main&repoName=frasermolyneux%2Fgeo-location&label=geo-location.destroy-development)](https://dev.azure.com/frasermolyneux/Molyneux.IO/_build/latest?definitionId=258&branchName=main) [![geo-location.release-consumers-to-production](https://dev.azure.com/frasermolyneux/Molyneux.IO/_apis/build/status/geo-location.release-consumers-to-production?branchName=main&repoName=frasermolyneux%2Fgeo-location&label=geo-location.release-consumers-to-production)](https://dev.azure.com/frasermolyneux/Molyneux.IO/_build/latest?definitionId=255&branchName=main) [![geo-location.release-to-production](https://dev.azure.com/frasermolyneux/Molyneux.IO/_apis/build/status/geo-location.release-to-production?branchName=main&repoName=frasermolyneux%2Fgeo-location&label=geo-location.release-to-production)](https://dev.azure.com/frasermolyneux/Molyneux.IO/_build/latest?definitionId=254&branchName=main)
 
 ## Scheduling
 
 | Type | Cron | Next run (UTC) | Link |
 | --- | --- | --- | --- |
-| Azure Pipelines | 0 3 * * 4 | 01/01/2026 03:00 UTC | [link](https://github.com/frasermolyneux/geo-location/blob/main/.azure-pipelines/release-to-production.yml) |
-| Azure Pipelines | 30 4 * * 6 | 03/01/2026 04:30 UTC | [link](https://github.com/frasermolyneux/geo-location/blob/main/.azure-pipelines/destroy-development.yml) |
+| Azure Pipelines | 0 3 * * 4 | 08/01/2026 03:00 UTC | [link](https://github.com/frasermolyneux/geo-location/blob/main/.azure-pipelines/release-to-production.yml) |
+| Azure Pipelines | 20 1 * * * | 02/01/2026 01:20 UTC | [link](https://github.com/frasermolyneux/geo-location/blob/main/.azure-pipelines/destroy-development.yml) |
 
 ## Workflows
 
@@ -34,11 +34,12 @@ Summary:
 
 | Name | Link |
 | --- | --- |
+| geo-location.destroy-development | [view](https://dev.azure.com/frasermolyneux/Molyneux.IO/_build?definitionId=258) |
 | geo-location.release-consumers-to-production | [view](https://dev.azure.com/frasermolyneux/Molyneux.IO/_build?definitionId=255) |
-| geo-location.ReleaseToProduction | [view](https://dev.azure.com/frasermolyneux/Molyneux.IO/_build?definitionId=254) |
+| geo-location.release-to-production | [view](https://dev.azure.com/frasermolyneux/Molyneux.IO/_build?definitionId=254) |
 
 
 ---
 Generated by scripts/estate-sync/estate_sync.py
 <!-- Auto-generated file; do not edit directly. -->
-Last updated: 2025-12-31 20:32 UTC
+Last updated: 2026-01-01 04:00 UTC
