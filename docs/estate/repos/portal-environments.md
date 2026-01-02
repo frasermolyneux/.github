@@ -11,21 +11,19 @@ Summary:
 
 ## Badges
 
-[![Dependabot Auto-Merge](https://github.com/frasermolyneux/portal-environments/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg)](https://github.com/frasermolyneux/portal-environments/actions/workflows/.github/workflows/dependabot-automerge.yml) [![Destroy Development](https://github.com/frasermolyneux/portal-environments/actions/workflows/.github/workflows/destroy-development.yml/badge.svg)](https://github.com/frasermolyneux/portal-environments/actions/workflows/.github/workflows/destroy-development.yml) [![Destroy Environment](https://github.com/frasermolyneux/portal-environments/actions/workflows/.github/workflows/destroy-environment.yml/badge.svg)](https://github.com/frasermolyneux/portal-environments/actions/workflows/.github/workflows/destroy-environment.yml) [![DevOps Secure Scanning](https://github.com/frasermolyneux/portal-environments/actions/workflows/.github/workflows/devops-secure-scanning.yml/badge.svg)](https://github.com/frasermolyneux/portal-environments/actions/workflows/.github/workflows/devops-secure-scanning.yml) [![Feature Development](https://github.com/frasermolyneux/portal-environments/actions/workflows/.github/workflows/feature-development.yml/badge.svg)](https://github.com/frasermolyneux/portal-environments/actions/workflows/.github/workflows/feature-development.yml) [![Pull Request Validation](https://github.com/frasermolyneux/portal-environments/actions/workflows/.github/workflows/pull-request-validation.yml/badge.svg)](https://github.com/frasermolyneux/portal-environments/actions/workflows/.github/workflows/pull-request-validation.yml) [![Release to Production](https://github.com/frasermolyneux/portal-environments/actions/workflows/.github/workflows/release-to-production.yml/badge.svg)](https://github.com/frasermolyneux/portal-environments/actions/workflows/.github/workflows/release-to-production.yml) [![Dependabot Updates](https://github.com/frasermolyneux/portal-environments/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg)](https://github.com/frasermolyneux/portal-environments/actions/workflows/dynamic/dependabot/dependabot-updates)
+[![Dependabot Auto-Merge](https://github.com/frasermolyneux/portal-environments/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg)](https://github.com/frasermolyneux/portal-environments/actions/workflows/.github/workflows/dependabot-automerge.yml) [![DevOps Secure Scanning](https://github.com/frasermolyneux/portal-environments/actions/workflows/.github/workflows/devops-secure-scanning.yml/badge.svg)](https://github.com/frasermolyneux/portal-environments/actions/workflows/.github/workflows/devops-secure-scanning.yml) [![Feature Development](https://github.com/frasermolyneux/portal-environments/actions/workflows/.github/workflows/feature-development.yml/badge.svg)](https://github.com/frasermolyneux/portal-environments/actions/workflows/.github/workflows/feature-development.yml) [![Pull Request Validation](https://github.com/frasermolyneux/portal-environments/actions/workflows/.github/workflows/pull-request-validation.yml/badge.svg)](https://github.com/frasermolyneux/portal-environments/actions/workflows/.github/workflows/pull-request-validation.yml) [![Release to Production](https://github.com/frasermolyneux/portal-environments/actions/workflows/.github/workflows/release-to-production.yml/badge.svg)](https://github.com/frasermolyneux/portal-environments/actions/workflows/.github/workflows/release-to-production.yml) [![Dependabot Updates](https://github.com/frasermolyneux/portal-environments/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg)](https://github.com/frasermolyneux/portal-environments/actions/workflows/dynamic/dependabot/dependabot-updates) [![Destroy Environment](https://github.com/frasermolyneux/portal-environments/actions/workflows/.github/workflows/destroy-environment.yml/badge.svg)](https://github.com/frasermolyneux/portal-environments/actions/workflows/.github/workflows/destroy-environment.yml)
 
 ## Scheduling
 
 | Type | Cron | Next run (UTC) | Link |
 | --- | --- | --- | --- |
 | GitHub Actions | 0 3 * * 4 | 08/01/2026 03:00 UTC | [link](https://github.com/frasermolyneux/portal-environments/actions/workflows/.github/workflows/release-to-production.yml) |
-| GitHub Actions | 10 1 * * * | 02/01/2026 01:10 UTC | [link](https://github.com/frasermolyneux/portal-environments/actions/workflows/.github/workflows/destroy-development.yml) |
 
 ## Workflows
 
 | Name | Path | Link |
 | --- | --- | --- |
 | Dependabot Auto-Merge | .github/workflows/dependabot-automerge.yml | [view](https://github.com/frasermolyneux/portal-environments/blob/main/.github/workflows/dependabot-automerge.yml) |
-| Destroy Development | .github/workflows/destroy-development.yml | [view](https://github.com/frasermolyneux/portal-environments/blob/main/.github/workflows/destroy-development.yml) |
 | Destroy Environment | .github/workflows/destroy-environment.yml | [view](https://github.com/frasermolyneux/portal-environments/blob/main/.github/workflows/destroy-environment.yml) |
 | DevOps Secure Scanning | .github/workflows/devops-secure-scanning.yml | [view](https://github.com/frasermolyneux/portal-environments/blob/main/.github/workflows/devops-secure-scanning.yml) |
 | Feature Development | .github/workflows/feature-development.yml | [view](https://github.com/frasermolyneux/portal-environments/blob/main/.github/workflows/feature-development.yml) |
@@ -42,4 +40,4 @@ Summary:
 ---
 Generated by scripts/estate-sync/estate_sync.py
 <!-- Auto-generated file; do not edit directly. -->
-Last updated: 2026-01-01 17:14 UTC
+Last updated: 2026-01-02 03:54 UTC
