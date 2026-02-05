@@ -9,24 +9,25 @@ Summary:
 
 ## Badges
 
-[![Code Quality](https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/codequality.yml/badge.svg)](https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/codequality.yml) [![Copilot Setup Steps](https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg)](https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/copilot-setup-steps.yml) [![Dependabot Auto-Merge](https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg)](https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/dependabot-automerge.yml) [![Feature Development](https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/feature-development.yml/badge.svg)](https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/feature-development.yml) [![Pull Request Validation](https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/pull-request-validation.yml/badge.svg)](https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/pull-request-validation.yml) [![Release to Production](https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/release-to-production.yml/badge.svg)](https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/release-to-production.yml) [![Dependabot Updates](https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg)](https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/dynamic/dependabot/dependabot-updates)
+[![Build and Test](https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/build-and-test.yml/badge.svg)](https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/build-and-test.yml) [![Code Quality](https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/codequality.yml/badge.svg)](https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/codequality.yml) [![Copilot Setup Steps](https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg)](https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/copilot-setup-steps.yml) [![Dependabot Auto-Merge](https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg)](https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/dependabot-automerge.yml) [![PR Verify](https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/pr-verify.yml/badge.svg)](https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/pr-verify.yml) [![Release - Publish NuGet](https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/release-publish-nuget.yml/badge.svg)](https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/release-publish-nuget.yml) [![Release - Version and Tag](https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/release-version-and-tag.yml/badge.svg)](https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/release-version-and-tag.yml) [![Dependabot Updates](https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg)](https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/dynamic/dependabot/dependabot-updates)
 
 ## Scheduling
 
 | Type | Cron | Next run (UTC) | Link |
 | --- | --- | --- | --- |
-| GitHub Actions | 0 3 * * 4 | 12/02/2026 03:00 UTC | [link](https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/release-to-production.yml) |
+| GitHub Actions | 0 3 * * 1 | 09/02/2026 03:00 UTC | [link](https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/codequality.yml) |
 
 ## Workflows
 
 | Name | Path | Link |
 | --- | --- | --- |
+| Build and Test | .github/workflows/build-and-test.yml | [view](https://github.com/frasermolyneux/cod-demo-reader/blob/main/.github/workflows/build-and-test.yml) |
 | Code Quality | .github/workflows/codequality.yml | [view](https://github.com/frasermolyneux/cod-demo-reader/blob/main/.github/workflows/codequality.yml) |
 | Copilot Setup Steps | .github/workflows/copilot-setup-steps.yml | [view](https://github.com/frasermolyneux/cod-demo-reader/blob/main/.github/workflows/copilot-setup-steps.yml) |
 | Dependabot Auto-Merge | .github/workflows/dependabot-automerge.yml | [view](https://github.com/frasermolyneux/cod-demo-reader/blob/main/.github/workflows/dependabot-automerge.yml) |
-| Feature Development | .github/workflows/feature-development.yml | [view](https://github.com/frasermolyneux/cod-demo-reader/blob/main/.github/workflows/feature-development.yml) |
-| Pull Request Validation | .github/workflows/pull-request-validation.yml | [view](https://github.com/frasermolyneux/cod-demo-reader/blob/main/.github/workflows/pull-request-validation.yml) |
-| Release to Production | .github/workflows/release-to-production.yml | [view](https://github.com/frasermolyneux/cod-demo-reader/blob/main/.github/workflows/release-to-production.yml) |
+| PR Verify | .github/workflows/pr-verify.yml | [view](https://github.com/frasermolyneux/cod-demo-reader/blob/main/.github/workflows/pr-verify.yml) |
+| Release - Publish NuGet | .github/workflows/release-publish-nuget.yml | [view](https://github.com/frasermolyneux/cod-demo-reader/blob/main/.github/workflows/release-publish-nuget.yml) |
+| Release - Version and Tag | .github/workflows/release-version-and-tag.yml | [view](https://github.com/frasermolyneux/cod-demo-reader/blob/main/.github/workflows/release-version-and-tag.yml) |
 
 ## Azure Pipelines
 
@@ -38,4 +39,4 @@ Summary:
 ---
 Generated by scripts/estate-sync/estate_sync.py
 <!-- Auto-generated file; do not edit directly. -->
-Last updated: 2026-02-05 17:07 UTC
+Last updated: 2026-02-05 20:16 UTC

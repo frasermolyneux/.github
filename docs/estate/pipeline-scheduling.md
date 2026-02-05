@@ -16,6 +16,7 @@ Workflows and pipelines with cron-based schedules, grouped by workload category.
 
 | Type | Repository | Name | Cron | Next run (UTC) |
 | --- | --- | --- | --- | --- |
+| ⏱️ GitHub Actions | 📁 [geo-location](https://github.com/frasermolyneux/geo-location) | [🧾 Code Quality](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/codequality.yml) | 🕒 0 3 * * 1 | 📅 09/02/2026 03:00 UTC |
 | ⏱️ Azure Pipelines | 📁 [geo-location](https://github.com/frasermolyneux/geo-location) | [🧾 release-to-production.yml](https://github.com/frasermolyneux/geo-location/blob/main/.azure-pipelines/release-to-production.yml) | 🕒 0 3 * * 4 | 📅 12/02/2026 03:00 UTC |
 | ⏱️ Azure Pipelines | 📁 [geo-location](https://github.com/frasermolyneux/geo-location) | [🧾 destroy-development.yml](https://github.com/frasermolyneux/geo-location/blob/main/.azure-pipelines/destroy-development.yml) | 🕒 20 1 * * * | 📅 06/02/2026 01:20 UTC |
 
@@ -25,7 +26,7 @@ Workflows and pipelines with cron-based schedules, grouped by workload category.
 | --- | --- | --- | --- | --- |
 | ⏱️ GitHub Actions | 📁 [skilling-molyneux-me](https://github.com/frasermolyneux/skilling-molyneux-me) | [🧾 CodeQL Analysis](https://github.com/frasermolyneux/skilling-molyneux-me/actions/workflows/.github/workflows/codeql.yml) | 🕒 0 2 * * * | 📅 06/02/2026 02:00 UTC |
 | ⏱️ GitHub Actions | 📁 [travel-itinerary](https://github.com/frasermolyneux/travel-itinerary) | [🧾 Destroy Development](https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/destroy-development.yml) | 🕒 0 2 * * * | 📅 06/02/2026 02:00 UTC |
-| ⏱️ GitHub Actions | 📁 [travel-itinerary](https://github.com/frasermolyneux/travel-itinerary) | [🧾 DevOps Secure Scanning](https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/devops-secure-scanning.yml) | 🕒 0 2 * * 4 | 📅 12/02/2026 02:00 UTC |
+| ⏱️ GitHub Actions | 📁 [travel-itinerary](https://github.com/frasermolyneux/travel-itinerary) | [🧾 Code Quality](https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/codequality.yml) | 🕒 0 3 * * 1 | 📅 09/02/2026 03:00 UTC |
 | ⏱️ GitHub Actions | 📁 [molyneux-me](https://github.com/frasermolyneux/molyneux-me) | [🧾 Release to Production](https://github.com/frasermolyneux/molyneux-me/actions/workflows/.github/workflows/release-to-production.yml) | 🕒 0 3 * * 4 | 📅 12/02/2026 03:00 UTC |
 | ⏱️ GitHub Actions | 📁 [travel-itinerary](https://github.com/frasermolyneux/travel-itinerary) | [🧾 Release to Production](https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/release-to-production.yml) | 🕒 0 3 * * 4 | 📅 12/02/2026 03:00 UTC |
 
@@ -33,11 +34,11 @@ Workflows and pipelines with cron-based schedules, grouped by workload category.
 
 | Type | Repository | Name | Cron | Next run (UTC) |
 | --- | --- | --- | --- | --- |
-| ⏱️ GitHub Actions | 📁 [platform-monitoring](https://github.com/frasermolyneux/platform-monitoring) | [🧾 DevOps Secure Scanning](https://github.com/frasermolyneux/platform-monitoring/actions/workflows/.github/workflows/devops-secure-scanning.yml) | 🕒 0 2 * * 4 | 📅 12/02/2026 02:00 UTC |
-| ⏱️ GitHub Actions | 📁 [platform-sitewatch-func](https://github.com/frasermolyneux/platform-sitewatch-func) | [🧾 DevOps Secure Scanning](https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/.github/workflows/devops-secure-scanning.yml) | 🕒 0 2 * * 4 | 📅 12/02/2026 02:00 UTC |
 | ⏱️ Azure Pipelines | 📁 [platform-connectivity](https://github.com/frasermolyneux/platform-connectivity) | [🧾 devops-secure-scanning.yml](https://github.com/frasermolyneux/platform-connectivity/blob/main/.azure-pipelines/devops-secure-scanning.yml) | 🕒 0 2 * * 4 | 📅 12/02/2026 02:00 UTC |
 | ⏱️ Azure Pipelines | 📁 [platform-landing-zones](https://github.com/frasermolyneux/platform-landing-zones) | [🧾 devops-secure-scanning.yml](https://github.com/frasermolyneux/platform-landing-zones/blob/main/.azure-pipelines/devops-secure-scanning.yml) | 🕒 0 2 * * 4 | 📅 12/02/2026 02:00 UTC |
 | ⏱️ Azure Pipelines | 📁 [platform-strategic-services](https://github.com/frasermolyneux/platform-strategic-services) | [🧾 devops-secure-scanning.yml](https://github.com/frasermolyneux/platform-strategic-services/blob/main/.azure-pipelines/devops-secure-scanning.yml) | 🕒 0 2 * * 4 | 📅 12/02/2026 02:00 UTC |
+| ⏱️ GitHub Actions | 📁 [platform-monitoring](https://github.com/frasermolyneux/platform-monitoring) | [🧾 Code Quality](https://github.com/frasermolyneux/platform-monitoring/actions/workflows/.github/workflows/codequality.yml) | 🕒 0 3 * * 1 | 📅 09/02/2026 03:00 UTC |
+| ⏱️ GitHub Actions | 📁 [platform-sitewatch-func](https://github.com/frasermolyneux/platform-sitewatch-func) | [🧾 Code Quality](https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/.github/workflows/codequality.yml) | 🕒 0 3 * * 1 | 📅 09/02/2026 03:00 UTC |
 | ⏱️ GitHub Actions | 📁 [platform-monitoring](https://github.com/frasermolyneux/platform-monitoring) | [🧾 Release to Production](https://github.com/frasermolyneux/platform-monitoring/actions/workflows/.github/workflows/release-to-production.yml) | 🕒 0 3 * * 4 | 📅 12/02/2026 03:00 UTC |
 | ⏱️ GitHub Actions | 📁 [platform-sitewatch-func](https://github.com/frasermolyneux/platform-sitewatch-func) | [🧾 Release to Production](https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/.github/workflows/release-to-production.yml) | 🕒 0 3 * * 4 | 📅 12/02/2026 03:00 UTC |
 | ⏱️ Azure Pipelines | 📁 [platform-connectivity](https://github.com/frasermolyneux/platform-connectivity) | [🧾 release-to-production.yml](https://github.com/frasermolyneux/platform-connectivity/blob/main/.azure-pipelines/release-to-production.yml) | 🕒 0 3 * * 4 | 📅 12/02/2026 03:00 UTC |
@@ -85,12 +86,13 @@ Workflows and pipelines with cron-based schedules, grouped by workload category.
 | Type | Repository | Name | Cron | Next run (UTC) |
 | --- | --- | --- | --- | --- |
 | ⏱️ Azure Pipelines | 📁 [demo-manager](https://github.com/frasermolyneux/demo-manager) | [🧾 devops-secure-scanning.yml](https://github.com/frasermolyneux/demo-manager/blob/main/.azure-pipelines/devops-secure-scanning.yml) | 🕒 0 2 * * 4 | 📅 12/02/2026 02:00 UTC |
-| ⏱️ GitHub Actions | 📁 [cod-demo-reader](https://github.com/frasermolyneux/cod-demo-reader) | [🧾 Release to Production](https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/release-to-production.yml) | 🕒 0 3 * * 4 | 📅 12/02/2026 03:00 UTC |
-| ⏱️ GitHub Actions | 📁 [invision-api-client](https://github.com/frasermolyneux/invision-api-client) | [🧾 Release to Production](https://github.com/frasermolyneux/invision-api-client/actions/workflows/.github/workflows/release-to-production.yml) | 🕒 0 3 * * 4 | 📅 12/02/2026 03:00 UTC |
+| ⏱️ GitHub Actions | 📁 [cod-demo-reader](https://github.com/frasermolyneux/cod-demo-reader) | [🧾 Code Quality](https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/codequality.yml) | 🕒 0 3 * * 1 | 📅 09/02/2026 03:00 UTC |
+| ⏱️ GitHub Actions | 📁 [demo-manager](https://github.com/frasermolyneux/demo-manager) | [🧾 Code Quality](https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/codequality.yml) | 🕒 0 3 * * 1 | 📅 09/02/2026 03:00 UTC |
+| ⏱️ GitHub Actions | 📁 [invision-api-client](https://github.com/frasermolyneux/invision-api-client) | [🧾 Code Quality](https://github.com/frasermolyneux/invision-api-client/actions/workflows/.github/workflows/codequality.yml) | 🕒 0 3 * * 1 | 📅 09/02/2026 03:00 UTC |
 | ⏱️ Azure Pipelines | 📁 [demo-manager](https://github.com/frasermolyneux/demo-manager) | [🧾 release-to-production.yml](https://github.com/frasermolyneux/demo-manager/blob/main/.azure-pipelines/release-to-production.yml) | 🕒 0 3 * * 4 | 📅 12/02/2026 03:00 UTC |
 
 
 ---
 Generated by scripts/estate-sync/estate_sync.py
 <!-- Auto-generated file; do not edit directly. -->
-Last updated: 2026-02-05 17:07 UTC
+Last updated: 2026-02-05 20:16 UTC
