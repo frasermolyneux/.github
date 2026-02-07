@@ -8,8 +8,7 @@ on:
       - main
   workflow_dispatch:
 
-
-permissions: read-all
+permissions: {}
 
 jobs:
   sync:
