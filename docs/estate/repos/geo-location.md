@@ -4,43 +4,45 @@
 
 Summary:
 - 📁 GitHub: [geo-location](https://github.com/frasermolyneux/geo-location)
-- 🏢 Azure DevOps project: [Molyneux.IO](https://dev.azure.com/frasermolyneux/Molyneux.IO)
 - 🌍 Environments: Development, Production
-- 🔑 Subscriptions: sub-fm-geolocation-prd, sub-visualstudio-enterprise
+- 🔑 Subscriptions: sub-platform-shared, sub-visualstudio-enterprise
 - 🗂️ Workflows: https://github.com/frasermolyneux/geo-location/tree/main/.github/workflows
 - 🗂️ Azure Pipelines YAML: https://github.com/frasermolyneux/geo-location/tree/main/.azure-pipelines
 
 ## Badges
 
-[![Dependency Review](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/dependency-review.yml/badge.svg)](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/dependency-review.yml) [![Dependabot Auto-Merge](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg)](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/dependabot-automerge.yml) [![Code Quality](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/codequality.yml/badge.svg)](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/codequality.yml) [![Dependabot Updates](https://github.com/frasermolyneux/geo-location/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg)](https://github.com/frasermolyneux/geo-location/actions/workflows/dynamic/dependabot/dependabot-updates) [![Automatic Dependency Submission](https://github.com/frasermolyneux/geo-location/actions/workflows/dynamic/dependency-graph/auto-submission/badge.svg)](https://github.com/frasermolyneux/geo-location/actions/workflows/dynamic/dependency-graph/auto-submission) [![Copilot Setup Steps](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg)](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/copilot-setup-steps.yml) [![Copilot coding agent](https://github.com/frasermolyneux/geo-location/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg)](https://github.com/frasermolyneux/geo-location/actions/workflows/dynamic/copilot-swe-agent/copilot) [![Copilot code review](https://github.com/frasermolyneux/geo-location/actions/workflows/dynamic/copilot-pull-request-reviewer/copilot-pull-request-reviewer/badge.svg)](https://github.com/frasermolyneux/geo-location/actions/workflows/dynamic/copilot-pull-request-reviewer/copilot-pull-request-reviewer) [![geo-location.destroy-development](https://dev.azure.com/frasermolyneux/Molyneux.IO/_apis/build/status/geo-location.destroy-development?branchName=main&repoName=frasermolyneux%2Fgeo-location&label=geo-location.destroy-development)](https://dev.azure.com/frasermolyneux/Molyneux.IO/_build/latest?definitionId=258&branchName=main) [![geo-location.release-consumers-to-production](https://dev.azure.com/frasermolyneux/Molyneux.IO/_apis/build/status/geo-location.release-consumers-to-production?branchName=main&repoName=frasermolyneux%2Fgeo-location&label=geo-location.release-consumers-to-production)](https://dev.azure.com/frasermolyneux/Molyneux.IO/_build/latest?definitionId=255&branchName=main) [![geo-location.release-to-production](https://dev.azure.com/frasermolyneux/Molyneux.IO/_apis/build/status/geo-location.release-to-production?branchName=main&repoName=frasermolyneux%2Fgeo-location&label=geo-location.release-to-production)](https://dev.azure.com/frasermolyneux/Molyneux.IO/_build/latest?definitionId=254&branchName=main)
+[![Build and Test](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/build-and-test.yml/badge.svg)](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/build-and-test.yml) [![Code Quality](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/codequality.yml/badge.svg)](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/codequality.yml) [![Copilot Setup Steps](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg)](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/copilot-setup-steps.yml) [![Dependabot Auto-Merge](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg)](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/dependabot-automerge.yml) [![Deploy Dev](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/deploy-dev.yml/badge.svg)](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/deploy-dev.yml) [![Deploy Prd](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/deploy-prd.yml/badge.svg)](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/deploy-prd.yml) [![Destroy Development](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/destroy-development.yml/badge.svg)](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/destroy-development.yml) [![Destroy Environment](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/destroy-environment.yml/badge.svg)](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/destroy-environment.yml) [![PR Verify](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/pr-verify.yml/badge.svg)](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/pr-verify.yml) [![Copilot code review](https://github.com/frasermolyneux/geo-location/actions/workflows/dynamic/copilot-pull-request-reviewer/copilot-pull-request-reviewer/badge.svg)](https://github.com/frasermolyneux/geo-location/actions/workflows/dynamic/copilot-pull-request-reviewer/copilot-pull-request-reviewer) [![Copilot coding agent](https://github.com/frasermolyneux/geo-location/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg)](https://github.com/frasermolyneux/geo-location/actions/workflows/dynamic/copilot-swe-agent/copilot) [![Dependabot Updates](https://github.com/frasermolyneux/geo-location/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg)](https://github.com/frasermolyneux/geo-location/actions/workflows/dynamic/dependabot/dependabot-updates) [![Automatic Dependency Submission](https://github.com/frasermolyneux/geo-location/actions/workflows/dynamic/dependency-graph/auto-submission/badge.svg)](https://github.com/frasermolyneux/geo-location/actions/workflows/dynamic/dependency-graph/auto-submission)
 
 ## Scheduling
 
 | Type | Cron | Next run (UTC) | Link |
 | --- | --- | --- | --- |
-| Azure Pipelines | 0 3 * * 4 | 19/02/2026 03:00 UTC | [link](https://github.com/frasermolyneux/geo-location/blob/main/.azure-pipelines/release-to-production.yml) |
-| Azure Pipelines | 20 1 * * * | 13/02/2026 01:20 UTC | [link](https://github.com/frasermolyneux/geo-location/blob/main/.azure-pipelines/destroy-development.yml) |
+| GitHub Actions | 0 2 * * * | 14/02/2026 02:00 UTC | [link](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/destroy-development.yml) |
 | GitHub Actions | 0 3 * * 1 | 16/02/2026 03:00 UTC | [link](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/codequality.yml) |
+| GitHub Actions | 0 3 * * 4 | 19/02/2026 03:00 UTC | [link](https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/deploy-prd.yml) |
 
 ## Workflows
 
 | Name | Path | Link |
 | --- | --- | --- |
+| Build and Test | .github/workflows/build-and-test.yml | [view](https://github.com/frasermolyneux/geo-location/blob/main/.github/workflows/build-and-test.yml) |
 | Code Quality | .github/workflows/codequality.yml | [view](https://github.com/frasermolyneux/geo-location/blob/main/.github/workflows/codequality.yml) |
 | Copilot Setup Steps | .github/workflows/copilot-setup-steps.yml | [view](https://github.com/frasermolyneux/geo-location/blob/main/.github/workflows/copilot-setup-steps.yml) |
 | Dependabot Auto-Merge | .github/workflows/dependabot-automerge.yml | [view](https://github.com/frasermolyneux/geo-location/blob/main/.github/workflows/dependabot-automerge.yml) |
-| Dependency Review | .github/workflows/dependency-review.yml | [view](https://github.com/frasermolyneux/geo-location/blob/main/.github/workflows/dependency-review.yml) |
+| Deploy Dev | .github/workflows/deploy-dev.yml | [view](https://github.com/frasermolyneux/geo-location/blob/main/.github/workflows/deploy-dev.yml) |
+| Deploy Prd | .github/workflows/deploy-prd.yml | [view](https://github.com/frasermolyneux/geo-location/blob/main/.github/workflows/deploy-prd.yml) |
+| Destroy Development | .github/workflows/destroy-development.yml | [view](https://github.com/frasermolyneux/geo-location/blob/main/.github/workflows/destroy-development.yml) |
+| Destroy Environment | .github/workflows/destroy-environment.yml | [view](https://github.com/frasermolyneux/geo-location/blob/main/.github/workflows/destroy-environment.yml) |
+| PR Verify | .github/workflows/pr-verify.yml | [view](https://github.com/frasermolyneux/geo-location/blob/main/.github/workflows/pr-verify.yml) |
 
 ## Azure Pipelines
 
 | Name | Link |
 | --- | --- |
-| geo-location.destroy-development | [view](https://dev.azure.com/frasermolyneux/Molyneux.IO/_build?definitionId=258) |
-| geo-location.release-consumers-to-production | [view](https://dev.azure.com/frasermolyneux/Molyneux.IO/_build?definitionId=255) |
-| geo-location.release-to-production | [view](https://dev.azure.com/frasermolyneux/Molyneux.IO/_build?definitionId=254) |
+| - | - |
 
 
 ---
 Generated by scripts/estate-sync/estate_sync.py
 <!-- Auto-generated file; do not edit directly. -->
-Last updated: 2026-02-12 04:17 UTC
+Last updated: 2026-02-13 02:07 UTC
