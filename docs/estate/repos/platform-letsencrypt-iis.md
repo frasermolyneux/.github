@@ -4,17 +4,20 @@
 
 Summary:
 - 📁 GitHub: [platform-letsencrypt-iis](https://github.com/frasermolyneux/platform-letsencrypt-iis)
+- 🌍 Environments: Production
+- 🔑 Subscriptions: sub-platform-management
 - 🗂️ Workflows: https://github.com/frasermolyneux/platform-letsencrypt-iis/tree/main/.github/workflows
 - 🗂️ Azure Pipelines YAML: https://github.com/frasermolyneux/platform-letsencrypt-iis/tree/main/.azure-pipelines
 
 ## Badges
 
-[![Build and Test](https://github.com/frasermolyneux/platform-letsencrypt-iis/actions/workflows/.github/workflows/build-and-test.yml/badge.svg)](https://github.com/frasermolyneux/platform-letsencrypt-iis/actions/workflows/.github/workflows/build-and-test.yml) [![Code Quality](https://github.com/frasermolyneux/platform-letsencrypt-iis/actions/workflows/.github/workflows/codequality.yml/badge.svg)](https://github.com/frasermolyneux/platform-letsencrypt-iis/actions/workflows/.github/workflows/codequality.yml) [![Copilot Setup Steps](https://github.com/frasermolyneux/platform-letsencrypt-iis/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg)](https://github.com/frasermolyneux/platform-letsencrypt-iis/actions/workflows/.github/workflows/copilot-setup-steps.yml) [![Dependabot Auto-Merge](https://github.com/frasermolyneux/platform-letsencrypt-iis/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg)](https://github.com/frasermolyneux/platform-letsencrypt-iis/actions/workflows/.github/workflows/dependabot-automerge.yml) [![PR Verify](https://github.com/frasermolyneux/platform-letsencrypt-iis/actions/workflows/.github/workflows/pr-verify.yml/badge.svg)](https://github.com/frasermolyneux/platform-letsencrypt-iis/actions/workflows/.github/workflows/pr-verify.yml) [![Dependabot Updates](https://github.com/frasermolyneux/platform-letsencrypt-iis/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg)](https://github.com/frasermolyneux/platform-letsencrypt-iis/actions/workflows/dynamic/dependabot/dependabot-updates)
+[![Build and Test](https://github.com/frasermolyneux/platform-letsencrypt-iis/actions/workflows/.github/workflows/build-and-test.yml/badge.svg)](https://github.com/frasermolyneux/platform-letsencrypt-iis/actions/workflows/.github/workflows/build-and-test.yml) [![Code Quality](https://github.com/frasermolyneux/platform-letsencrypt-iis/actions/workflows/.github/workflows/codequality.yml/badge.svg)](https://github.com/frasermolyneux/platform-letsencrypt-iis/actions/workflows/.github/workflows/codequality.yml) [![Copilot Setup Steps](https://github.com/frasermolyneux/platform-letsencrypt-iis/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg)](https://github.com/frasermolyneux/platform-letsencrypt-iis/actions/workflows/.github/workflows/copilot-setup-steps.yml) [![Dependabot Auto-Merge](https://github.com/frasermolyneux/platform-letsencrypt-iis/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg)](https://github.com/frasermolyneux/platform-letsencrypt-iis/actions/workflows/.github/workflows/dependabot-automerge.yml) [![Deploy Prd](https://github.com/frasermolyneux/platform-letsencrypt-iis/actions/workflows/.github/workflows/deploy-prd.yml/badge.svg)](https://github.com/frasermolyneux/platform-letsencrypt-iis/actions/workflows/.github/workflows/deploy-prd.yml) [![PR Verify](https://github.com/frasermolyneux/platform-letsencrypt-iis/actions/workflows/.github/workflows/pr-verify.yml/badge.svg)](https://github.com/frasermolyneux/platform-letsencrypt-iis/actions/workflows/.github/workflows/pr-verify.yml) [![Dependabot Updates](https://github.com/frasermolyneux/platform-letsencrypt-iis/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg)](https://github.com/frasermolyneux/platform-letsencrypt-iis/actions/workflows/dynamic/dependabot/dependabot-updates)
 
 ## Scheduling
 
 | Type | Cron | Next run (UTC) | Link |
 | --- | --- | --- | --- |
+| GitHub Actions | 0 3 * * 4 | 05/03/2026 03:00 UTC | [link](https://github.com/frasermolyneux/platform-letsencrypt-iis/actions/workflows/.github/workflows/deploy-prd.yml) |
 | GitHub Actions | 45 5 * * 1 | 02/03/2026 05:45 UTC | [link](https://github.com/frasermolyneux/platform-letsencrypt-iis/actions/workflows/.github/workflows/codequality.yml) |
 
 ## Workflows
@@ -25,6 +28,7 @@ Summary:
 | Code Quality | .github/workflows/codequality.yml | [view](https://github.com/frasermolyneux/platform-letsencrypt-iis/blob/main/.github/workflows/codequality.yml) |
 | Copilot Setup Steps | .github/workflows/copilot-setup-steps.yml | [view](https://github.com/frasermolyneux/platform-letsencrypt-iis/blob/main/.github/workflows/copilot-setup-steps.yml) |
 | Dependabot Auto-Merge | .github/workflows/dependabot-automerge.yml | [view](https://github.com/frasermolyneux/platform-letsencrypt-iis/blob/main/.github/workflows/dependabot-automerge.yml) |
+| Deploy Prd | .github/workflows/deploy-prd.yml | [view](https://github.com/frasermolyneux/platform-letsencrypt-iis/blob/main/.github/workflows/deploy-prd.yml) |
 | PR Verify | .github/workflows/pr-verify.yml | [view](https://github.com/frasermolyneux/platform-letsencrypt-iis/blob/main/.github/workflows/pr-verify.yml) |
 
 ## Azure Pipelines
@@ -37,4 +41,4 @@ Summary:
 ---
 Generated by scripts/estate-sync/estate_sync.py
 <!-- Auto-generated file; do not edit directly. -->
-Last updated: 2026-02-26 04:16 UTC
+Last updated: 2026-02-27 04:15 UTC
