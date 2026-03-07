@@ -4,7 +4,6 @@
 
 Summary:
 - 📁 GitHub: [demo-manager](https://github.com/frasermolyneux/demo-manager)
-- 🏢 Azure DevOps project: [XtremeIdiots](https://dev.azure.com/frasermolyneux/XtremeIdiots)
 - 🌍 Environments: Production
 - 🔑 Subscriptions: sub-xi-demomanager-prd
 - 🗂️ Workflows: https://github.com/frasermolyneux/demo-manager/tree/main/.github/workflows
@@ -12,14 +11,13 @@ Summary:
 
 ## Badges
 
-[![Build and Test](https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/build-and-test.yml/badge.svg)](https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/build-and-test.yml) [![Code Quality](https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/codequality.yml/badge.svg)](https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/codequality.yml) [![Copilot Setup Steps](https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg)](https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/copilot-setup-steps.yml) [![Dependabot Auto-Merge](https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg)](https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/dependabot-automerge.yml) [![Merge To Main](https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/merge-to-main.yml/badge.svg)](https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/merge-to-main.yml) [![PR Verify](https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/pr-verify.yml/badge.svg)](https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/pr-verify.yml) [![Dependabot Updates](https://github.com/frasermolyneux/demo-manager/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg)](https://github.com/frasermolyneux/demo-manager/actions/workflows/dynamic/dependabot/dependabot-updates) [![demo-manager.devops-secure-scanning](https://dev.azure.com/frasermolyneux/XtremeIdiots/_apis/build/status/demo-manager.devops-secure-scanning?branchName=main&repoName=frasermolyneux%2Fdemo-manager&label=demo-manager.devops-secure-scanning)](https://dev.azure.com/frasermolyneux/XtremeIdiots/_build/latest?definitionId=250&branchName=main) [![demo-manager.release-to-production](https://dev.azure.com/frasermolyneux/XtremeIdiots/_apis/build/status/demo-manager.release-to-production?branchName=main&repoName=frasermolyneux%2Fdemo-manager&label=demo-manager.release-to-production)](https://dev.azure.com/frasermolyneux/XtremeIdiots/_build/latest?definitionId=251&branchName=main)
+[![Build and Test](https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/build-and-test.yml/badge.svg)](https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/build-and-test.yml) [![Code Quality](https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/codequality.yml/badge.svg)](https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/codequality.yml) [![Copilot Setup Steps](https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg)](https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/copilot-setup-steps.yml) [![Dependabot Auto-Merge](https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg)](https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/dependabot-automerge.yml) [![Deploy Prd](https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/deploy-prd.yml/badge.svg)](https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/deploy-prd.yml) [![Merge To Main](https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/merge-to-main.yml/badge.svg)](https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/merge-to-main.yml) [![PR Verify](https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/pr-verify.yml/badge.svg)](https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/pr-verify.yml) [![Dependabot Updates](https://github.com/frasermolyneux/demo-manager/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg)](https://github.com/frasermolyneux/demo-manager/actions/workflows/dynamic/dependabot/dependabot-updates)
 
 ## Scheduling
 
 | Type | Cron | Next run (UTC) | Link |
 | --- | --- | --- | --- |
-| Azure Pipelines | 0 2 * * 4 | 12/03/2026 02:00 UTC | [link](https://github.com/frasermolyneux/demo-manager/blob/main/.azure-pipelines/devops-secure-scanning.yml) |
-| Azure Pipelines | 0 3 * * 4 | 12/03/2026 03:00 UTC | [link](https://github.com/frasermolyneux/demo-manager/blob/main/.azure-pipelines/release-to-production.yml) |
+| GitHub Actions | 0 3 * * 4 | 12/03/2026 03:00 UTC | [link](https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/deploy-prd.yml) |
 | GitHub Actions | 15 7 * * 1 | 09/03/2026 07:15 UTC | [link](https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/codequality.yml) |
 
 ## Workflows
@@ -30,6 +28,7 @@ Summary:
 | Code Quality | .github/workflows/codequality.yml | [view](https://github.com/frasermolyneux/demo-manager/blob/main/.github/workflows/codequality.yml) |
 | Copilot Setup Steps | .github/workflows/copilot-setup-steps.yml | [view](https://github.com/frasermolyneux/demo-manager/blob/main/.github/workflows/copilot-setup-steps.yml) |
 | Dependabot Auto-Merge | .github/workflows/dependabot-automerge.yml | [view](https://github.com/frasermolyneux/demo-manager/blob/main/.github/workflows/dependabot-automerge.yml) |
+| Deploy Prd | .github/workflows/deploy-prd.yml | [view](https://github.com/frasermolyneux/demo-manager/blob/main/.github/workflows/deploy-prd.yml) |
 | Merge To Main | .github/workflows/merge-to-main.yml | [view](https://github.com/frasermolyneux/demo-manager/blob/main/.github/workflows/merge-to-main.yml) |
 | PR Verify | .github/workflows/pr-verify.yml | [view](https://github.com/frasermolyneux/demo-manager/blob/main/.github/workflows/pr-verify.yml) |
 
@@ -37,11 +36,10 @@ Summary:
 
 | Name | Link |
 | --- | --- |
-| demo-manager.devops-secure-scanning | [view](https://dev.azure.com/frasermolyneux/XtremeIdiots/_build?definitionId=250) |
-| demo-manager.release-to-production | [view](https://dev.azure.com/frasermolyneux/XtremeIdiots/_build?definitionId=251) |
+| - | - |
 
 
 ---
 Generated by scripts/estate-sync/estate_sync.py
 <!-- Auto-generated file; do not edit directly. -->
-Last updated: 2026-03-06 04:14 UTC
+Last updated: 2026-03-07 04:08 UTC
