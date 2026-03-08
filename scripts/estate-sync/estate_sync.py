@@ -400,33 +400,143 @@ def render_route_to_production(repos: List[Tuple[str, Optional[str], Optional[st
     return "\n".join(lines)
 
 
+WORKFLOW_STAGE_ORDER = [
+    # Core pipeline workflows — ordered earliest-to-commit through deploy
+    "Code Quality",
+    "Build and Test",
+    "PR Verify",
+    "Integration Tests",
+    "Merge To Main",
+    "Release - Version and Tag",
+    "Release - Publish NuGet",
+    "Deploy Dev",
+    "Deploy Prd",
+    "Update Dashboard from Staging Dashboard",
+    "Destroy Development",
+    "Destroy Environment",
+]
+
+AUTOMATION_WORKFLOWS = [
+    "Dependabot Auto-Merge",
+    "Dependabot Updates",
+    "Copilot Setup Steps",
+    "Copilot coding agent",
+    "Copilot code review",
+    "Automatic Dependency Submission",
+]
+
+_BADGE_NAME_RE = re.compile(r"^\[!\[([^\]]+)\]")
+
+
+def _extract_badge_name(badge_md: str) -> str:
+    m = _BADGE_NAME_RE.match(badge_md)
+    return m.group(1) if m else badge_md
+
+
+def _workflow_sort_key(name: str) -> Tuple[int, int, str]:
+    """Return a sort key that groups core workflows first, then automation, then ADO/other."""
+    if name in WORKFLOW_STAGE_ORDER:
+        return (0, WORKFLOW_STAGE_ORDER.index(name), name)
+    if name in AUTOMATION_WORKFLOWS:
+        return (1, AUTOMATION_WORKFLOWS.index(name), name)
+    return (2, 0, name.lower())
+
+
 def render_pipelines(categories: Dict[str, List[Dict]], repos: Dict[str, List[str]], timestamp: datetime) -> str:
     lines = [
         nav_line("../index.md", "./workloads.md", "./pipelines.md", "./pipeline-scheduling.md", "./repos/index.md"),
         "",
         "# Pipeline Badges",
         "",
-        "All workflow badges per workload. Badges link to the workflow definitions.",
+        "Workflow status per workload, grouped by category. Repos run across the top; "
+        "workflows run down the side in pipeline-stage order. Scroll horizontally on wide tables.",
         "",
-        "| Workload | Workflows |",
-        "| --- | --- |",
     ]
 
-    workloads = []
-    for category in categories.values():
-        workloads.extend(category)
+    for category in sorted(categories.keys()):
+        workloads = sorted(categories[category], key=lambda w: w["name"].lower())
+        if not workloads:
+            continue
 
-    for workload in sorted(workloads, key=lambda w: w["name"].lower()):
-        repo_name = workload["repo"]
-        badges = repos.get(repo_name, [])
-        repo_link = f"[{workload['name']}](https://github.com/{OWNER}/{repo_name})"
-        badge_list = " ".join(badges) if badges else "No workflows found"
-        detail_link = _page_link(f"./repos/{repo_name}.md")
-        lines.append(f"| 📁 {repo_link} ([Detail]({detail_link})) | 🏷️ {badge_list} |")
+        # Build per-repo badge map: repo -> {workflow_name: badge_markdown}
+        repo_badge_maps: Dict[str, Dict[str, str]] = {}
+        all_workflow_names: set = set()
+        for workload in workloads:
+            repo_name = workload["repo"]
+            badge_list = repos.get(repo_name, [])
+            badge_map: Dict[str, str] = {}
+            for badge_md in badge_list:
+                wf_name = _extract_badge_name(badge_md)
+                badge_map[wf_name] = badge_md
+                all_workflow_names.add(wf_name)
+            repo_badge_maps[repo_name] = badge_map
 
-    lines.append("")
+        # Sort workflow names by pipeline stage
+        sorted_workflows = sorted(all_workflow_names, key=_workflow_sort_key)
+
+        # Determine where automation section starts for the separator
+        first_automation_idx = None
+        for i, wf_name in enumerate(sorted_workflows):
+            if _workflow_sort_key(wf_name)[0] >= 1 and (i == 0 or _workflow_sort_key(sorted_workflows[i - 1])[0] == 0):
+                first_automation_idx = i
+                break
+
+        # Build HTML table
+        lines.append(f'<div class="pipeline-category">')
+        lines.append(f"<h2>{category}</h2>")
+        lines.append("")
+        lines.append('<div class="pipeline-matrix-wrap">')
+        lines.append('<table class="pipeline-matrix">')
+
+        # Header row: Workflow | repo1 | repo2 | ...
+        lines.append("<thead><tr>")
+        lines.append("<th>Workflow</th>")
+        for workload in workloads:
+            repo_name = workload["repo"]
+            detail_link = _page_link(f"./repos/{repo_name}.md")
+            lines.append(
+                f'<th><a href="https://github.com/{OWNER}/{repo_name}">{repo_name}</a>'
+                f'<br><a href="{detail_link}" style="font-size:0.75em">detail</a></th>'
+            )
+        lines.append("</tr></thead>")
+
+        # Body rows: one per workflow
+        lines.append("<tbody>")
+        for i, wf_name in enumerate(sorted_workflows):
+            # Insert separator between core and automation sections
+            if i == first_automation_idx:
+                lines.append(f'<tr class="separator"><td colspan="{1 + len(workloads)}"></td></tr>')
+            lines.append("<tr>")
+            lines.append(f"<td>{wf_name}</td>")
+            for workload in workloads:
+                badge_md = repo_badge_maps[workload["repo"]].get(wf_name)
+                if badge_md:
+                    # Convert markdown badge to HTML img+link
+                    lines.append(f"<td>{_badge_md_to_html(badge_md)}</td>")
+                else:
+                    lines.append('<td class="no-workflow">—</td>')
+            lines.append("</tr>")
+        lines.append("</tbody>")
+
+        lines.append("</table>")
+        lines.append("</div>")  # pipeline-matrix-wrap
+        lines.append("</div>")  # pipeline-category
+        lines.append("")
+
     lines.extend(footer_lines(timestamp))
     return "\n".join(lines)
+
+
+_BADGE_MD_RE = re.compile(r"^\[!\[([^\]]*)\]\(([^)]+)\)\]\(([^)]+)\)$")
+
+
+def _badge_md_to_html(badge_md: str) -> str:
+    """Convert [![alt](img_url)](link_url) markdown to an HTML <a><img></a>."""
+    m = _BADGE_MD_RE.match(badge_md.strip())
+    if m:
+        alt, img_url, link_url = m.group(1), m.group(2), m.group(3)
+        return f'<a href="{link_url}"><img src="{img_url}" alt="{alt}"></a>'
+    return badge_md
 
 
 def render_scheduling(schedules: List[Dict], timestamp: datetime) -> str:

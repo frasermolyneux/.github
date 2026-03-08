@@ -1,0 +1,80 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Full-width override for the Cayman theme */
+.main-content {
+  max-width: none;
+  padding: 2rem 3rem;
+}
+
+/* Pipeline matrix tables */
+.pipeline-matrix-wrap {
+  overflow-x: auto;
+  margin-bottom: 2rem;
+}
+
+.pipeline-matrix {
+  border-collapse: collapse;
+  white-space: nowrap;
+  font-size: 0.85rem;
+}
+
+.pipeline-matrix th,
+.pipeline-matrix td {
+  border: 1px solid #ddd;
+  padding: 4px 6px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.pipeline-matrix th {
+  background-color: #f6f8fa;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* First column (workflow name) sticks on horizontal scroll */
+.pipeline-matrix th:first-child,
+.pipeline-matrix td:first-child {
+  position: sticky;
+  left: 0;
+  background-color: #f6f8fa;
+  z-index: 2;
+  text-align: left;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.pipeline-matrix td:first-child {
+  background-color: #fff;
+}
+
+/* Separator row between core and automation workflows */
+.pipeline-matrix .separator td {
+  background-color: #f0f0f0;
+  height: 4px;
+  padding: 0;
+  border-left: none;
+  border-right: none;
+}
+
+/* Badge images in cells — constrain height for consistency */
+.pipeline-matrix td img {
+  height: 20px;
+  vertical-align: middle;
+}
+
+/* Empty cell indicator */
+.pipeline-matrix td.no-workflow {
+  color: #ccc;
+}
+
+/* Category heading */
+.pipeline-category h2 {
+  margin-top: 2rem;
+  border-bottom: 2px solid #e1e4e8;
+  padding-bottom: 0.3em;
+}
