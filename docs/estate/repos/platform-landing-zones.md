@@ -12,14 +12,13 @@ Summary:
 
 ## Badges
 
-[![Build and Test](https://github.com/frasermolyneux/platform-landing-zones/actions/workflows/.github/workflows/build-and-test.yml/badge.svg)](https://github.com/frasermolyneux/platform-landing-zones/actions/workflows/.github/workflows/build-and-test.yml) [![Code Quality](https://github.com/frasermolyneux/platform-landing-zones/actions/workflows/.github/workflows/codequality.yml/badge.svg)](https://github.com/frasermolyneux/platform-landing-zones/actions/workflows/.github/workflows/codequality.yml) [![Copilot Setup Steps](https://github.com/frasermolyneux/platform-landing-zones/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg)](https://github.com/frasermolyneux/platform-landing-zones/actions/workflows/.github/workflows/copilot-setup-steps.yml) [![Dependabot Auto-Merge](https://github.com/frasermolyneux/platform-landing-zones/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg)](https://github.com/frasermolyneux/platform-landing-zones/actions/workflows/.github/workflows/dependabot-automerge.yml) [![PR Verify](https://github.com/frasermolyneux/platform-landing-zones/actions/workflows/.github/workflows/pr-verify.yml/badge.svg)](https://github.com/frasermolyneux/platform-landing-zones/actions/workflows/.github/workflows/pr-verify.yml) [![Dependabot Updates](https://github.com/frasermolyneux/platform-landing-zones/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg)](https://github.com/frasermolyneux/platform-landing-zones/actions/workflows/dynamic/dependabot/dependabot-updates) [![platform-landing-zones.release-to-production](https://dev.azure.com/frasermolyneux/Molyneux.IO/_apis/build/status/platform-landing-zones.release-to-production?branchName=main&repoName=frasermolyneux%2Fplatform-landing-zones&label=platform-landing-zones.release-to-production)](https://dev.azure.com/frasermolyneux/Molyneux.IO/_build/latest?definitionId=253&branchName=main)
+[![Build and Test](https://github.com/frasermolyneux/platform-landing-zones/actions/workflows/.github/workflows/build-and-test.yml/badge.svg)](https://github.com/frasermolyneux/platform-landing-zones/actions/workflows/.github/workflows/build-and-test.yml) [![Code Quality](https://github.com/frasermolyneux/platform-landing-zones/actions/workflows/.github/workflows/codequality.yml/badge.svg)](https://github.com/frasermolyneux/platform-landing-zones/actions/workflows/.github/workflows/codequality.yml) [![Copilot Setup Steps](https://github.com/frasermolyneux/platform-landing-zones/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg)](https://github.com/frasermolyneux/platform-landing-zones/actions/workflows/.github/workflows/copilot-setup-steps.yml) [![Dependabot Auto-Merge](https://github.com/frasermolyneux/platform-landing-zones/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg)](https://github.com/frasermolyneux/platform-landing-zones/actions/workflows/.github/workflows/dependabot-automerge.yml) [![Deploy Prd](https://github.com/frasermolyneux/platform-landing-zones/actions/workflows/.github/workflows/deploy-prd.yml/badge.svg)](https://github.com/frasermolyneux/platform-landing-zones/actions/workflows/.github/workflows/deploy-prd.yml) [![Destroy Environment](https://github.com/frasermolyneux/platform-landing-zones/actions/workflows/.github/workflows/destroy-environment.yml/badge.svg)](https://github.com/frasermolyneux/platform-landing-zones/actions/workflows/.github/workflows/destroy-environment.yml) [![PR Verify](https://github.com/frasermolyneux/platform-landing-zones/actions/workflows/.github/workflows/pr-verify.yml/badge.svg)](https://github.com/frasermolyneux/platform-landing-zones/actions/workflows/.github/workflows/pr-verify.yml) [![Dependabot Updates](https://github.com/frasermolyneux/platform-landing-zones/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg)](https://github.com/frasermolyneux/platform-landing-zones/actions/workflows/dynamic/dependabot/dependabot-updates)
 
 ## Scheduling
 
 | Type | Cron | Next run (UTC) | Link |
 | --- | --- | --- | --- |
-| Azure Pipelines | 0 2 * * 4 | 09/04/2026 02:00 UTC | [link](https://github.com/frasermolyneux/platform-landing-zones/blob/main/.azure-pipelines/devops-secure-scanning.yml) |
-| Azure Pipelines | 0 3 * * 4 | 09/04/2026 03:00 UTC | [link](https://github.com/frasermolyneux/platform-landing-zones/blob/main/.azure-pipelines/release-to-production.yml) |
+| GitHub Actions | 0 3 * * 4 | 09/04/2026 03:00 UTC | [link](https://github.com/frasermolyneux/platform-landing-zones/actions/workflows/.github/workflows/deploy-prd.yml) |
 | GitHub Actions | 30 4 * * 1 | 06/04/2026 04:30 UTC | [link](https://github.com/frasermolyneux/platform-landing-zones/actions/workflows/.github/workflows/codequality.yml) |
 
 ## Workflows
@@ -30,16 +29,18 @@ Summary:
 | Code Quality | .github/workflows/codequality.yml | [view](https://github.com/frasermolyneux/platform-landing-zones/blob/main/.github/workflows/codequality.yml) |
 | Copilot Setup Steps | .github/workflows/copilot-setup-steps.yml | [view](https://github.com/frasermolyneux/platform-landing-zones/blob/main/.github/workflows/copilot-setup-steps.yml) |
 | Dependabot Auto-Merge | .github/workflows/dependabot-automerge.yml | [view](https://github.com/frasermolyneux/platform-landing-zones/blob/main/.github/workflows/dependabot-automerge.yml) |
+| Deploy Prd | .github/workflows/deploy-prd.yml | [view](https://github.com/frasermolyneux/platform-landing-zones/blob/main/.github/workflows/deploy-prd.yml) |
+| Destroy Environment | .github/workflows/destroy-environment.yml | [view](https://github.com/frasermolyneux/platform-landing-zones/blob/main/.github/workflows/destroy-environment.yml) |
 | PR Verify | .github/workflows/pr-verify.yml | [view](https://github.com/frasermolyneux/platform-landing-zones/blob/main/.github/workflows/pr-verify.yml) |
 
 ## Azure Pipelines
 
 | Name | Link |
 | --- | --- |
-| platform-landing-zones.release-to-production | [view](https://dev.azure.com/frasermolyneux/Molyneux.IO/_build?definitionId=253) |
+| - | - |
 
 
 ---
 Generated by scripts/estate-sync/estate_sync.py
 <!-- Auto-generated file; do not edit directly. -->
-Last updated: 2026-04-04 21:28 UTC
+Last updated: 2026-04-05 04:23 UTC
