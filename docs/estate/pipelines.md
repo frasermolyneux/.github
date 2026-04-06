@@ -137,35 +137,6 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 </div>
 
 <div class="pipeline-category">
-<h2>idp</h2>
-
-<div class="pipeline-matrix-wrap">
-<table class="pipeline-matrix">
-<thead><tr>
-<th>Workflow</th>
-<th><a href="https://github.com/frasermolyneux/idp-agents">idp-agents</a><br><a href="./repos/idp-agents.html" style="font-size:0.75em">detail</a></th>
-<th><a href="https://github.com/frasermolyneux/idp-core">idp-core</a><br><a href="./repos/idp-core.html" style="font-size:0.75em">detail</a></th>
-<th><a href="https://github.com/frasermolyneux/idp-web">idp-web</a><br><a href="./repos/idp-web.html" style="font-size:0.75em">detail</a></th>
-</tr></thead>
-<tbody>
-<tr>
-<td>Deploy Dev</td>
-<td><a href="https://github.com/frasermolyneux/idp-agents/actions/workflows/.github/workflows/deploy-dev.yml"><img src="https://github.com/frasermolyneux/idp-agents/actions/workflows/.github/workflows/deploy-dev.yml/badge.svg" alt="Deploy Dev"></a></td>
-<td><a href="https://github.com/frasermolyneux/idp-core/actions/workflows/.github/workflows/deploy-dev.yml"><img src="https://github.com/frasermolyneux/idp-core/actions/workflows/.github/workflows/deploy-dev.yml/badge.svg" alt="Deploy Dev"></a></td>
-<td><a href="https://github.com/frasermolyneux/idp-web/actions/workflows/.github/workflows/deploy-dev.yml"><img src="https://github.com/frasermolyneux/idp-web/actions/workflows/.github/workflows/deploy-dev.yml/badge.svg" alt="Deploy Dev"></a></td>
-</tr>
-<tr>
-<td>Deploy Prd</td>
-<td><a href="https://github.com/frasermolyneux/idp-agents/actions/workflows/.github/workflows/deploy-prd.yml"><img src="https://github.com/frasermolyneux/idp-agents/actions/workflows/.github/workflows/deploy-prd.yml/badge.svg" alt="Deploy Prd"></a></td>
-<td><a href="https://github.com/frasermolyneux/idp-core/actions/workflows/.github/workflows/deploy-prd.yml"><img src="https://github.com/frasermolyneux/idp-core/actions/workflows/.github/workflows/deploy-prd.yml/badge.svg" alt="Deploy Prd"></a></td>
-<td><a href="https://github.com/frasermolyneux/idp-web/actions/workflows/.github/workflows/deploy-prd.yml"><img src="https://github.com/frasermolyneux/idp-web/actions/workflows/.github/workflows/deploy-prd.yml/badge.svg" alt="Deploy Prd"></a></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-
-<div class="pipeline-category">
 <h2>misc</h2>
 
 <div class="pipeline-matrix-wrap">
@@ -564,8 +535,8 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/portal-event-ingest/actions/workflows/.github/workflows/codequality.yml"><img src="https://github.com/frasermolyneux/portal-event-ingest/actions/workflows/.github/workflows/codequality.yml/badge.svg" alt="Code Quality"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-repository/actions/workflows/.github/workflows/codequality.yml"><img src="https://github.com/frasermolyneux/portal-repository/actions/workflows/.github/workflows/codequality.yml/badge.svg" alt="Code Quality"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-repository-func/actions/workflows/.github/workflows/codequality.yml"><img src="https://github.com/frasermolyneux/portal-repository-func/actions/workflows/.github/workflows/codequality.yml/badge.svg" alt="Code Quality"></a></td>
-<td class="no-workflow">—</td>
-<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/portal-server-agent/actions/workflows/.github/workflows/codequality.yml"><img src="https://github.com/frasermolyneux/portal-server-agent/actions/workflows/.github/workflows/codequality.yml/badge.svg" alt="Code Quality"></a></td>
+<td><a href="https://github.com/frasermolyneux/portal-server-events/actions/workflows/.github/workflows/codequality.yml"><img src="https://github.com/frasermolyneux/portal-server-events/actions/workflows/.github/workflows/codequality.yml/badge.svg" alt="Code Quality"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/.github/workflows/codequality.yml"><img src="https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/.github/workflows/codequality.yml/badge.svg" alt="Code Quality"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-sync/actions/workflows/.github/workflows/codequality.yml"><img src="https://github.com/frasermolyneux/portal-sync/actions/workflows/.github/workflows/codequality.yml/badge.svg" alt="Code Quality"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-web/actions/workflows/.github/workflows/codequality.yml"><img src="https://github.com/frasermolyneux/portal-web/actions/workflows/.github/workflows/codequality.yml/badge.svg" alt="Code Quality"></a></td>
@@ -578,8 +549,8 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/portal-event-ingest/actions/workflows/.github/workflows/build-and-test.yml"><img src="https://github.com/frasermolyneux/portal-event-ingest/actions/workflows/.github/workflows/build-and-test.yml/badge.svg" alt="Build and Test"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-repository/actions/workflows/.github/workflows/build-and-test.yml"><img src="https://github.com/frasermolyneux/portal-repository/actions/workflows/.github/workflows/build-and-test.yml/badge.svg" alt="Build and Test"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-repository-func/actions/workflows/.github/workflows/build-and-test.yml"><img src="https://github.com/frasermolyneux/portal-repository-func/actions/workflows/.github/workflows/build-and-test.yml/badge.svg" alt="Build and Test"></a></td>
-<td class="no-workflow">—</td>
-<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/portal-server-agent/actions/workflows/.github/workflows/build-and-test.yml"><img src="https://github.com/frasermolyneux/portal-server-agent/actions/workflows/.github/workflows/build-and-test.yml/badge.svg" alt="Build and Test"></a></td>
+<td><a href="https://github.com/frasermolyneux/portal-server-events/actions/workflows/.github/workflows/build-and-test.yml"><img src="https://github.com/frasermolyneux/portal-server-events/actions/workflows/.github/workflows/build-and-test.yml/badge.svg" alt="Build and Test"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/.github/workflows/build-and-test.yml"><img src="https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/.github/workflows/build-and-test.yml/badge.svg" alt="Build and Test"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-sync/actions/workflows/.github/workflows/build-and-test.yml"><img src="https://github.com/frasermolyneux/portal-sync/actions/workflows/.github/workflows/build-and-test.yml/badge.svg" alt="Build and Test"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-web/actions/workflows/.github/workflows/build-and-test.yml"><img src="https://github.com/frasermolyneux/portal-web/actions/workflows/.github/workflows/build-and-test.yml/badge.svg" alt="Build and Test"></a></td>
@@ -592,8 +563,8 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/portal-event-ingest/actions/workflows/.github/workflows/pr-verify.yml"><img src="https://github.com/frasermolyneux/portal-event-ingest/actions/workflows/.github/workflows/pr-verify.yml/badge.svg" alt="PR Verify"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-repository/actions/workflows/.github/workflows/pr-verify.yml"><img src="https://github.com/frasermolyneux/portal-repository/actions/workflows/.github/workflows/pr-verify.yml/badge.svg" alt="PR Verify"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-repository-func/actions/workflows/.github/workflows/pr-verify.yml"><img src="https://github.com/frasermolyneux/portal-repository-func/actions/workflows/.github/workflows/pr-verify.yml/badge.svg" alt="PR Verify"></a></td>
-<td class="no-workflow">—</td>
-<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/portal-server-agent/actions/workflows/.github/workflows/pr-verify.yml"><img src="https://github.com/frasermolyneux/portal-server-agent/actions/workflows/.github/workflows/pr-verify.yml/badge.svg" alt="PR Verify"></a></td>
+<td><a href="https://github.com/frasermolyneux/portal-server-events/actions/workflows/.github/workflows/pr-verify.yml"><img src="https://github.com/frasermolyneux/portal-server-events/actions/workflows/.github/workflows/pr-verify.yml/badge.svg" alt="PR Verify"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/.github/workflows/pr-verify.yml"><img src="https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/.github/workflows/pr-verify.yml/badge.svg" alt="PR Verify"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-sync/actions/workflows/.github/workflows/pr-verify.yml"><img src="https://github.com/frasermolyneux/portal-sync/actions/workflows/.github/workflows/pr-verify.yml/badge.svg" alt="PR Verify"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-web/actions/workflows/.github/workflows/pr-verify.yml"><img src="https://github.com/frasermolyneux/portal-web/actions/workflows/.github/workflows/pr-verify.yml/badge.svg" alt="PR Verify"></a></td>
@@ -607,7 +578,7 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/portal-repository/actions/workflows/.github/workflows/release-version-and-tag.yml"><img src="https://github.com/frasermolyneux/portal-repository/actions/workflows/.github/workflows/release-version-and-tag.yml/badge.svg" alt="Release - Version and Tag"></a></td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
-<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/portal-server-events/actions/workflows/.github/workflows/release-version-and-tag.yml"><img src="https://github.com/frasermolyneux/portal-server-events/actions/workflows/.github/workflows/release-version-and-tag.yml/badge.svg" alt="Release - Version and Tag"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/.github/workflows/release-version-and-tag.yml"><img src="https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/.github/workflows/release-version-and-tag.yml/badge.svg" alt="Release - Version and Tag"></a></td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
@@ -621,7 +592,7 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/portal-repository/actions/workflows/.github/workflows/release-publish-nuget.yml"><img src="https://github.com/frasermolyneux/portal-repository/actions/workflows/.github/workflows/release-publish-nuget.yml/badge.svg" alt="Release - Publish NuGet"></a></td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
-<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/portal-server-events/actions/workflows/.github/workflows/release-publish-nuget.yml"><img src="https://github.com/frasermolyneux/portal-server-events/actions/workflows/.github/workflows/release-publish-nuget.yml/badge.svg" alt="Release - Publish NuGet"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/.github/workflows/release-publish-nuget.yml"><img src="https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/.github/workflows/release-publish-nuget.yml/badge.svg" alt="Release - Publish NuGet"></a></td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
@@ -634,8 +605,8 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/portal-event-ingest/actions/workflows/.github/workflows/deploy-dev.yml"><img src="https://github.com/frasermolyneux/portal-event-ingest/actions/workflows/.github/workflows/deploy-dev.yml/badge.svg" alt="Deploy Dev"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-repository/actions/workflows/.github/workflows/deploy-dev.yml"><img src="https://github.com/frasermolyneux/portal-repository/actions/workflows/.github/workflows/deploy-dev.yml/badge.svg" alt="Deploy Dev"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-repository-func/actions/workflows/.github/workflows/deploy-dev.yml"><img src="https://github.com/frasermolyneux/portal-repository-func/actions/workflows/.github/workflows/deploy-dev.yml/badge.svg" alt="Deploy Dev"></a></td>
-<td class="no-workflow">—</td>
-<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/portal-server-agent/actions/workflows/.github/workflows/deploy-dev.yml"><img src="https://github.com/frasermolyneux/portal-server-agent/actions/workflows/.github/workflows/deploy-dev.yml/badge.svg" alt="Deploy Dev"></a></td>
+<td><a href="https://github.com/frasermolyneux/portal-server-events/actions/workflows/.github/workflows/deploy-dev.yml"><img src="https://github.com/frasermolyneux/portal-server-events/actions/workflows/.github/workflows/deploy-dev.yml/badge.svg" alt="Deploy Dev"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/.github/workflows/deploy-dev.yml"><img src="https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/.github/workflows/deploy-dev.yml/badge.svg" alt="Deploy Dev"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-sync/actions/workflows/.github/workflows/deploy-dev.yml"><img src="https://github.com/frasermolyneux/portal-sync/actions/workflows/.github/workflows/deploy-dev.yml/badge.svg" alt="Deploy Dev"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-web/actions/workflows/.github/workflows/deploy-dev.yml"><img src="https://github.com/frasermolyneux/portal-web/actions/workflows/.github/workflows/deploy-dev.yml/badge.svg" alt="Deploy Dev"></a></td>
@@ -648,8 +619,8 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/portal-event-ingest/actions/workflows/.github/workflows/deploy-prd.yml"><img src="https://github.com/frasermolyneux/portal-event-ingest/actions/workflows/.github/workflows/deploy-prd.yml/badge.svg" alt="Deploy Prd"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-repository/actions/workflows/.github/workflows/deploy-prd.yml"><img src="https://github.com/frasermolyneux/portal-repository/actions/workflows/.github/workflows/deploy-prd.yml/badge.svg" alt="Deploy Prd"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-repository-func/actions/workflows/.github/workflows/deploy-prd.yml"><img src="https://github.com/frasermolyneux/portal-repository-func/actions/workflows/.github/workflows/deploy-prd.yml/badge.svg" alt="Deploy Prd"></a></td>
-<td class="no-workflow">—</td>
-<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/portal-server-agent/actions/workflows/.github/workflows/deploy-prd.yml"><img src="https://github.com/frasermolyneux/portal-server-agent/actions/workflows/.github/workflows/deploy-prd.yml/badge.svg" alt="Deploy Prd"></a></td>
+<td><a href="https://github.com/frasermolyneux/portal-server-events/actions/workflows/.github/workflows/deploy-prd.yml"><img src="https://github.com/frasermolyneux/portal-server-events/actions/workflows/.github/workflows/deploy-prd.yml/badge.svg" alt="Deploy Prd"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/.github/workflows/deploy-prd.yml"><img src="https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/.github/workflows/deploy-prd.yml/badge.svg" alt="Deploy Prd"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-sync/actions/workflows/.github/workflows/deploy-prd.yml"><img src="https://github.com/frasermolyneux/portal-sync/actions/workflows/.github/workflows/deploy-prd.yml/badge.svg" alt="Deploy Prd"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-web/actions/workflows/.github/workflows/deploy-prd.yml"><img src="https://github.com/frasermolyneux/portal-web/actions/workflows/.github/workflows/deploy-prd.yml/badge.svg" alt="Deploy Prd"></a></td>
@@ -676,8 +647,8 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/portal-event-ingest/actions/workflows/.github/workflows/destroy-development.yml"><img src="https://github.com/frasermolyneux/portal-event-ingest/actions/workflows/.github/workflows/destroy-development.yml/badge.svg" alt="Destroy Development"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-repository/actions/workflows/.github/workflows/destroy-development.yml"><img src="https://github.com/frasermolyneux/portal-repository/actions/workflows/.github/workflows/destroy-development.yml/badge.svg" alt="Destroy Development"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-repository-func/actions/workflows/.github/workflows/destroy-development.yml"><img src="https://github.com/frasermolyneux/portal-repository-func/actions/workflows/.github/workflows/destroy-development.yml/badge.svg" alt="Destroy Development"></a></td>
-<td class="no-workflow">—</td>
-<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/portal-server-agent/actions/workflows/.github/workflows/destroy-development.yml"><img src="https://github.com/frasermolyneux/portal-server-agent/actions/workflows/.github/workflows/destroy-development.yml/badge.svg" alt="Destroy Development"></a></td>
+<td><a href="https://github.com/frasermolyneux/portal-server-events/actions/workflows/.github/workflows/destroy-development.yml"><img src="https://github.com/frasermolyneux/portal-server-events/actions/workflows/.github/workflows/destroy-development.yml/badge.svg" alt="Destroy Development"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/.github/workflows/destroy-development.yml"><img src="https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/.github/workflows/destroy-development.yml/badge.svg" alt="Destroy Development"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-sync/actions/workflows/.github/workflows/destroy-development.yml"><img src="https://github.com/frasermolyneux/portal-sync/actions/workflows/.github/workflows/destroy-development.yml/badge.svg" alt="Destroy Development"></a></td>
 <td class="no-workflow">—</td>
@@ -690,8 +661,8 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/portal-event-ingest/actions/workflows/.github/workflows/destroy-environment.yml"><img src="https://github.com/frasermolyneux/portal-event-ingest/actions/workflows/.github/workflows/destroy-environment.yml/badge.svg" alt="Destroy Environment"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-repository/actions/workflows/.github/workflows/destroy-environment.yml"><img src="https://github.com/frasermolyneux/portal-repository/actions/workflows/.github/workflows/destroy-environment.yml/badge.svg" alt="Destroy Environment"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-repository-func/actions/workflows/.github/workflows/destroy-environment.yml"><img src="https://github.com/frasermolyneux/portal-repository-func/actions/workflows/.github/workflows/destroy-environment.yml/badge.svg" alt="Destroy Environment"></a></td>
-<td class="no-workflow">—</td>
-<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/portal-server-agent/actions/workflows/.github/workflows/destroy-environment.yml"><img src="https://github.com/frasermolyneux/portal-server-agent/actions/workflows/.github/workflows/destroy-environment.yml/badge.svg" alt="Destroy Environment"></a></td>
+<td><a href="https://github.com/frasermolyneux/portal-server-events/actions/workflows/.github/workflows/destroy-environment.yml"><img src="https://github.com/frasermolyneux/portal-server-events/actions/workflows/.github/workflows/destroy-environment.yml/badge.svg" alt="Destroy Environment"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/.github/workflows/destroy-environment.yml"><img src="https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/.github/workflows/destroy-environment.yml/badge.svg" alt="Destroy Environment"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-sync/actions/workflows/.github/workflows/destroy-environment.yml"><img src="https://github.com/frasermolyneux/portal-sync/actions/workflows/.github/workflows/destroy-environment.yml/badge.svg" alt="Destroy Environment"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-web/actions/workflows/.github/workflows/destroy-environment.yml"><img src="https://github.com/frasermolyneux/portal-web/actions/workflows/.github/workflows/destroy-environment.yml/badge.svg" alt="Destroy Environment"></a></td>
@@ -705,8 +676,8 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/portal-event-ingest/actions/workflows/.github/workflows/dependabot-automerge.yml"><img src="https://github.com/frasermolyneux/portal-event-ingest/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg" alt="Dependabot Auto-Merge"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-repository/actions/workflows/.github/workflows/dependabot-automerge.yml"><img src="https://github.com/frasermolyneux/portal-repository/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg" alt="Dependabot Auto-Merge"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-repository-func/actions/workflows/.github/workflows/dependabot-automerge.yml"><img src="https://github.com/frasermolyneux/portal-repository-func/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg" alt="Dependabot Auto-Merge"></a></td>
-<td class="no-workflow">—</td>
-<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/portal-server-agent/actions/workflows/.github/workflows/dependabot-automerge.yml"><img src="https://github.com/frasermolyneux/portal-server-agent/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg" alt="Dependabot Auto-Merge"></a></td>
+<td><a href="https://github.com/frasermolyneux/portal-server-events/actions/workflows/.github/workflows/dependabot-automerge.yml"><img src="https://github.com/frasermolyneux/portal-server-events/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg" alt="Dependabot Auto-Merge"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/.github/workflows/dependabot-automerge.yml"><img src="https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg" alt="Dependabot Auto-Merge"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-sync/actions/workflows/.github/workflows/dependabot-automerge.yml"><img src="https://github.com/frasermolyneux/portal-sync/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg" alt="Dependabot Auto-Merge"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-web/actions/workflows/.github/workflows/dependabot-automerge.yml"><img src="https://github.com/frasermolyneux/portal-web/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg" alt="Dependabot Auto-Merge"></a></td>
@@ -719,8 +690,8 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/portal-event-ingest/actions/workflows/dynamic/dependabot/dependabot-updates"><img src="https://github.com/frasermolyneux/portal-event-ingest/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg" alt="Dependabot Updates"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-repository/actions/workflows/dynamic/dependabot/dependabot-updates"><img src="https://github.com/frasermolyneux/portal-repository/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg" alt="Dependabot Updates"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-repository-func/actions/workflows/dynamic/dependabot/dependabot-updates"><img src="https://github.com/frasermolyneux/portal-repository-func/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg" alt="Dependabot Updates"></a></td>
-<td class="no-workflow">—</td>
-<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/portal-server-agent/actions/workflows/dynamic/dependabot/dependabot-updates"><img src="https://github.com/frasermolyneux/portal-server-agent/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg" alt="Dependabot Updates"></a></td>
+<td><a href="https://github.com/frasermolyneux/portal-server-events/actions/workflows/dynamic/dependabot/dependabot-updates"><img src="https://github.com/frasermolyneux/portal-server-events/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg" alt="Dependabot Updates"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/dynamic/dependabot/dependabot-updates"><img src="https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg" alt="Dependabot Updates"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-sync/actions/workflows/dynamic/dependabot/dependabot-updates"><img src="https://github.com/frasermolyneux/portal-sync/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg" alt="Dependabot Updates"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-web/actions/workflows/dynamic/dependabot/dependabot-updates"><img src="https://github.com/frasermolyneux/portal-web/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg" alt="Dependabot Updates"></a></td>
@@ -733,8 +704,8 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/portal-event-ingest/actions/workflows/.github/workflows/copilot-setup-steps.yml"><img src="https://github.com/frasermolyneux/portal-event-ingest/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg" alt="Copilot Setup Steps"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-repository/actions/workflows/.github/workflows/copilot-setup-steps.yml"><img src="https://github.com/frasermolyneux/portal-repository/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg" alt="Copilot Setup Steps"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-repository-func/actions/workflows/.github/workflows/copilot-setup-steps.yml"><img src="https://github.com/frasermolyneux/portal-repository-func/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg" alt="Copilot Setup Steps"></a></td>
-<td class="no-workflow">—</td>
-<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/portal-server-agent/actions/workflows/.github/workflows/copilot-setup-steps.yml"><img src="https://github.com/frasermolyneux/portal-server-agent/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg" alt="Copilot Setup Steps"></a></td>
+<td><a href="https://github.com/frasermolyneux/portal-server-events/actions/workflows/.github/workflows/copilot-setup-steps.yml"><img src="https://github.com/frasermolyneux/portal-server-events/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg" alt="Copilot Setup Steps"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/.github/workflows/copilot-setup-steps.yml"><img src="https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg" alt="Copilot Setup Steps"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-sync/actions/workflows/.github/workflows/copilot-setup-steps.yml"><img src="https://github.com/frasermolyneux/portal-sync/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg" alt="Copilot Setup Steps"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-web/actions/workflows/.github/workflows/copilot-setup-steps.yml"><img src="https://github.com/frasermolyneux/portal-web/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg" alt="Copilot Setup Steps"></a></td>
@@ -876,4 +847,4 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 ---
 Generated by scripts/estate-sync/estate_sync.py
 <!-- Auto-generated file; do not edit directly. -->
-Last updated: 2026-04-05 04:23 UTC
+Last updated: 2026-04-06 04:28 UTC
