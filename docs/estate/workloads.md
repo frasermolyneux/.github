@@ -49,10 +49,10 @@ Generated from platform-workloads/terraform/workloads (excluding examples).
 
 | Workload | Environments | Subscriptions |
 | --- | --- | --- |
-| 📁 [portal-bots](https://github.com/frasermolyneux/portal-bots) ([Detail](./repos/portal-bots.html)) | 🌍 Development, Production | 🔑 sub-visualstudio-enterprise, sub-xi-portal-prd |
+
 | 📁 [portal-core](https://github.com/frasermolyneux/portal-core) ([Detail](./repos/portal-core.html)) | 🌍 Development, Production | 🔑 sub-visualstudio-enterprise, sub-xi-portal-prd |
 | 📁 [portal-environments](https://github.com/frasermolyneux/portal-environments) ([Detail](./repos/portal-environments.html)) | 🌍 Development, Production | 🔑 sub-visualstudio-enterprise, sub-xi-portal-prd |
-| 📁 [portal-event-ingest](https://github.com/frasermolyneux/portal-event-ingest) ([Detail](./repos/portal-event-ingest.html)) | 🌍 Development, Production | 🔑 sub-visualstudio-enterprise, sub-xi-portal-prd |
+
 | 📁 [portal-repository](https://github.com/frasermolyneux/portal-repository) ([Detail](./repos/portal-repository.html)) | 🌍 Development, Production | 🔑 sub-visualstudio-enterprise, sub-xi-portal-prd |
 | 📁 [portal-repository-func](https://github.com/frasermolyneux/portal-repository-func) ([Detail](./repos/portal-repository-func.html)) | 🌍 Development, Production | 🔑 sub-visualstudio-enterprise, sub-xi-portal-prd |
 | 📁 [portal-server-agent](https://github.com/frasermolyneux/portal-server-agent) ([Detail](./repos/portal-server-agent.html)) | 🌍 Development, Production | 🔑 sub-visualstudio-enterprise, sub-xi-portal-prd |

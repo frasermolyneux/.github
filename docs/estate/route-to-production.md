@@ -23,10 +23,10 @@ This page is generated from repository workflows. Badges link to the owning work
 | 📁 [platform-notifications](https://github.com/frasermolyneux/platform-notifications) ([Detail](./repos/platform-notifications.html)) | 📦 Not configured | ✅ Not found |
 | 📁 [platform-registry](https://github.com/frasermolyneux/platform-registry) ([Detail](./repos/platform-registry.html)) | 📦 Not configured | ✅ Not found |
 | 📁 [platform-sitewatch-func](https://github.com/frasermolyneux/platform-sitewatch-func) ([Detail](./repos/platform-sitewatch-func.html)) | 📦 Not configured | ✅ Not found |
-| 📁 [portal-bots](https://github.com/frasermolyneux/portal-bots) ([Detail](./repos/portal-bots.html)) | 📦 Not configured | ✅ Not found |
+
 | 📁 [portal-core](https://github.com/frasermolyneux/portal-core) ([Detail](./repos/portal-core.html)) | 📦 Not configured | ✅ Not found |
 | 📁 [portal-environments](https://github.com/frasermolyneux/portal-environments) ([Detail](./repos/portal-environments.html)) | 📦 Not configured | ✅ Not found |
-| 📁 [portal-event-ingest](https://github.com/frasermolyneux/portal-event-ingest) ([Detail](./repos/portal-event-ingest.html)) | 📦 Not configured | ✅ Not found |
+
 | 📁 [portal-repository](https://github.com/frasermolyneux/portal-repository) ([Detail](./repos/portal-repository.html)) | 📦 Not configured | ✅ Not found |
 | 📁 [portal-repository-func](https://github.com/frasermolyneux/portal-repository-func) ([Detail](./repos/portal-repository-func.html)) | 📦 Not configured | ✅ Not found |
 | 📁 [portal-server-agent](https://github.com/frasermolyneux/portal-server-agent) ([Detail](./repos/portal-server-agent.html)) | 📦 Not configured | ✅ Not found |

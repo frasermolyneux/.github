@@ -21,10 +21,10 @@ All repositories with links to their detail pages.
 | 📁 [platform-notifications](https://github.com/frasermolyneux/platform-notifications) ([Detail](./platform-notifications.html)) | 🏢 - | 🌍 Development, Production | 🔑 sub-platform-shared, sub-visualstudio-enterprise |
 | 📁 [platform-registry](https://github.com/frasermolyneux/platform-registry) ([Detail](./platform-registry.html)) | 🏢 - | 🌍 Development, Production | 🔑 sub-platform-shared, sub-visualstudio-enterprise |
 | 📁 [platform-sitewatch-func](https://github.com/frasermolyneux/platform-sitewatch-func) ([Detail](./platform-sitewatch-func.html)) | 🏢 - | 🌍 Development, Production | 🔑 sub-platform-management, sub-visualstudio-enterprise |
-| 📁 [portal-bots](https://github.com/frasermolyneux/portal-bots) ([Detail](./portal-bots.html)) | 🏢 [XtremeIdiots](https://dev.azure.com/frasermolyneux/XtremeIdiots) | 🌍 Development, Production | 🔑 sub-visualstudio-enterprise, sub-xi-portal-prd |
+
 | 📁 [portal-core](https://github.com/frasermolyneux/portal-core) ([Detail](./portal-core.html)) | 🏢 - | 🌍 Development, Production | 🔑 sub-visualstudio-enterprise, sub-xi-portal-prd |
 | 📁 [portal-environments](https://github.com/frasermolyneux/portal-environments) ([Detail](./portal-environments.html)) | 🏢 - | 🌍 Development, Production | 🔑 sub-visualstudio-enterprise, sub-xi-portal-prd |
-| 📁 [portal-event-ingest](https://github.com/frasermolyneux/portal-event-ingest) ([Detail](./portal-event-ingest.html)) | 🏢 - | 🌍 Development, Production | 🔑 sub-visualstudio-enterprise, sub-xi-portal-prd |
+
 | 📁 [portal-repository](https://github.com/frasermolyneux/portal-repository) ([Detail](./portal-repository.html)) | 🏢 - | 🌍 Development, Production | 🔑 sub-visualstudio-enterprise, sub-xi-portal-prd |
 | 📁 [portal-repository-func](https://github.com/frasermolyneux/portal-repository-func) ([Detail](./portal-repository-func.html)) | 🏢 - | 🌍 Development, Production | 🔑 sub-visualstudio-enterprise, sub-xi-portal-prd |
 | 📁 [portal-server-agent](https://github.com/frasermolyneux/portal-server-agent) ([Detail](./portal-server-agent.html)) | 🏢 - | 🌍 Development, Production | 🔑 sub-visualstudio-enterprise, sub-xi-portal-prd |
