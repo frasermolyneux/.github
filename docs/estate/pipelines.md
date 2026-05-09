@@ -13,57 +13,68 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <th>Workflow</th>
 <th><a href="https://github.com/frasermolyneux/api-client-abstractions">api-client-abstractions</a><br><a href="./repos/api-client-abstractions.html" style="font-size:0.75em">detail</a></th>
 <th><a href="https://github.com/frasermolyneux/observability-appinsights">observability-appinsights</a><br><a href="./repos/observability-appinsights.html" style="font-size:0.75em">detail</a></th>
+<th><a href="https://github.com/frasermolyneux/observability-opentelemetry">observability-opentelemetry</a><br><a href="./repos/observability-opentelemetry.html" style="font-size:0.75em">detail</a></th>
 </tr></thead>
 <tbody>
 <tr>
 <td>Code Quality</td>
 <td><a href="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/.github/workflows/codequality.yml"><img src="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/.github/workflows/codequality.yml/badge.svg" alt="Code Quality"></a></td>
 <td><a href="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/.github/workflows/codequality.yml"><img src="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/.github/workflows/codequality.yml/badge.svg" alt="Code Quality"></a></td>
+<td><a href="https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/.github/workflows/codequality.yml"><img src="https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/.github/workflows/codequality.yml/badge.svg" alt="Code Quality"></a></td>
 </tr>
 <tr>
 <td>Build and Test</td>
 <td><a href="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/.github/workflows/build-and-test.yml"><img src="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/.github/workflows/build-and-test.yml/badge.svg" alt="Build and Test"></a></td>
 <td><a href="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/.github/workflows/build-and-test.yml"><img src="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/.github/workflows/build-and-test.yml/badge.svg" alt="Build and Test"></a></td>
+<td><a href="https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/.github/workflows/build-and-test.yml"><img src="https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/.github/workflows/build-and-test.yml/badge.svg" alt="Build and Test"></a></td>
 </tr>
 <tr>
 <td>PR Verify</td>
 <td><a href="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/.github/workflows/pr-verify.yml"><img src="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/.github/workflows/pr-verify.yml/badge.svg" alt="PR Verify"></a></td>
 <td><a href="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/.github/workflows/pr-verify.yml"><img src="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/.github/workflows/pr-verify.yml/badge.svg" alt="PR Verify"></a></td>
+<td><a href="https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/.github/workflows/pr-verify.yml"><img src="https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/.github/workflows/pr-verify.yml/badge.svg" alt="PR Verify"></a></td>
 </tr>
 <tr>
 <td>Release - Version and Tag</td>
 <td><a href="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/.github/workflows/release-version-and-tag.yml"><img src="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/.github/workflows/release-version-and-tag.yml/badge.svg" alt="Release - Version and Tag"></a></td>
 <td><a href="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/.github/workflows/release-version-and-tag.yml"><img src="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/.github/workflows/release-version-and-tag.yml/badge.svg" alt="Release - Version and Tag"></a></td>
+<td><a href="https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/.github/workflows/release-version-and-tag.yml"><img src="https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/.github/workflows/release-version-and-tag.yml/badge.svg" alt="Release - Version and Tag"></a></td>
 </tr>
 <tr>
 <td>Release - Publish NuGet</td>
 <td><a href="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/.github/workflows/release-publish-nuget.yml"><img src="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/.github/workflows/release-publish-nuget.yml/badge.svg" alt="Release - Publish NuGet"></a></td>
 <td><a href="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/.github/workflows/release-publish-nuget.yml"><img src="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/.github/workflows/release-publish-nuget.yml/badge.svg" alt="Release - Publish NuGet"></a></td>
+<td><a href="https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/.github/workflows/release-publish-nuget.yml"><img src="https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/.github/workflows/release-publish-nuget.yml/badge.svg" alt="Release - Publish NuGet"></a></td>
 </tr>
-<tr class="separator"><td colspan="3"></td></tr>
+<tr class="separator"><td colspan="4"></td></tr>
 <tr>
 <td>Dependabot Auto-Merge</td>
 <td><a href="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/.github/workflows/dependabot-automerge.yml"><img src="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg" alt="Dependabot Auto-Merge"></a></td>
 <td><a href="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/.github/workflows/dependabot-automerge.yml"><img src="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg" alt="Dependabot Auto-Merge"></a></td>
+<td><a href="https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/.github/workflows/dependabot-automerge.yml"><img src="https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg" alt="Dependabot Auto-Merge"></a></td>
 </tr>
 <tr>
 <td>Dependabot Updates</td>
 <td><a href="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/dynamic/dependabot/dependabot-updates"><img src="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg" alt="Dependabot Updates"></a></td>
 <td><a href="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/dynamic/dependabot/dependabot-updates"><img src="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg" alt="Dependabot Updates"></a></td>
+<td><a href="https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/dynamic/dependabot/dependabot-updates"><img src="https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg" alt="Dependabot Updates"></a></td>
 </tr>
 <tr>
 <td>Copilot Setup Steps</td>
 <td><a href="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/.github/workflows/copilot-setup-steps.yml"><img src="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg" alt="Copilot Setup Steps"></a></td>
 <td><a href="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/.github/workflows/copilot-setup-steps.yml"><img src="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg" alt="Copilot Setup Steps"></a></td>
+<td><a href="https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/.github/workflows/copilot-setup-steps.yml"><img src="https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg" alt="Copilot Setup Steps"></a></td>
 </tr>
 <tr>
 <td>Copilot coding agent</td>
 <td><a href="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot coding agent"></a></td>
 <td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
 </tr>
 <tr>
 <td>Copilot code review</td>
 <td><a href="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/dynamic/copilot-pull-request-reviewer/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/dynamic/copilot-pull-request-reviewer/copilot-pull-request-reviewer/badge.svg" alt="Copilot code review"></a></td>
+<td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 </tr>
 </tbody>
@@ -798,4 +809,4 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 ---
 Generated by scripts/estate-sync/estate_sync.py
 <!-- Auto-generated file; do not edit directly. -->
-Last updated: 2026-04-28 04:41 UTC
+Last updated: 2026-05-09 04:35 UTC
