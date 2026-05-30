@@ -103,6 +103,20 @@ Delete this section entirely if no contract changed.
 <!-- Explicit asks: "double-check the role-assignment scope on line X",
 "the OpenAPI transformer is the part I'm least sure about", etc. -->
 
+## Agent attestation
+
+<!--
+For agent-authored PRs the Coding-Agent PR Gate fails until every box below is ticked.
+Humans don't have to tick these — the gate only runs for Copilot-authored PRs or PRs labelled `coding-agent`.
+If you tick them anyway, nothing breaks.
+-->
+
+- [ ] Read `AGENTS.md` and all files in its **Required reading** section
+- [ ] Followed `personal.working-preferences.instructions.md` (no unsolicited git commit/push/branch operations)
+- [ ] Ran `code-review` sub-agent before declaring done
+- [ ] PR body cites each acceptance criterion from the originating issue
+- [ ] No client secrets / GUIDs / connection strings introduced
+
 ---
 
 <!--

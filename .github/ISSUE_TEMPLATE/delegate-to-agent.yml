@@ -103,14 +103,3 @@ body:
         - (optional) `terraform fmt -check -recursive`
     validations:
       required: true
-
-  - type: checkboxes
-    id: agent-attestation
-    attributes:
-      label: Agent-side attestation (the agent should tick these in the PR, not the requester)
-      options:
-        - label: Read `AGENTS.md` and all files in its **Required reading** section
-        - label: Followed `personal.working-preferences.instructions.md` (no git commit/push/branch operations beyond what is needed)
-        - label: Ran `code-review` sub-agent before declaring done
-        - label: PR body cites each acceptance criterion above
-        - label: No client secrets / GUIDs / connection strings introduced
