@@ -109,13 +109,14 @@ Delete this section entirely if no contract changed.
 For agent-authored PRs the Coding-Agent PR Gate fails until every box below is ticked.
 Humans don't have to tick these — the gate only runs for Copilot-authored PRs or PRs labelled `coding-agent`.
 If you tick them anyway, nothing breaks.
+
+Every box below must be verifiable from the PR itself (diff, validation evidence, linked issue).
+Do not add ceremonial boxes — they get ticked mechanically and add no safety.
 -->
 
-- [ ] Read `AGENTS.md` and all files in its **Required reading** section
-- [ ] Followed `personal.working-preferences.instructions.md` (no unsolicited git commit/push/branch operations)
-- [ ] Ran `code-review` sub-agent before declaring done
-- [ ] PR body cites each acceptance criterion from the originating issue
-- [ ] No client secrets / GUIDs / connection strings introduced
+- [ ] Ran `code-review` sub-agent; High/Medium findings resolved or justified above in **Reviewer focus areas**
+- [ ] PR body cites each acceptance criterion from the linked issue
+- [ ] No client secrets, GUIDs, connection strings, or hard-coded subscription IDs introduced (`standards.oidc-and-secrets.instructions.md`)
 
 ---
 
