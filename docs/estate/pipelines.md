@@ -714,7 +714,7 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot coding agent"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-sync/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/portal-sync/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot coding agent"></a></td>
-<td><a href="https://github.com/frasermolyneux/portal-web/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/portal-web/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot coding agent"></a></td>
+<td class="no-workflow">—</td>
 </tr>
 <tr>
 <td>Copilot code review</td>
@@ -735,10 +735,10 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/portal-repository/actions/workflows/.github/workflows/coding-agent-pr-gate.yml"><img src="https://github.com/frasermolyneux/portal-repository/actions/workflows/.github/workflows/coding-agent-pr-gate.yml/badge.svg" alt="Coding-Agent PR Gate"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-repository-func/actions/workflows/.github/workflows/coding-agent-pr-gate.yml"><img src="https://github.com/frasermolyneux/portal-repository-func/actions/workflows/.github/workflows/coding-agent-pr-gate.yml/badge.svg" alt="Coding-Agent PR Gate"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-server-agent/actions/workflows/.github/workflows/coding-agent-pr-gate.yml"><img src="https://github.com/frasermolyneux/portal-server-agent/actions/workflows/.github/workflows/coding-agent-pr-gate.yml/badge.svg" alt="Coding-Agent PR Gate"></a></td>
-<td class="no-workflow">—</td>
-<td class="no-workflow">—</td>
-<td class="no-workflow">—</td>
-<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/portal-server-events/actions/workflows/.github/workflows/coding-agent-pr-gate.yml"><img src="https://github.com/frasermolyneux/portal-server-events/actions/workflows/.github/workflows/coding-agent-pr-gate.yml/badge.svg" alt="Coding-Agent PR Gate"></a></td>
+<td><a href="https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/.github/workflows/coding-agent-pr-gate.yml"><img src="https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/.github/workflows/coding-agent-pr-gate.yml/badge.svg" alt="Coding-Agent PR Gate"></a></td>
+<td><a href="https://github.com/frasermolyneux/portal-sync/actions/workflows/.github/workflows/coding-agent-pr-gate.yml"><img src="https://github.com/frasermolyneux/portal-sync/actions/workflows/.github/workflows/coding-agent-pr-gate.yml/badge.svg" alt="Coding-Agent PR Gate"></a></td>
+<td><a href="https://github.com/frasermolyneux/portal-web/actions/workflows/.github/workflows/coding-agent-pr-gate.yml"><img src="https://github.com/frasermolyneux/portal-web/actions/workflows/.github/workflows/coding-agent-pr-gate.yml/badge.svg" alt="Coding-Agent PR Gate"></a></td>
 </tr>
 <tr>
 <td>Contract Changed Gate</td>
@@ -747,7 +747,43 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/portal-repository/actions/workflows/.github/workflows/contract-changed.yml"><img src="https://github.com/frasermolyneux/portal-repository/actions/workflows/.github/workflows/contract-changed.yml/badge.svg" alt="Contract Changed Gate"></a></td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/portal-server-events/actions/workflows/.github/workflows/contract-changed.yml"><img src="https://github.com/frasermolyneux/portal-server-events/actions/workflows/.github/workflows/contract-changed.yml/badge.svg" alt="Contract Changed Gate"></a></td>
+<td><a href="https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/.github/workflows/contract-changed.yml"><img src="https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/.github/workflows/contract-changed.yml/badge.svg" alt="Contract Changed Gate"></a></td>
 <td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+</tr>
+<tr>
+<td>Copilot</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/portal-web/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/portal-web/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
+</tr>
+<tr>
+<td>Copilot cloud agent</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/portal-web/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/portal-web/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot cloud agent"></a></td>
+</tr>
+<tr>
+<td>Mirror Issue Labels to PR</td>
+<td><a href="https://github.com/frasermolyneux/portal-core/actions/workflows/.github/workflows/mirror-issue-labels.yml"><img src="https://github.com/frasermolyneux/portal-core/actions/workflows/.github/workflows/mirror-issue-labels.yml/badge.svg" alt="Mirror Issue Labels to PR"></a></td>
+<td><a href="https://github.com/frasermolyneux/portal-environments/actions/workflows/.github/workflows/mirror-issue-labels.yml"><img src="https://github.com/frasermolyneux/portal-environments/actions/workflows/.github/workflows/mirror-issue-labels.yml/badge.svg" alt="Mirror Issue Labels to PR"></a></td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/portal-server-agent/actions/workflows/.github/workflows/mirror-issue-labels.yml"><img src="https://github.com/frasermolyneux/portal-server-agent/actions/workflows/.github/workflows/mirror-issue-labels.yml/badge.svg" alt="Mirror Issue Labels to PR"></a></td>
+<td><a href="https://github.com/frasermolyneux/portal-server-events/actions/workflows/.github/workflows/mirror-issue-labels.yml"><img src="https://github.com/frasermolyneux/portal-server-events/actions/workflows/.github/workflows/mirror-issue-labels.yml/badge.svg" alt="Mirror Issue Labels to PR"></a></td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
@@ -833,4 +869,4 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 ---
 Generated by scripts/estate-sync/estate_sync.py
 <!-- Auto-generated file; do not edit directly. -->
-Last updated: 2026-05-30 05:08 UTC
+Last updated: 2026-05-30 07:01 UTC
