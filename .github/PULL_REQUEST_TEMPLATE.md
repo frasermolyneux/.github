@@ -106,9 +106,8 @@ Delete this section entirely if no contract changed.
 ## Agent attestation
 
 <!--
-For agent-authored PRs the Coding-Agent PR Gate fails until every box below is ticked.
-Humans don't have to tick these — the gate only runs for Copilot-authored PRs or PRs labelled `coding-agent`.
-If you tick them anyway, nothing breaks.
+For agent-authored PRs, complete every box below before requesting review.
+Humans can leave these unticked when not applicable.
 
 Every box below must be verifiable from the PR itself (diff, validation evidence, linked issue).
 Do not add ceremonial boxes — they get ticked mechanically and add no safety.
