@@ -12,6 +12,7 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <thead><tr>
 <th>Workflow</th>
 <th><a href="https://github.com/frasermolyneux/api-client-abstractions">api-client-abstractions</a><br><a href="./repos/api-client-abstractions.html" style="font-size:0.75em">detail</a></th>
+<th><a href="https://github.com/frasermolyneux/github-copilot">github-copilot</a><br><a href="./repos/github-copilot.html" style="font-size:0.75em">detail</a></th>
 <th><a href="https://github.com/frasermolyneux/observability-appinsights">observability-appinsights</a><br><a href="./repos/observability-appinsights.html" style="font-size:0.75em">detail</a></th>
 <th><a href="https://github.com/frasermolyneux/observability-opentelemetry">observability-opentelemetry</a><br><a href="./repos/observability-opentelemetry.html" style="font-size:0.75em">detail</a></th>
 </tr></thead>
@@ -19,49 +20,57 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <tr>
 <td>Code Quality</td>
 <td><a href="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/.github/workflows/codequality.yml"><img src="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/.github/workflows/codequality.yml/badge.svg" alt="Code Quality"></a></td>
+<td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/.github/workflows/codequality.yml"><img src="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/.github/workflows/codequality.yml/badge.svg" alt="Code Quality"></a></td>
 <td><a href="https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/.github/workflows/codequality.yml"><img src="https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/.github/workflows/codequality.yml/badge.svg" alt="Code Quality"></a></td>
 </tr>
 <tr>
 <td>Build and Test</td>
 <td><a href="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/.github/workflows/build-and-test.yml"><img src="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/.github/workflows/build-and-test.yml/badge.svg" alt="Build and Test"></a></td>
+<td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/.github/workflows/build-and-test.yml"><img src="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/.github/workflows/build-and-test.yml/badge.svg" alt="Build and Test"></a></td>
 <td><a href="https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/.github/workflows/build-and-test.yml"><img src="https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/.github/workflows/build-and-test.yml/badge.svg" alt="Build and Test"></a></td>
 </tr>
 <tr>
 <td>PR Verify</td>
 <td><a href="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/.github/workflows/pr-verify.yml"><img src="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/.github/workflows/pr-verify.yml/badge.svg" alt="PR Verify"></a></td>
+<td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/.github/workflows/pr-verify.yml"><img src="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/.github/workflows/pr-verify.yml/badge.svg" alt="PR Verify"></a></td>
 <td><a href="https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/.github/workflows/pr-verify.yml"><img src="https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/.github/workflows/pr-verify.yml/badge.svg" alt="PR Verify"></a></td>
 </tr>
 <tr>
 <td>Release - Version and Tag</td>
 <td><a href="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/.github/workflows/release-version-and-tag.yml"><img src="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/.github/workflows/release-version-and-tag.yml/badge.svg" alt="Release - Version and Tag"></a></td>
+<td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/.github/workflows/release-version-and-tag.yml"><img src="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/.github/workflows/release-version-and-tag.yml/badge.svg" alt="Release - Version and Tag"></a></td>
 <td><a href="https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/.github/workflows/release-version-and-tag.yml"><img src="https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/.github/workflows/release-version-and-tag.yml/badge.svg" alt="Release - Version and Tag"></a></td>
 </tr>
 <tr>
 <td>Release - Publish NuGet</td>
 <td><a href="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/.github/workflows/release-publish-nuget.yml"><img src="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/.github/workflows/release-publish-nuget.yml/badge.svg" alt="Release - Publish NuGet"></a></td>
+<td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/.github/workflows/release-publish-nuget.yml"><img src="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/.github/workflows/release-publish-nuget.yml/badge.svg" alt="Release - Publish NuGet"></a></td>
 <td><a href="https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/.github/workflows/release-publish-nuget.yml"><img src="https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/.github/workflows/release-publish-nuget.yml/badge.svg" alt="Release - Publish NuGet"></a></td>
 </tr>
-<tr class="separator"><td colspan="4"></td></tr>
+<tr class="separator"><td colspan="5"></td></tr>
 <tr>
 <td>Dependabot Auto-Merge</td>
 <td><a href="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/.github/workflows/dependabot-automerge.yml"><img src="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg" alt="Dependabot Auto-Merge"></a></td>
+<td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/.github/workflows/dependabot-automerge.yml"><img src="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg" alt="Dependabot Auto-Merge"></a></td>
 <td><a href="https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/.github/workflows/dependabot-automerge.yml"><img src="https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg" alt="Dependabot Auto-Merge"></a></td>
 </tr>
 <tr>
 <td>Dependabot Updates</td>
 <td><a href="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/dynamic/dependabot/dependabot-updates"><img src="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg" alt="Dependabot Updates"></a></td>
+<td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/dynamic/dependabot/dependabot-updates"><img src="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg" alt="Dependabot Updates"></a></td>
 <td><a href="https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/dynamic/dependabot/dependabot-updates"><img src="https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg" alt="Dependabot Updates"></a></td>
 </tr>
 <tr>
 <td>Copilot Setup Steps</td>
 <td><a href="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/.github/workflows/copilot-setup-steps.yml"><img src="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg" alt="Copilot Setup Steps"></a></td>
+<td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/.github/workflows/copilot-setup-steps.yml"><img src="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg" alt="Copilot Setup Steps"></a></td>
 <td><a href="https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/.github/workflows/copilot-setup-steps.yml"><img src="https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg" alt="Copilot Setup Steps"></a></td>
 </tr>
@@ -70,11 +79,20 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot coding agent"></a></td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
 </tr>
 <tr>
 <td>Copilot code review</td>
 <td><a href="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/dynamic/copilot-pull-request-reviewer/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/dynamic/copilot-pull-request-reviewer/copilot-pull-request-reviewer/badge.svg" alt="Copilot code review"></a></td>
 <td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+</tr>
+<tr>
+<td>Copilot</td>
+<td><a href="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td class="no-workflow">—</td>
 </tr>
 </tbody>
@@ -153,6 +171,10 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td>Automatic Dependency Submission</td>
 <td><a href="https://github.com/frasermolyneux/geo-location/actions/workflows/dynamic/dependency-graph/auto-submission"><img src="https://github.com/frasermolyneux/geo-location/actions/workflows/dynamic/dependency-graph/auto-submission/badge.svg" alt="Automatic Dependency Submission"></a></td>
 </tr>
+<tr>
+<td>Copilot</td>
+<td><a href="https://github.com/frasermolyneux/geo-location/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/geo-location/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -229,6 +251,11 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td>Copilot code review</td>
 <td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/talkwithtiles/actions/workflows/dynamic/copilot-pull-request-reviewer/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/talkwithtiles/actions/workflows/dynamic/copilot-pull-request-reviewer/copilot-pull-request-reviewer/badge.svg" alt="Copilot code review"></a></td>
+</tr>
+<tr>
+<td>Copilot</td>
+<td><a href="https://github.com/frasermolyneux/craftpledge/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/craftpledge/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
+<td><a href="https://github.com/frasermolyneux/talkwithtiles/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/talkwithtiles/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 </tr>
 </tbody>
 </table>
@@ -346,6 +373,13 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/molyneux-me/actions/workflows/dynamic/copilot-pull-request-reviewer/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/molyneux-me/actions/workflows/dynamic/copilot-pull-request-reviewer/copilot-pull-request-reviewer/badge.svg" alt="Copilot code review"></a></td>
 <td><a href="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/dynamic/copilot-pull-request-reviewer/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/dynamic/copilot-pull-request-reviewer/copilot-pull-request-reviewer/badge.svg" alt="Copilot code review"></a></td>
 <td><a href="https://github.com/frasermolyneux/twenty-one/actions/workflows/dynamic/copilot-pull-request-reviewer/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/twenty-one/actions/workflows/dynamic/copilot-pull-request-reviewer/copilot-pull-request-reviewer/badge.svg" alt="Copilot code review"></a></td>
+</tr>
+<tr>
+<td>Copilot</td>
+<td><a href="https://github.com/frasermolyneux/invision-api-client/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/invision-api-client/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
+<td><a href="https://github.com/frasermolyneux/molyneux-me/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/molyneux-me/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
+<td><a href="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
+<td><a href="https://github.com/frasermolyneux/twenty-one/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/twenty-one/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 </tr>
 </tbody>
 </table>
@@ -526,13 +560,13 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 </tr>
 <tr>
 <td>Copilot</td>
+<td><a href="https://github.com/frasermolyneux/platform-connectivity/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/platform-connectivity/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
+<td><a href="https://github.com/frasermolyneux/platform-hosting/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/platform-hosting/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/platform-monitoring/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/platform-monitoring/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td class="no-workflow">—</td>
-<td class="no-workflow">—</td>
-<td class="no-workflow">—</td>
-<td class="no-workflow">—</td>
-<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/platform-registry/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/platform-registry/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td><a href="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 </tr>
 <tr>
@@ -753,13 +787,13 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <tr>
 <td>Copilot</td>
 <td><a href="https://github.com/frasermolyneux/portal-core/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/portal-core/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
-<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/portal-environments/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/portal-environments/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-repository/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/portal-repository/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
-<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/portal-repository-func/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/portal-repository-func/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-server-agent/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/portal-server-agent/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
-<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/portal-server-events/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/portal-server-events/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
-<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/portal-sync/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/portal-sync/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-web/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/portal-web/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 </tr>
 <tr>
@@ -858,6 +892,11 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/dynamic/copilot-pull-request-reviewer/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/dynamic/copilot-pull-request-reviewer/copilot-pull-request-reviewer/badge.svg" alt="Copilot code review"></a></td>
 <td class="no-workflow">—</td>
 </tr>
+<tr>
+<td>Copilot</td>
+<td><a href="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
+<td><a href="https://github.com/frasermolyneux/demo-manager/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/demo-manager/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -867,4 +906,4 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 ---
 Generated by scripts/estate-sync/estate_sync.py
 <!-- Auto-generated file; do not edit directly. -->
-Last updated: 2026-06-10 05:00 UTC
+Last updated: 2026-06-11 05:03 UTC
