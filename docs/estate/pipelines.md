@@ -402,7 +402,7 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/platform-notifications/actions/workflows/.github/workflows/codequality.yml"><img src="https://github.com/frasermolyneux/platform-notifications/actions/workflows/.github/workflows/codequality.yml/badge.svg" alt="Code Quality"></a></td>
 <td><a href="https://github.com/frasermolyneux/platform-registry/actions/workflows/.github/workflows/codequality.yml"><img src="https://github.com/frasermolyneux/platform-registry/actions/workflows/.github/workflows/codequality.yml/badge.svg" alt="Code Quality"></a></td>
 <td><a href="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/.github/workflows/codequality.yml"><img src="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/.github/workflows/codequality.yml/badge.svg" alt="Code Quality"></a></td>
-<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/platform-status-web/actions/workflows/.github/workflows/codequality.yml"><img src="https://github.com/frasermolyneux/platform-status-web/actions/workflows/.github/workflows/codequality.yml/badge.svg" alt="Code Quality"></a></td>
 </tr>
 <tr>
 <td>Build and Test</td>
@@ -426,7 +426,7 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/platform-notifications/actions/workflows/.github/workflows/pr-verify.yml"><img src="https://github.com/frasermolyneux/platform-notifications/actions/workflows/.github/workflows/pr-verify.yml/badge.svg" alt="PR Verify"></a></td>
 <td><a href="https://github.com/frasermolyneux/platform-registry/actions/workflows/.github/workflows/pr-verify.yml"><img src="https://github.com/frasermolyneux/platform-registry/actions/workflows/.github/workflows/pr-verify.yml/badge.svg" alt="PR Verify"></a></td>
 <td><a href="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/.github/workflows/pr-verify.yml"><img src="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/.github/workflows/pr-verify.yml/badge.svg" alt="PR Verify"></a></td>
-<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/platform-status-web/actions/workflows/.github/workflows/pr-verify.yml"><img src="https://github.com/frasermolyneux/platform-status-web/actions/workflows/.github/workflows/pr-verify.yml/badge.svg" alt="PR Verify"></a></td>
 </tr>
 <tr>
 <td>Release - Version and Tag</td>
@@ -562,6 +562,18 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 </tr>
 <tr>
+<td>Azure Static Web Apps CI/CD</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/platform-status-web/actions/workflows/.github/workflows/azure-static-web-apps.yml"><img src="https://github.com/frasermolyneux/platform-status-web/actions/workflows/.github/workflows/azure-static-web-apps.yml/badge.svg" alt="Azure Static Web Apps CI/CD"></a></td>
+</tr>
+<tr>
 <td>Copilot</td>
 <td><a href="https://github.com/frasermolyneux/platform-connectivity/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/platform-connectivity/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td><a href="https://github.com/frasermolyneux/platform-hosting/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/platform-hosting/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
@@ -571,7 +583,7 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/platform-registry/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/platform-registry/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td><a href="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
-<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/platform-status-web/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/platform-status-web/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 </tr>
 <tr>
 <td>Copilot cloud agent</td>
@@ -911,4 +923,4 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 ---
 Generated by scripts/estate-sync/estate_sync.py
 <!-- Auto-generated file; do not edit directly. -->
-Last updated: 2026-06-18 05:06 UTC
+Last updated: 2026-06-19 05:14 UTC
