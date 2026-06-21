@@ -825,18 +825,6 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/portal-web/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/portal-web/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot cloud agent"></a></td>
 </tr>
-<tr>
-<td>Mirror Issue Labels to PR</td>
-<td><a href="https://github.com/frasermolyneux/portal-core/actions/workflows/.github/workflows/mirror-issue-labels.yml"><img src="https://github.com/frasermolyneux/portal-core/actions/workflows/.github/workflows/mirror-issue-labels.yml/badge.svg" alt="Mirror Issue Labels to PR"></a></td>
-<td><a href="https://github.com/frasermolyneux/portal-environments/actions/workflows/.github/workflows/mirror-issue-labels.yml"><img src="https://github.com/frasermolyneux/portal-environments/actions/workflows/.github/workflows/mirror-issue-labels.yml/badge.svg" alt="Mirror Issue Labels to PR"></a></td>
-<td><a href="https://github.com/frasermolyneux/portal-repository/actions/workflows/.github/workflows/mirror-issue-labels.yml"><img src="https://github.com/frasermolyneux/portal-repository/actions/workflows/.github/workflows/mirror-issue-labels.yml/badge.svg" alt="Mirror Issue Labels to PR"></a></td>
-<td><a href="https://github.com/frasermolyneux/portal-repository-func/actions/workflows/.github/workflows/mirror-issue-labels.yml"><img src="https://github.com/frasermolyneux/portal-repository-func/actions/workflows/.github/workflows/mirror-issue-labels.yml/badge.svg" alt="Mirror Issue Labels to PR"></a></td>
-<td><a href="https://github.com/frasermolyneux/portal-server-agent/actions/workflows/.github/workflows/mirror-issue-labels.yml"><img src="https://github.com/frasermolyneux/portal-server-agent/actions/workflows/.github/workflows/mirror-issue-labels.yml/badge.svg" alt="Mirror Issue Labels to PR"></a></td>
-<td><a href="https://github.com/frasermolyneux/portal-server-events/actions/workflows/.github/workflows/mirror-issue-labels.yml"><img src="https://github.com/frasermolyneux/portal-server-events/actions/workflows/.github/workflows/mirror-issue-labels.yml/badge.svg" alt="Mirror Issue Labels to PR"></a></td>
-<td><a href="https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/.github/workflows/mirror-issue-labels.yml"><img src="https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/.github/workflows/mirror-issue-labels.yml/badge.svg" alt="Mirror Issue Labels to PR"></a></td>
-<td><a href="https://github.com/frasermolyneux/portal-sync/actions/workflows/.github/workflows/mirror-issue-labels.yml"><img src="https://github.com/frasermolyneux/portal-sync/actions/workflows/.github/workflows/mirror-issue-labels.yml/badge.svg" alt="Mirror Issue Labels to PR"></a></td>
-<td><a href="https://github.com/frasermolyneux/portal-web/actions/workflows/.github/workflows/mirror-issue-labels.yml"><img src="https://github.com/frasermolyneux/portal-web/actions/workflows/.github/workflows/mirror-issue-labels.yml/badge.svg" alt="Mirror Issue Labels to PR"></a></td>
-</tr>
 </tbody>
 </table>
 </div>
