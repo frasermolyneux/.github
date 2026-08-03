@@ -1,12 +1,12 @@
 🏠 [Home](../../index.html) | 📦 [Workloads](../workloads.html) | 🧪 [Pipelines](../pipelines.html) | ⏰ [Scheduling](../pipeline-scheduling.html) | 📚 [Repos](../repos/index.html)
 
-# geo-location
+# trip-side-kick
 
 Workloads in this category.
 
 | Workload | Environments | Subscriptions |
 | --- | --- | --- |
-| 📁 [geo-location](https://github.com/frasermolyneux/geo-location) ([Detail](../repos/geo-location.html)) | 🌍 Development, Production | 🔑 sub-platform-shared, sub-visualstudio-enterprise |
+| 📁 [trip-side-kick](https://github.com/frasermolyneux/trip-side-kick) ([Detail](../repos/trip-side-kick.html)) | 🌍 Development, Production | 🔑 sub-platform-shared, sub-visualstudio-enterprise |
 
 
 ---

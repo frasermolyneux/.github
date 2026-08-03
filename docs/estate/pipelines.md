@@ -91,7 +91,7 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <tr>
 <td>Copilot</td>
 <td><a href="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
-<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/dotnet-caching/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/dotnet-caching/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td><a href="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td class="no-workflow">—</td>
 </tr>
@@ -402,6 +402,7 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <th><a href="https://github.com/frasermolyneux/platform-registry">platform-registry</a><br><a href="./repos/platform-registry.html" style="font-size:0.75em">detail</a></th>
 <th><a href="https://github.com/frasermolyneux/platform-sitewatch-func">platform-sitewatch-func</a><br><a href="./repos/platform-sitewatch-func.html" style="font-size:0.75em">detail</a></th>
 <th><a href="https://github.com/frasermolyneux/platform-status-web">platform-status-web</a><br><a href="./repos/platform-status-web.html" style="font-size:0.75em">detail</a></th>
+<th><a href="https://github.com/frasermolyneux/status-pages">status-pages</a><br><a href="./repos/status-pages.html" style="font-size:0.75em">detail</a></th>
 </tr></thead>
 <tbody>
 <tr>
@@ -415,6 +416,7 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/platform-registry/actions/workflows/.github/workflows/codequality.yml"><img src="https://github.com/frasermolyneux/platform-registry/actions/workflows/.github/workflows/codequality.yml/badge.svg" alt="Code Quality"></a></td>
 <td><a href="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/.github/workflows/codequality.yml"><img src="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/.github/workflows/codequality.yml/badge.svg" alt="Code Quality"></a></td>
 <td><a href="https://github.com/frasermolyneux/platform-status-web/actions/workflows/.github/workflows/codequality.yml"><img src="https://github.com/frasermolyneux/platform-status-web/actions/workflows/.github/workflows/codequality.yml/badge.svg" alt="Code Quality"></a></td>
+<td class="no-workflow">—</td>
 </tr>
 <tr>
 <td>Build and Test</td>
@@ -427,6 +429,7 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/platform-registry/actions/workflows/.github/workflows/build-and-test.yml"><img src="https://github.com/frasermolyneux/platform-registry/actions/workflows/.github/workflows/build-and-test.yml/badge.svg" alt="Build and Test"></a></td>
 <td><a href="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/.github/workflows/build-and-test.yml"><img src="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/.github/workflows/build-and-test.yml/badge.svg" alt="Build and Test"></a></td>
 <td><a href="https://github.com/frasermolyneux/platform-status-web/actions/workflows/.github/workflows/build-and-test.yml"><img src="https://github.com/frasermolyneux/platform-status-web/actions/workflows/.github/workflows/build-and-test.yml/badge.svg" alt="Build and Test"></a></td>
+<td class="no-workflow">—</td>
 </tr>
 <tr>
 <td>PR Verify</td>
@@ -439,6 +442,7 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/platform-registry/actions/workflows/.github/workflows/pr-verify.yml"><img src="https://github.com/frasermolyneux/platform-registry/actions/workflows/.github/workflows/pr-verify.yml/badge.svg" alt="PR Verify"></a></td>
 <td><a href="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/.github/workflows/pr-verify.yml"><img src="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/.github/workflows/pr-verify.yml/badge.svg" alt="PR Verify"></a></td>
 <td><a href="https://github.com/frasermolyneux/platform-status-web/actions/workflows/.github/workflows/pr-verify.yml"><img src="https://github.com/frasermolyneux/platform-status-web/actions/workflows/.github/workflows/pr-verify.yml/badge.svg" alt="PR Verify"></a></td>
+<td class="no-workflow">—</td>
 </tr>
 <tr>
 <td>Release - Version and Tag</td>
@@ -448,6 +452,7 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/platform-notifications/actions/workflows/.github/workflows/release-version-and-tag.yml"><img src="https://github.com/frasermolyneux/platform-notifications/actions/workflows/.github/workflows/release-version-and-tag.yml/badge.svg" alt="Release - Version and Tag"></a></td>
+<td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
@@ -463,6 +468,7 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
 </tr>
 <tr>
 <td>Deploy Dev</td>
@@ -475,6 +481,7 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/platform-registry/actions/workflows/.github/workflows/deploy-dev.yml"><img src="https://github.com/frasermolyneux/platform-registry/actions/workflows/.github/workflows/deploy-dev.yml/badge.svg" alt="Deploy Dev"></a></td>
 <td><a href="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/.github/workflows/deploy-dev.yml"><img src="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/.github/workflows/deploy-dev.yml/badge.svg" alt="Deploy Dev"></a></td>
 <td><a href="https://github.com/frasermolyneux/platform-status-web/actions/workflows/.github/workflows/deploy-dev.yml"><img src="https://github.com/frasermolyneux/platform-status-web/actions/workflows/.github/workflows/deploy-dev.yml/badge.svg" alt="Deploy Dev"></a></td>
+<td class="no-workflow">—</td>
 </tr>
 <tr>
 <td>Deploy Prd</td>
@@ -487,6 +494,7 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/platform-registry/actions/workflows/.github/workflows/deploy-prd.yml"><img src="https://github.com/frasermolyneux/platform-registry/actions/workflows/.github/workflows/deploy-prd.yml/badge.svg" alt="Deploy Prd"></a></td>
 <td><a href="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/.github/workflows/deploy-prd.yml"><img src="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/.github/workflows/deploy-prd.yml/badge.svg" alt="Deploy Prd"></a></td>
 <td><a href="https://github.com/frasermolyneux/platform-status-web/actions/workflows/.github/workflows/deploy-prd.yml"><img src="https://github.com/frasermolyneux/platform-status-web/actions/workflows/.github/workflows/deploy-prd.yml/badge.svg" alt="Deploy Prd"></a></td>
+<td class="no-workflow">—</td>
 </tr>
 <tr>
 <td>Destroy Development</td>
@@ -499,6 +507,7 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/.github/workflows/destroy-development.yml"><img src="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/.github/workflows/destroy-development.yml/badge.svg" alt="Destroy Development"></a></td>
 <td><a href="https://github.com/frasermolyneux/platform-status-web/actions/workflows/.github/workflows/destroy-development.yml"><img src="https://github.com/frasermolyneux/platform-status-web/actions/workflows/.github/workflows/destroy-development.yml/badge.svg" alt="Destroy Development"></a></td>
+<td class="no-workflow">—</td>
 </tr>
 <tr>
 <td>Destroy Environment</td>
@@ -511,8 +520,9 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/platform-registry/actions/workflows/.github/workflows/destroy-environment.yml"><img src="https://github.com/frasermolyneux/platform-registry/actions/workflows/.github/workflows/destroy-environment.yml/badge.svg" alt="Destroy Environment"></a></td>
 <td><a href="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/.github/workflows/destroy-environment.yml"><img src="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/.github/workflows/destroy-environment.yml/badge.svg" alt="Destroy Environment"></a></td>
 <td><a href="https://github.com/frasermolyneux/platform-status-web/actions/workflows/.github/workflows/destroy-environment.yml"><img src="https://github.com/frasermolyneux/platform-status-web/actions/workflows/.github/workflows/destroy-environment.yml/badge.svg" alt="Destroy Environment"></a></td>
+<td class="no-workflow">—</td>
 </tr>
-<tr class="separator"><td colspan="10"></td></tr>
+<tr class="separator"><td colspan="11"></td></tr>
 <tr>
 <td>Dependabot Auto-Merge</td>
 <td><a href="https://github.com/frasermolyneux/platform-connectivity/actions/workflows/.github/workflows/dependabot-automerge.yml"><img src="https://github.com/frasermolyneux/platform-connectivity/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg" alt="Dependabot Auto-Merge"></a></td>
@@ -524,6 +534,7 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/platform-registry/actions/workflows/.github/workflows/dependabot-automerge.yml"><img src="https://github.com/frasermolyneux/platform-registry/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg" alt="Dependabot Auto-Merge"></a></td>
 <td><a href="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/.github/workflows/dependabot-automerge.yml"><img src="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg" alt="Dependabot Auto-Merge"></a></td>
 <td><a href="https://github.com/frasermolyneux/platform-status-web/actions/workflows/.github/workflows/dependabot-automerge.yml"><img src="https://github.com/frasermolyneux/platform-status-web/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg" alt="Dependabot Auto-Merge"></a></td>
+<td class="no-workflow">—</td>
 </tr>
 <tr>
 <td>Dependabot Updates</td>
@@ -536,6 +547,7 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/platform-registry/actions/workflows/dynamic/dependabot/dependabot-updates"><img src="https://github.com/frasermolyneux/platform-registry/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg" alt="Dependabot Updates"></a></td>
 <td><a href="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/dynamic/dependabot/dependabot-updates"><img src="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg" alt="Dependabot Updates"></a></td>
 <td><a href="https://github.com/frasermolyneux/platform-status-web/actions/workflows/dynamic/dependabot/dependabot-updates"><img src="https://github.com/frasermolyneux/platform-status-web/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg" alt="Dependabot Updates"></a></td>
+<td class="no-workflow">—</td>
 </tr>
 <tr>
 <td>Copilot Setup Steps</td>
@@ -548,10 +560,12 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/.github/workflows/copilot-setup-steps.yml"><img src="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg" alt="Copilot Setup Steps"></a></td>
 <td><a href="https://github.com/frasermolyneux/platform-status-web/actions/workflows/.github/workflows/copilot-setup-steps.yml"><img src="https://github.com/frasermolyneux/platform-status-web/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg" alt="Copilot Setup Steps"></a></td>
+<td class="no-workflow">—</td>
 </tr>
 <tr>
 <td>Copilot coding agent</td>
 <td><a href="https://github.com/frasermolyneux/platform-connectivity/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/platform-connectivity/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot coding agent"></a></td>
+<td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
@@ -572,6 +586,7 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/dynamic/copilot-pull-request-reviewer/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/dynamic/copilot-pull-request-reviewer/copilot-pull-request-reviewer/badge.svg" alt="Copilot code review"></a></td>
 <td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
 </tr>
 <tr>
 <td>Azure Static Web Apps CI/CD</td>
@@ -584,6 +599,7 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/platform-status-web/actions/workflows/.github/workflows/azure-static-web-apps.yml"><img src="https://github.com/frasermolyneux/platform-status-web/actions/workflows/.github/workflows/azure-static-web-apps.yml/badge.svg" alt="Azure Static Web Apps CI/CD"></a></td>
+<td class="no-workflow">—</td>
 </tr>
 <tr>
 <td>Copilot</td>
@@ -596,6 +612,7 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/platform-registry/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/platform-registry/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td><a href="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td><a href="https://github.com/frasermolyneux/platform-status-web/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/platform-status-web/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
+<td class="no-workflow">—</td>
 </tr>
 <tr>
 <td>Copilot cloud agent</td>
@@ -607,6 +624,7 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot cloud agent"></a></td>
+<td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 </tr>
 </tbody>
@@ -874,6 +892,21 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 </div>
 
 <div class="pipeline-category">
+<h2>trip-side-kick</h2>
+
+<div class="pipeline-matrix-wrap">
+<table class="pipeline-matrix">
+<thead><tr>
+<th>Workflow</th>
+<th><a href="https://github.com/frasermolyneux/trip-side-kick">trip-side-kick</a><br><a href="./repos/trip-side-kick.html" style="font-size:0.75em">detail</a></th>
+</tr></thead>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="pipeline-category">
 <h2>xtremeidiots</h2>
 
 <div class="pipeline-matrix-wrap">
@@ -954,4 +987,4 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 ---
 Generated by scripts/estate-sync/estate_sync.py
 <!-- Auto-generated file; do not edit directly. -->
-Last updated: 2026-08-02 04:37 UTC
+Last updated: 2026-08-03 04:41 UTC
