@@ -608,7 +608,7 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/platform-monitoring/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/platform-monitoring/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
-<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/platform-notifications/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/platform-notifications/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td><a href="https://github.com/frasermolyneux/platform-registry/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/platform-registry/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td><a href="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td><a href="https://github.com/frasermolyneux/platform-status-web/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/platform-status-web/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
@@ -901,6 +901,51 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <th><a href="https://github.com/frasermolyneux/trip-side-kick">trip-side-kick</a><br><a href="./repos/trip-side-kick.html" style="font-size:0.75em">detail</a></th>
 </tr></thead>
 <tbody>
+<tr>
+<td>Code Quality</td>
+<td><a href="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/codequality.yml"><img src="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/codequality.yml/badge.svg" alt="Code Quality"></a></td>
+</tr>
+<tr>
+<td>Build and Test</td>
+<td><a href="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/build-and-test.yml"><img src="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/build-and-test.yml/badge.svg" alt="Build and Test"></a></td>
+</tr>
+<tr>
+<td>PR Verify</td>
+<td><a href="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/pr-verify.yml"><img src="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/pr-verify.yml/badge.svg" alt="PR Verify"></a></td>
+</tr>
+<tr>
+<td>Deploy Dev</td>
+<td><a href="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/deploy-dev.yml"><img src="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/deploy-dev.yml/badge.svg" alt="Deploy Dev"></a></td>
+</tr>
+<tr>
+<td>Deploy Prd</td>
+<td><a href="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/deploy-prd.yml"><img src="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/deploy-prd.yml/badge.svg" alt="Deploy Prd"></a></td>
+</tr>
+<tr>
+<td>Destroy Development</td>
+<td><a href="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/destroy-development.yml"><img src="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/destroy-development.yml/badge.svg" alt="Destroy Development"></a></td>
+</tr>
+<tr>
+<td>Destroy Environment</td>
+<td><a href="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/destroy-environment.yml"><img src="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/destroy-environment.yml/badge.svg" alt="Destroy Environment"></a></td>
+</tr>
+<tr class="separator"><td colspan="2"></td></tr>
+<tr>
+<td>Dependabot Auto-Merge</td>
+<td><a href="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/dependabot-automerge.yml"><img src="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg" alt="Dependabot Auto-Merge"></a></td>
+</tr>
+<tr>
+<td>Dependabot Updates</td>
+<td><a href="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/dynamic/dependabot/dependabot-updates"><img src="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg" alt="Dependabot Updates"></a></td>
+</tr>
+<tr>
+<td>Copilot Setup Steps</td>
+<td><a href="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/copilot-setup-steps.yml"><img src="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg" alt="Copilot Setup Steps"></a></td>
+</tr>
+<tr>
+<td>Copilot</td>
+<td><a href="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -987,4 +1032,4 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 ---
 Generated by scripts/estate-sync/estate_sync.py
 <!-- Auto-generated file; do not edit directly. -->
-Last updated: 2026-08-03 04:41 UTC
+Last updated: 2026-08-04 04:33 UTC
