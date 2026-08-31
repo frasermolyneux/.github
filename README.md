@@ -18,7 +18,7 @@ and its synchronization.
   `.github/workflows/estate-sync.yml`.
 - Maintain the Pages entry point in `docs/index.md`.
 - Treat `docs/estate/` as generated output. Its files identify the generator
-  and must not be edited directly.
+  and must not be edited or regenerated for routine documentation changes.
 
 ## What This Solves
 
