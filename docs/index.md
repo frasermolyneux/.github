@@ -1,6 +1,6 @@
 # Engineering Estate Dashboard
 
-Welcome to the org-wide view for the `frasermolyneux` tenant. Use the quick links below to jump to the generated reports.
+Welcome to the estate-wide view for the `frasermolyneux` personal account. Use the quick links below to jump to the generated reports.
 
 ## Quick links
 

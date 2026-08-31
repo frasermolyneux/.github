@@ -17,7 +17,7 @@ body:
     id: proposal
     attributes:
       label: Proposal
-      description: How might it work? Sketch the shape (API, UI, config, infra) at a high level.
+      description: How might it work? Describe the shape at a high level without requiring a specific implementation.
 
   - type: textarea
     id: alternatives
@@ -35,6 +35,6 @@ body:
     attributes:
       value: |
         ---
-        If this is ready to hand to the Copilot coding agent, close this issue
-        and re-file using the **Delegate to coding agent** form, which captures
-        acceptance criteria and validation expectations.
+        If this is ready as a bounded implementation task, use the
+        **Delegate to coding agent** form to capture acceptance criteria,
+        relevant paths, exclusions, and targeted validation.

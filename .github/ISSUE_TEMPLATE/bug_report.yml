@@ -37,15 +37,15 @@ body:
   - type: textarea
     id: environment
     attributes:
-      label: Environment
-      description: Affected environment(s), branch, commit, build version (`/v1.0/info` if applicable).
+      label: Environment and version
+      description: Include the affected version, platform, branch, commit, or other relevant context.
       placeholder: |
-        - Environment: dev / prd
-        - Branch / commit:
-        - Build version:
+        - Version or commit:
+        - Platform or environment:
+        - Other relevant configuration:
 
   - type: textarea
     id: logs
     attributes:
       label: Logs / screenshots
-      description: Application Insights query, stack trace, screenshot.
+      description: Add relevant logs, error output, screenshots, or recordings. Remove secrets and sensitive data first.
