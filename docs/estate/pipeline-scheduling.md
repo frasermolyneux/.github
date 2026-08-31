@@ -9,9 +9,9 @@ Workflows and pipelines with cron-based schedules, grouped by workload category.
 | Type | Repository | Name | Cron | Next run (UTC) |
 | --- | --- | --- | --- | --- |
 | ⏱️ GitHub Actions | 📁 [observability-opentelemetry](https://github.com/frasermolyneux/observability-opentelemetry) | [🧾 Code Quality](https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/.github/workflows/codequality.yml) | 🕒 0 2 * * 1 | 📅 07/09/2026 02:00 UTC |
-| ⏱️ GitHub Actions | 📁 [api-client-abstractions](https://github.com/frasermolyneux/api-client-abstractions) | [🧾 Code Quality](https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/.github/workflows/codequality.yml) | 🕒 0 6 * * 1 | 📅 31/08/2026 06:00 UTC |
-| ⏱️ GitHub Actions | 📁 [observability-appinsights](https://github.com/frasermolyneux/observability-appinsights) | [🧾 Code Quality](https://github.com/frasermolyneux/observability-appinsights/actions/workflows/.github/workflows/codequality.yml) | 🕒 0 6 * * 1 | 📅 31/08/2026 06:00 UTC |
-| ⏱️ GitHub Actions | 📁 [dotnet-caching](https://github.com/frasermolyneux/dotnet-caching) | [🧾 Code Quality](https://github.com/frasermolyneux/dotnet-caching/actions/workflows/.github/workflows/codequality.yml) | 🕒 15 8 * * 1 | 📅 31/08/2026 08:15 UTC |
+| ⏱️ GitHub Actions | 📁 [api-client-abstractions](https://github.com/frasermolyneux/api-client-abstractions) | [🧾 Code Quality](https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/.github/workflows/codequality.yml) | 🕒 0 6 * * 1 | 📅 07/09/2026 06:00 UTC |
+| ⏱️ GitHub Actions | 📁 [observability-appinsights](https://github.com/frasermolyneux/observability-appinsights) | [🧾 Code Quality](https://github.com/frasermolyneux/observability-appinsights/actions/workflows/.github/workflows/codequality.yml) | 🕒 0 6 * * 1 | 📅 07/09/2026 06:00 UTC |
+| ⏱️ GitHub Actions | 📁 [dotnet-caching](https://github.com/frasermolyneux/dotnet-caching) | [🧾 Code Quality](https://github.com/frasermolyneux/dotnet-caching/actions/workflows/.github/workflows/codequality.yml) | 🕒 15 8 * * 1 | 📅 07/09/2026 08:15 UTC |
 
 ## geo-location
 
@@ -25,8 +25,8 @@ Workflows and pipelines with cron-based schedules, grouped by workload category.
 
 | Type | Repository | Name | Cron | Next run (UTC) |
 | --- | --- | --- | --- | --- |
-| ⏱️ GitHub Actions | 📁 [craftpledge](https://github.com/frasermolyneux/craftpledge) | [🧾 Code Quality](https://github.com/frasermolyneux/craftpledge/actions/workflows/.github/workflows/codequality.yml) | 🕒 0 4 * * 1 | 📅 31/08/2026 04:00 UTC |
-| ⏱️ GitHub Actions | 📁 [talkwithtiles](https://github.com/frasermolyneux/talkwithtiles) | [🧾 Code Quality](https://github.com/frasermolyneux/talkwithtiles/actions/workflows/.github/workflows/codequality.yml) | 🕒 0 4 * * 1 | 📅 31/08/2026 04:00 UTC |
+| ⏱️ GitHub Actions | 📁 [craftpledge](https://github.com/frasermolyneux/craftpledge) | [🧾 Code Quality](https://github.com/frasermolyneux/craftpledge/actions/workflows/.github/workflows/codequality.yml) | 🕒 0 4 * * 1 | 📅 07/09/2026 04:00 UTC |
+| ⏱️ GitHub Actions | 📁 [talkwithtiles](https://github.com/frasermolyneux/talkwithtiles) | [🧾 Code Quality](https://github.com/frasermolyneux/talkwithtiles/actions/workflows/.github/workflows/codequality.yml) | 🕒 0 4 * * 1 | 📅 07/09/2026 04:00 UTC |
 | ⏱️ GitHub Actions | 📁 [craftpledge](https://github.com/frasermolyneux/craftpledge) | [🧾 Deploy Prd](https://github.com/frasermolyneux/craftpledge/actions/workflows/.github/workflows/deploy-prd.yml) | 🕒 0 4 * * 4 | 📅 03/09/2026 04:00 UTC |
 | ⏱️ GitHub Actions | 📁 [talkwithtiles](https://github.com/frasermolyneux/talkwithtiles) | [🧾 Deploy Prd](https://github.com/frasermolyneux/talkwithtiles/actions/workflows/.github/workflows/deploy-prd.yml) | 🕒 0 4 * * 4 | 📅 03/09/2026 04:00 UTC |
 | ⏱️ GitHub Actions | 📁 [craftpledge](https://github.com/frasermolyneux/craftpledge) | [🧾 Destroy Development](https://github.com/frasermolyneux/craftpledge/actions/workflows/.github/workflows/destroy-development.yml) | 🕒 30 23 * * * | 📅 31/08/2026 23:30 UTC |
@@ -39,12 +39,12 @@ Workflows and pipelines with cron-based schedules, grouped by workload category.
 | ⏱️ GitHub Actions | 📁 [molyneux-me](https://github.com/frasermolyneux/molyneux-me) | [🧾 Deploy Prd](https://github.com/frasermolyneux/molyneux-me/actions/workflows/.github/workflows/deploy-prd.yml) | 🕒 0 1 * * 5 | 📅 04/09/2026 01:00 UTC |
 | ⏱️ GitHub Actions | 📁 [travel-itinerary](https://github.com/frasermolyneux/travel-itinerary) | [🧾 Deploy Prd](https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/deploy-prd.yml) | 🕒 0 3 * * 4 | 📅 03/09/2026 03:00 UTC |
 | ⏱️ GitHub Actions | 📁 [twenty-one](https://github.com/frasermolyneux/twenty-one) | [🧾 Deploy Prd](https://github.com/frasermolyneux/twenty-one/actions/workflows/.github/workflows/deploy-prd.yml) | 🕒 0 7 * * 5 | 📅 04/09/2026 07:00 UTC |
-| ⏱️ GitHub Actions | 📁 [invision-api-client](https://github.com/frasermolyneux/invision-api-client) | [🧾 Code Quality](https://github.com/frasermolyneux/invision-api-client/actions/workflows/.github/workflows/codequality.yml) | 🕒 15 6 * * 1 | 📅 31/08/2026 06:15 UTC |
-| ⏱️ GitHub Actions | 📁 [molyneux-me](https://github.com/frasermolyneux/molyneux-me) | [🧾 Code Quality](https://github.com/frasermolyneux/molyneux-me/actions/workflows/.github/workflows/codequality.yml) | 🕒 30 7 * * 1 | 📅 31/08/2026 07:30 UTC |
+| ⏱️ GitHub Actions | 📁 [invision-api-client](https://github.com/frasermolyneux/invision-api-client) | [🧾 Code Quality](https://github.com/frasermolyneux/invision-api-client/actions/workflows/.github/workflows/codequality.yml) | 🕒 15 6 * * 1 | 📅 07/09/2026 06:15 UTC |
+| ⏱️ GitHub Actions | 📁 [molyneux-me](https://github.com/frasermolyneux/molyneux-me) | [🧾 Code Quality](https://github.com/frasermolyneux/molyneux-me/actions/workflows/.github/workflows/codequality.yml) | 🕒 30 7 * * 1 | 📅 07/09/2026 07:30 UTC |
 | ⏱️ GitHub Actions | 📁 [travel-itinerary](https://github.com/frasermolyneux/travel-itinerary) | [🧾 Destroy Development](https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/destroy-development.yml) | 🕒 35 23 * * * | 📅 31/08/2026 23:35 UTC |
 | ⏱️ GitHub Actions | 📁 [molyneux-me](https://github.com/frasermolyneux/molyneux-me) | [🧾 Destroy Development](https://github.com/frasermolyneux/molyneux-me/actions/workflows/.github/workflows/destroy-development.yml) | 🕒 40 23 * * * | 📅 31/08/2026 23:40 UTC |
-| ⏱️ GitHub Actions | 📁 [travel-itinerary](https://github.com/frasermolyneux/travel-itinerary) | [🧾 Code Quality](https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/codequality.yml) | 🕒 45 3 * * 1 | 📅 31/08/2026 03:45 UTC |
-| ⏱️ GitHub Actions | 📁 [twenty-one](https://github.com/frasermolyneux/twenty-one) | [🧾 Code Quality](https://github.com/frasermolyneux/twenty-one/actions/workflows/.github/workflows/codequality.yml) | 🕒 45 7 * * 1 | 📅 31/08/2026 07:45 UTC |
+| ⏱️ GitHub Actions | 📁 [travel-itinerary](https://github.com/frasermolyneux/travel-itinerary) | [🧾 Code Quality](https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/codequality.yml) | 🕒 45 3 * * 1 | 📅 07/09/2026 03:45 UTC |
+| ⏱️ GitHub Actions | 📁 [twenty-one](https://github.com/frasermolyneux/twenty-one) | [🧾 Code Quality](https://github.com/frasermolyneux/twenty-one/actions/workflows/.github/workflows/codequality.yml) | 🕒 45 7 * * 1 | 📅 07/09/2026 07:45 UTC |
 | ⏱️ GitHub Actions | 📁 [twenty-one](https://github.com/frasermolyneux/twenty-one) | [🧾 Destroy Development](https://github.com/frasermolyneux/twenty-one/actions/workflows/.github/workflows/destroy-development.yml) | 🕒 50 23 * * * | 📅 31/08/2026 23:50 UTC |
 
 ## platform
@@ -58,19 +58,19 @@ Workflows and pipelines with cron-based schedules, grouped by workload category.
 | ⏱️ GitHub Actions | 📁 [platform-letsencrypt-iis](https://github.com/frasermolyneux/platform-letsencrypt-iis) | [🧾 Deploy Prd](https://github.com/frasermolyneux/platform-letsencrypt-iis/actions/workflows/.github/workflows/deploy-prd.yml) | 🕒 0 3 * * 4 | 📅 03/09/2026 03:00 UTC |
 | ⏱️ GitHub Actions | 📁 [platform-monitoring](https://github.com/frasermolyneux/platform-monitoring) | [🧾 Deploy Prd](https://github.com/frasermolyneux/platform-monitoring/actions/workflows/.github/workflows/deploy-prd.yml) | 🕒 0 3 * * 5 | 📅 04/09/2026 03:00 UTC |
 | ⏱️ GitHub Actions | 📁 [platform-registry](https://github.com/frasermolyneux/platform-registry) | [🧾 Deploy Prd](https://github.com/frasermolyneux/platform-registry/actions/workflows/.github/workflows/deploy-prd.yml) | 🕒 0 4 * * 5 | 📅 04/09/2026 04:00 UTC |
-| ⏱️ GitHub Actions | 📁 [platform-registry](https://github.com/frasermolyneux/platform-registry) | [🧾 Code Quality](https://github.com/frasermolyneux/platform-registry/actions/workflows/.github/workflows/codequality.yml) | 🕒 0 5 * * 1 | 📅 31/08/2026 05:00 UTC |
+| ⏱️ GitHub Actions | 📁 [platform-registry](https://github.com/frasermolyneux/platform-registry) | [🧾 Code Quality](https://github.com/frasermolyneux/platform-registry/actions/workflows/.github/workflows/codequality.yml) | 🕒 0 5 * * 1 | 📅 07/09/2026 05:00 UTC |
 | ⏱️ GitHub Actions | 📁 [platform-sitewatch-func](https://github.com/frasermolyneux/platform-sitewatch-func) | [🧾 Deploy Prd](https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/.github/workflows/deploy-prd.yml) | 🕒 0 5 * * 5 | 📅 04/09/2026 05:00 UTC |
 | ⏱️ GitHub Actions | 📁 [platform-status-web](https://github.com/frasermolyneux/platform-status-web) | [🧾 Deploy Prd](https://github.com/frasermolyneux/platform-status-web/actions/workflows/.github/workflows/deploy-prd.yml) | 🕒 0 8 * * 5 | 📅 04/09/2026 08:00 UTC |
 | ⏱️ GitHub Actions | 📁 [platform-hosting](https://github.com/frasermolyneux/platform-hosting) | [🧾 Code Quality](https://github.com/frasermolyneux/platform-hosting/actions/workflows/.github/workflows/codequality.yml) | 🕒 15 3 * * 1 | 📅 07/09/2026 03:15 UTC |
-| ⏱️ GitHub Actions | 📁 [platform-connectivity](https://github.com/frasermolyneux/platform-connectivity) | [🧾 Code Quality](https://github.com/frasermolyneux/platform-connectivity/actions/workflows/.github/workflows/codequality.yml) | 🕒 15 4 * * 1 | 📅 31/08/2026 04:15 UTC |
-| ⏱️ GitHub Actions | 📁 [platform-sitewatch-func](https://github.com/frasermolyneux/platform-sitewatch-func) | [🧾 Code Quality](https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/.github/workflows/codequality.yml) | 🕒 15 5 * * 1 | 📅 31/08/2026 05:15 UTC |
-| ⏱️ GitHub Actions | 📁 [platform-status-web](https://github.com/frasermolyneux/platform-status-web) | [🧾 Code Quality](https://github.com/frasermolyneux/platform-status-web/actions/workflows/.github/workflows/codequality.yml) | 🕒 15 8 * * 1 | 📅 31/08/2026 08:15 UTC |
+| ⏱️ GitHub Actions | 📁 [platform-connectivity](https://github.com/frasermolyneux/platform-connectivity) | [🧾 Code Quality](https://github.com/frasermolyneux/platform-connectivity/actions/workflows/.github/workflows/codequality.yml) | 🕒 15 4 * * 1 | 📅 07/09/2026 04:15 UTC |
+| ⏱️ GitHub Actions | 📁 [platform-sitewatch-func](https://github.com/frasermolyneux/platform-sitewatch-func) | [🧾 Code Quality](https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/.github/workflows/codequality.yml) | 🕒 15 5 * * 1 | 📅 07/09/2026 05:15 UTC |
+| ⏱️ GitHub Actions | 📁 [platform-status-web](https://github.com/frasermolyneux/platform-status-web) | [🧾 Code Quality](https://github.com/frasermolyneux/platform-status-web/actions/workflows/.github/workflows/codequality.yml) | 🕒 15 8 * * 1 | 📅 07/09/2026 08:15 UTC |
 | ⏱️ GitHub Actions | 📁 [platform-notifications](https://github.com/frasermolyneux/platform-notifications) | [🧾 Destroy Development](https://github.com/frasermolyneux/platform-notifications/actions/workflows/.github/workflows/destroy-development.yml) | 🕒 25 23 * * * | 📅 31/08/2026 23:25 UTC |
 | ⏱️ GitHub Actions | 📁 [platform-notifications](https://github.com/frasermolyneux/platform-notifications) | [🧾 Code Quality](https://github.com/frasermolyneux/platform-notifications/actions/workflows/.github/workflows/codequality.yml) | 🕒 30 3 * * 1 | 📅 07/09/2026 03:30 UTC |
-| ⏱️ GitHub Actions | 📁 [platform-landing-zones](https://github.com/frasermolyneux/platform-landing-zones) | [🧾 Code Quality](https://github.com/frasermolyneux/platform-landing-zones/actions/workflows/.github/workflows/codequality.yml) | 🕒 30 4 * * 1 | 📅 31/08/2026 04:30 UTC |
+| ⏱️ GitHub Actions | 📁 [platform-landing-zones](https://github.com/frasermolyneux/platform-landing-zones) | [🧾 Code Quality](https://github.com/frasermolyneux/platform-landing-zones/actions/workflows/.github/workflows/codequality.yml) | 🕒 30 4 * * 1 | 📅 07/09/2026 04:30 UTC |
 | ⏱️ GitHub Actions | 📁 [platform-sitewatch-func](https://github.com/frasermolyneux/platform-sitewatch-func) | [🧾 Destroy Development](https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/.github/workflows/destroy-development.yml) | 🕒 45 23 * * * | 📅 31/08/2026 23:45 UTC |
-| ⏱️ GitHub Actions | 📁 [platform-monitoring](https://github.com/frasermolyneux/platform-monitoring) | [🧾 Code Quality](https://github.com/frasermolyneux/platform-monitoring/actions/workflows/.github/workflows/codequality.yml) | 🕒 45 4 * * 1 | 📅 31/08/2026 04:45 UTC |
-| ⏱️ GitHub Actions | 📁 [platform-letsencrypt-iis](https://github.com/frasermolyneux/platform-letsencrypt-iis) | [🧾 Code Quality](https://github.com/frasermolyneux/platform-letsencrypt-iis/actions/workflows/.github/workflows/codequality.yml) | 🕒 45 5 * * 1 | 📅 31/08/2026 05:45 UTC |
+| ⏱️ GitHub Actions | 📁 [platform-monitoring](https://github.com/frasermolyneux/platform-monitoring) | [🧾 Code Quality](https://github.com/frasermolyneux/platform-monitoring/actions/workflows/.github/workflows/codequality.yml) | 🕒 45 4 * * 1 | 📅 07/09/2026 04:45 UTC |
+| ⏱️ GitHub Actions | 📁 [platform-letsencrypt-iis](https://github.com/frasermolyneux/platform-letsencrypt-iis) | [🧾 Code Quality](https://github.com/frasermolyneux/platform-letsencrypt-iis/actions/workflows/.github/workflows/codequality.yml) | 🕒 45 5 * * 1 | 📅 07/09/2026 05:45 UTC |
 | ⏱️ GitHub Actions | 📁 [platform-status-web](https://github.com/frasermolyneux/platform-status-web) | [🧾 Destroy Development](https://github.com/frasermolyneux/platform-status-web/actions/workflows/.github/workflows/destroy-development.yml) | 🕒 55 23 * * * | 📅 31/08/2026 23:55 UTC |
 
 ## portal
@@ -101,15 +101,27 @@ Workflows and pipelines with cron-based schedules, grouped by workload category.
 | ⏱️ GitHub Actions | 📁 [portal-repository-func](https://github.com/frasermolyneux/portal-repository-func) | [🧾 Code Quality](https://github.com/frasermolyneux/portal-repository-func/actions/workflows/.github/workflows/codequality.yml) | 🕒 45 1 * * 1 | 📅 07/09/2026 01:45 UTC |
 | ⏱️ GitHub Actions | 📁 [portal-server-agent](https://github.com/frasermolyneux/portal-server-agent) | [🧾 Code Quality](https://github.com/frasermolyneux/portal-server-agent/actions/workflows/.github/workflows/codequality.yml) | 🕒 45 2 * * 1 | 📅 07/09/2026 02:45 UTC |
 | ⏱️ GitHub Actions | 📁 [portal-server-events](https://github.com/frasermolyneux/portal-server-events) | [🧾 Code Quality](https://github.com/frasermolyneux/portal-server-events/actions/workflows/.github/workflows/codequality.yml) | 🕒 45 2 * * 1 | 📅 07/09/2026 02:45 UTC |
-| ⏱️ GitHub Actions | 📁 [portal-cod4x-plugin](https://github.com/frasermolyneux/portal-cod4x-plugin) | [🧾 Code Quality](https://github.com/frasermolyneux/portal-cod4x-plugin/actions/workflows/.github/workflows/codequality.yml) | 🕒 45 6 * * 1 | 📅 31/08/2026 06:45 UTC |
+| ⏱️ GitHub Actions | 📁 [portal-cod4x-plugin](https://github.com/frasermolyneux/portal-cod4x-plugin) | [🧾 Code Quality](https://github.com/frasermolyneux/portal-cod4x-plugin/actions/workflows/.github/workflows/codequality.yml) | 🕒 45 6 * * 1 | 📅 07/09/2026 06:45 UTC |
 | ⏱️ GitHub Actions | 📁 [portal-repository](https://github.com/frasermolyneux/portal-repository) | [🧾 Destroy Development](https://github.com/frasermolyneux/portal-repository/actions/workflows/.github/workflows/destroy-development.yml) | 🕒 5 23 * * * | 📅 31/08/2026 23:05 UTC |
+
+## repository-governance
+
+| Type | Repository | Name | Cron | Next run (UTC) |
+| --- | --- | --- | --- | --- |
+| ⏱️ GitHub Actions | 📁 [platform-workloads](https://github.com/frasermolyneux/platform-workloads) | [🧾 Deploy Prd](https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/deploy-prd.yml) | 🕒 0 6 * * 5 | 📅 04/09/2026 06:00 UTC |
+| ⏱️ GitHub Actions | 📁 [ado-pipeline-templates](https://github.com/frasermolyneux/ado-pipeline-templates) | [🧾 Code Quality](https://github.com/frasermolyneux/ado-pipeline-templates/actions/workflows/.github/workflows/codequality.yml) | 🕒 0 7 * * 1 | 📅 07/09/2026 07:00 UTC |
+| ⏱️ GitHub Actions | 📁 [actions](https://github.com/frasermolyneux/actions) | [🧾 Code Quality](https://github.com/frasermolyneux/actions/actions/workflows/.github/workflows/code-quality.yml) | 🕒 0 8 * * 1 | 📅 07/09/2026 08:00 UTC |
+| ⏱️ GitHub Actions | 📁 [portal-bots](https://github.com/frasermolyneux/portal-bots) | [🧾 Deploy Prd](https://github.com/frasermolyneux/portal-bots/actions/workflows/.github/workflows/deploy-prd.yml) | 🕒 0 8 * * 3 | 📅 02/09/2026 08:00 UTC |
+| ⏱️ GitHub Actions | 📁 [.github](https://github.com/frasermolyneux/.github) | [🧾 estate-sync](https://github.com/frasermolyneux/.github/actions/workflows/.github/workflows/estate-sync.yml) | 🕒 30 3 * * * | 📅 01/09/2026 03:30 UTC |
+| ⏱️ GitHub Actions | 📁 [platform-workloads](https://github.com/frasermolyneux/platform-workloads) | [🧾 Code Quality](https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/codequality.yml) | 🕒 30 5 * * 1 | 📅 07/09/2026 05:30 UTC |
+| ⏱️ GitHub Actions | 📁 [portal-bots](https://github.com/frasermolyneux/portal-bots) | [🧾 Code Quality](https://github.com/frasermolyneux/portal-bots/actions/workflows/.github/workflows/codequality.yml) | 🕒 45 2 * * 1 | 📅 07/09/2026 02:45 UTC |
 
 ## trip-side-kick
 
 | Type | Repository | Name | Cron | Next run (UTC) |
 | --- | --- | --- | --- | --- |
 | ⏱️ GitHub Actions | 📁 [trip-side-kick](https://github.com/frasermolyneux/trip-side-kick) | [🧾 Deploy Prd](https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/deploy-prd.yml) | 🕒 0 5 * * 4 | 📅 03/09/2026 05:00 UTC |
-| ⏱️ GitHub Actions | 📁 [trip-side-kick](https://github.com/frasermolyneux/trip-side-kick) | [🧾 Code Quality](https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/codequality.yml) | 🕒 30 8 * * 1 | 📅 31/08/2026 08:30 UTC |
+| ⏱️ GitHub Actions | 📁 [trip-side-kick](https://github.com/frasermolyneux/trip-side-kick) | [🧾 Code Quality](https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/codequality.yml) | 🕒 30 8 * * 1 | 📅 07/09/2026 08:30 UTC |
 | ⏱️ GitHub Actions | 📁 [trip-side-kick](https://github.com/frasermolyneux/trip-side-kick) | [🧾 Destroy Development](https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/destroy-development.yml) | 🕒 55 23 * * * | 📅 31/08/2026 23:55 UTC |
 
 ## xtremeidiots
@@ -117,11 +129,11 @@ Workflows and pipelines with cron-based schedules, grouped by workload category.
 | Type | Repository | Name | Cron | Next run (UTC) |
 | --- | --- | --- | --- | --- |
 | ⏱️ GitHub Actions | 📁 [demo-manager](https://github.com/frasermolyneux/demo-manager) | [🧾 Deploy Prd](https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/deploy-prd.yml) | 🕒 0 3 * * 4 | 📅 03/09/2026 03:00 UTC |
-| ⏱️ GitHub Actions | 📁 [demo-manager](https://github.com/frasermolyneux/demo-manager) | [🧾 Code Quality](https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/codequality.yml) | 🕒 15 7 * * 1 | 📅 31/08/2026 07:15 UTC |
-| ⏱️ GitHub Actions | 📁 [cod-demo-reader](https://github.com/frasermolyneux/cod-demo-reader) | [🧾 Code Quality](https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/codequality.yml) | 🕒 30 6 * * 1 | 📅 31/08/2026 06:30 UTC |
+| ⏱️ GitHub Actions | 📁 [demo-manager](https://github.com/frasermolyneux/demo-manager) | [🧾 Code Quality](https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/codequality.yml) | 🕒 15 7 * * 1 | 📅 07/09/2026 07:15 UTC |
+| ⏱️ GitHub Actions | 📁 [cod-demo-reader](https://github.com/frasermolyneux/cod-demo-reader) | [🧾 Code Quality](https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/codequality.yml) | 🕒 30 6 * * 1 | 📅 07/09/2026 06:30 UTC |
 
 
 ---
 Generated by scripts/estate-sync/estate_sync.py
 <!-- Auto-generated file; do not edit directly. -->
-Last updated: 2026-08-31 03:39 UTC
+Last updated: 2026-08-31 11:27 UTC

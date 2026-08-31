@@ -892,6 +892,249 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 </div>
 
 <div class="pipeline-category">
+<h2>repository-governance</h2>
+
+<div class="pipeline-matrix-wrap">
+<table class="pipeline-matrix">
+<thead><tr>
+<th>Workflow</th>
+<th><a href="https://github.com/frasermolyneux/.github">.github</a><br><a href="./repos/.github.html" style="font-size:0.75em">detail</a></th>
+<th><a href="https://github.com/frasermolyneux/.github-copilot">.github-copilot</a><br><a href="./repos/.github-copilot.html" style="font-size:0.75em">detail</a></th>
+<th><a href="https://github.com/frasermolyneux/41-bovet-street">41-bovet-street</a><br><a href="./repos/41-bovet-street.html" style="font-size:0.75em">detail</a></th>
+<th><a href="https://github.com/frasermolyneux/actions">actions</a><br><a href="./repos/actions.html" style="font-size:0.75em">detail</a></th>
+<th><a href="https://github.com/frasermolyneux/ado-pipeline-templates">ado-pipeline-templates</a><br><a href="./repos/ado-pipeline-templates.html" style="font-size:0.75em">detail</a></th>
+<th><a href="https://github.com/frasermolyneux/CoD4x_Server">CoD4x_Server</a><br><a href="./repos/CoD4x_Server.html" style="font-size:0.75em">detail</a></th>
+<th><a href="https://github.com/frasermolyneux/platform-workloads">platform-workloads</a><br><a href="./repos/platform-workloads.html" style="font-size:0.75em">detail</a></th>
+<th><a href="https://github.com/frasermolyneux/portal-bots">portal-bots</a><br><a href="./repos/portal-bots.html" style="font-size:0.75em">detail</a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Code Quality</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/actions/actions/workflows/.github/workflows/code-quality.yml"><img src="https://github.com/frasermolyneux/actions/actions/workflows/.github/workflows/code-quality.yml/badge.svg" alt="Code Quality"></a></td>
+<td><a href="https://github.com/frasermolyneux/ado-pipeline-templates/actions/workflows/.github/workflows/codequality.yml"><img src="https://github.com/frasermolyneux/ado-pipeline-templates/actions/workflows/.github/workflows/codequality.yml/badge.svg" alt="Code Quality"></a></td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/codequality.yml"><img src="https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/codequality.yml/badge.svg" alt="Code Quality"></a></td>
+<td><a href="https://github.com/frasermolyneux/portal-bots/actions/workflows/.github/workflows/codequality.yml"><img src="https://github.com/frasermolyneux/portal-bots/actions/workflows/.github/workflows/codequality.yml/badge.svg" alt="Code Quality"></a></td>
+</tr>
+<tr>
+<td>Build and Test</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/ado-pipeline-templates/actions/workflows/.github/workflows/build-and-test.yml"><img src="https://github.com/frasermolyneux/ado-pipeline-templates/actions/workflows/.github/workflows/build-and-test.yml/badge.svg" alt="Build and Test"></a></td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/build-and-test.yml"><img src="https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/build-and-test.yml/badge.svg" alt="Build and Test"></a></td>
+<td><a href="https://github.com/frasermolyneux/portal-bots/actions/workflows/.github/workflows/build-and-test.yml"><img src="https://github.com/frasermolyneux/portal-bots/actions/workflows/.github/workflows/build-and-test.yml/badge.svg" alt="Build and Test"></a></td>
+</tr>
+<tr>
+<td>PR Verify</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/ado-pipeline-templates/actions/workflows/.github/workflows/pr-verify.yml"><img src="https://github.com/frasermolyneux/ado-pipeline-templates/actions/workflows/.github/workflows/pr-verify.yml/badge.svg" alt="PR Verify"></a></td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/pr-verify.yml"><img src="https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/pr-verify.yml/badge.svg" alt="PR Verify"></a></td>
+<td><a href="https://github.com/frasermolyneux/portal-bots/actions/workflows/.github/workflows/pr-verify.yml"><img src="https://github.com/frasermolyneux/portal-bots/actions/workflows/.github/workflows/pr-verify.yml/badge.svg" alt="PR Verify"></a></td>
+</tr>
+<tr>
+<td>Deploy Dev</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/portal-bots/actions/workflows/.github/workflows/deploy-dev.yml"><img src="https://github.com/frasermolyneux/portal-bots/actions/workflows/.github/workflows/deploy-dev.yml/badge.svg" alt="Deploy Dev"></a></td>
+</tr>
+<tr>
+<td>Deploy Prd</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/deploy-prd.yml"><img src="https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/deploy-prd.yml/badge.svg" alt="Deploy Prd"></a></td>
+<td><a href="https://github.com/frasermolyneux/portal-bots/actions/workflows/.github/workflows/deploy-prd.yml"><img src="https://github.com/frasermolyneux/portal-bots/actions/workflows/.github/workflows/deploy-prd.yml/badge.svg" alt="Deploy Prd"></a></td>
+</tr>
+<tr>
+<td>Destroy Environment</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/destroy-environment.yml"><img src="https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/destroy-environment.yml/badge.svg" alt="Destroy Environment"></a></td>
+<td><a href="https://github.com/frasermolyneux/portal-bots/actions/workflows/.github/workflows/destroy-environment.yml"><img src="https://github.com/frasermolyneux/portal-bots/actions/workflows/.github/workflows/destroy-environment.yml/badge.svg" alt="Destroy Environment"></a></td>
+</tr>
+<tr class="separator"><td colspan="9"></td></tr>
+<tr>
+<td>Dependabot Auto-Merge</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/actions/actions/workflows/.github/workflows/dependabot-automerge.yml"><img src="https://github.com/frasermolyneux/actions/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg" alt="Dependabot Auto-Merge"></a></td>
+<td><a href="https://github.com/frasermolyneux/ado-pipeline-templates/actions/workflows/.github/workflows/dependabot-automerge.yml"><img src="https://github.com/frasermolyneux/ado-pipeline-templates/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg" alt="Dependabot Auto-Merge"></a></td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/dependabot-automerge.yml"><img src="https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg" alt="Dependabot Auto-Merge"></a></td>
+<td><a href="https://github.com/frasermolyneux/portal-bots/actions/workflows/.github/workflows/dependabot-automerge.yml"><img src="https://github.com/frasermolyneux/portal-bots/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg" alt="Dependabot Auto-Merge"></a></td>
+</tr>
+<tr>
+<td>Dependabot Updates</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/.github-copilot/actions/workflows/dynamic/dependabot/dependabot-updates"><img src="https://github.com/frasermolyneux/.github-copilot/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg" alt="Dependabot Updates"></a></td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/actions/actions/workflows/dynamic/dependabot/dependabot-updates"><img src="https://github.com/frasermolyneux/actions/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg" alt="Dependabot Updates"></a></td>
+<td><a href="https://github.com/frasermolyneux/ado-pipeline-templates/actions/workflows/dynamic/dependabot/dependabot-updates"><img src="https://github.com/frasermolyneux/ado-pipeline-templates/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg" alt="Dependabot Updates"></a></td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/platform-workloads/actions/workflows/dynamic/dependabot/dependabot-updates"><img src="https://github.com/frasermolyneux/platform-workloads/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg" alt="Dependabot Updates"></a></td>
+<td><a href="https://github.com/frasermolyneux/portal-bots/actions/workflows/dynamic/dependabot/dependabot-updates"><img src="https://github.com/frasermolyneux/portal-bots/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg" alt="Dependabot Updates"></a></td>
+</tr>
+<tr>
+<td>Copilot Setup Steps</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/ado-pipeline-templates/actions/workflows/.github/workflows/copilot-setup-steps.yml"><img src="https://github.com/frasermolyneux/ado-pipeline-templates/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg" alt="Copilot Setup Steps"></a></td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/copilot-setup-steps.yml"><img src="https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg" alt="Copilot Setup Steps"></a></td>
+<td><a href="https://github.com/frasermolyneux/portal-bots/actions/workflows/.github/workflows/copilot-setup-steps.yml"><img src="https://github.com/frasermolyneux/portal-bots/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg" alt="Copilot Setup Steps"></a></td>
+</tr>
+<tr>
+<td>Copilot coding agent</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/platform-workloads/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/platform-workloads/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot coding agent"></a></td>
+<td><a href="https://github.com/frasermolyneux/portal-bots/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/portal-bots/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot coding agent"></a></td>
+</tr>
+<tr>
+<td>actions-versioning</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/actions/actions/workflows/.github/workflows/actions-versioning.yml"><img src="https://github.com/frasermolyneux/actions/actions/workflows/.github/workflows/actions-versioning.yml/badge.svg" alt="actions-versioning"></a></td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+</tr>
+<tr>
+<td>build</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/CoD4x_Server/actions/workflows/.github/workflows/build.yml"><img src="https://github.com/frasermolyneux/CoD4x_Server/actions/workflows/.github/workflows/build.yml/badge.svg" alt="build"></a></td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+</tr>
+<tr>
+<td>Copilot cloud agent</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/actions/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/actions/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot cloud agent"></a></td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+</tr>
+<tr>
+<td>Decommission State Rm</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/decommission-state-rm.yml"><img src="https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/decommission-state-rm.yml/badge.svg" alt="Decommission State Rm"></a></td>
+<td class="no-workflow">—</td>
+</tr>
+<tr>
+<td>estate-sync</td>
+<td><a href="https://github.com/frasermolyneux/.github/actions/workflows/.github/workflows/estate-sync.yml"><img src="https://github.com/frasermolyneux/.github/actions/workflows/.github/workflows/estate-sync.yml/badge.svg" alt="estate-sync"></a></td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+</tr>
+<tr>
+<td>Feature Development</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/feature-development.yml"><img src="https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/feature-development.yml/badge.svg" alt="Feature Development"></a></td>
+<td class="no-workflow">—</td>
+</tr>
+<tr>
+<td>MCP Server CI</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/.github-copilot/actions/workflows/.github/workflows/mcp-server-ci.yml"><img src="https://github.com/frasermolyneux/.github-copilot/actions/workflows/.github/workflows/mcp-server-ci.yml/badge.svg" alt="MCP Server CI"></a></td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+</tr>
+<tr>
+<td>pages-build-deployment</td>
+<td><a href="https://github.com/frasermolyneux/.github/actions/workflows/dynamic/pages/pages-build-deployment"><img src="https://github.com/frasermolyneux/.github/actions/workflows/dynamic/pages/pages-build-deployment/badge.svg" alt="pages-build-deployment"></a></td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+</tr>
+<tr>
+<td>reusable-code-quality</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/actions/actions/workflows/.github/workflows/codequality.yml"><img src="https://github.com/frasermolyneux/actions/actions/workflows/.github/workflows/codequality.yml/badge.svg" alt="reusable-code-quality"></a></td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+</tr>
+<tr>
+<td>reusable-devops-secure-scanning</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/actions/actions/workflows/.github/workflows/devops-secure-scanning.yml"><img src="https://github.com/frasermolyneux/actions/actions/workflows/.github/workflows/devops-secure-scanning.yml/badge.svg" alt="reusable-devops-secure-scanning"></a></td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="pipeline-category">
 <h2>trip-side-kick</h2>
 
 <div class="pipeline-matrix-wrap">
@@ -1036,4 +1279,4 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 ---
 Generated by scripts/estate-sync/estate_sync.py
 <!-- Auto-generated file; do not edit directly. -->
-Last updated: 2026-08-31 03:39 UTC
+Last updated: 2026-08-31 11:27 UTC

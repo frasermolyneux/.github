@@ -1,0 +1,45 @@
+🏠 [Home](../../index.html) | 📦 [Workloads](../workloads.html) | 🧪 [Pipelines](../pipelines.html) | ⏰ [Scheduling](../pipeline-scheduling.html) | 📚 [Repos](./index.html)
+
+# platform-workloads
+
+Summary:
+- 📁 GitHub: [platform-workloads](https://github.com/frasermolyneux/platform-workloads)
+- 🗂️ Workflows: https://github.com/frasermolyneux/platform-workloads/tree/main/.github/workflows
+- 🗂️ Azure Pipelines YAML: https://github.com/frasermolyneux/platform-workloads/tree/main/.azure-pipelines
+
+## Badges
+
+[![Feature Development](https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/feature-development.yml/badge.svg)](https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/feature-development.yml) [![Dependabot Auto-Merge](https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg)](https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/dependabot-automerge.yml) [![Dependabot Updates](https://github.com/frasermolyneux/platform-workloads/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg)](https://github.com/frasermolyneux/platform-workloads/actions/workflows/dynamic/dependabot/dependabot-updates) [![Copilot coding agent](https://github.com/frasermolyneux/platform-workloads/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg)](https://github.com/frasermolyneux/platform-workloads/actions/workflows/dynamic/copilot-swe-agent/copilot) [![Code Quality](https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/codequality.yml/badge.svg)](https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/codequality.yml) [![Build and Test](https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/build-and-test.yml/badge.svg)](https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/build-and-test.yml) [![Copilot Setup Steps](https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg)](https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/copilot-setup-steps.yml) [![Deploy Prd](https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/deploy-prd.yml/badge.svg)](https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/deploy-prd.yml) [![Destroy Environment](https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/destroy-environment.yml/badge.svg)](https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/destroy-environment.yml) [![PR Verify](https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/pr-verify.yml/badge.svg)](https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/pr-verify.yml) [![Decommission State Rm](https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/decommission-state-rm.yml/badge.svg)](https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/decommission-state-rm.yml)
+
+## Scheduling
+
+| Type | Cron | Next run (UTC) | Link |
+| --- | --- | --- | --- |
+| GitHub Actions | 0 6 * * 5 | 04/09/2026 06:00 UTC | [link](https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/deploy-prd.yml) |
+| GitHub Actions | 30 5 * * 1 | 07/09/2026 05:30 UTC | [link](https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/codequality.yml) |
+
+## Workflows
+
+| Name | Path | Link |
+| --- | --- | --- |
+| Build and Test | .github/workflows/build-and-test.yml | [view](https://github.com/frasermolyneux/platform-workloads/blob/main/.github/workflows/build-and-test.yml) |
+| Code Quality | .github/workflows/codequality.yml | [view](https://github.com/frasermolyneux/platform-workloads/blob/main/.github/workflows/codequality.yml) |
+| Copilot Setup Steps | .github/workflows/copilot-setup-steps.yml | [view](https://github.com/frasermolyneux/platform-workloads/blob/main/.github/workflows/copilot-setup-steps.yml) |
+| Decommission State Rm | .github/workflows/decommission-state-rm.yml | [view](https://github.com/frasermolyneux/platform-workloads/blob/main/.github/workflows/decommission-state-rm.yml) |
+| Dependabot Auto-Merge | .github/workflows/dependabot-automerge.yml | [view](https://github.com/frasermolyneux/platform-workloads/blob/main/.github/workflows/dependabot-automerge.yml) |
+| Deploy Prd | .github/workflows/deploy-prd.yml | [view](https://github.com/frasermolyneux/platform-workloads/blob/main/.github/workflows/deploy-prd.yml) |
+| Destroy Environment | .github/workflows/destroy-environment.yml | [view](https://github.com/frasermolyneux/platform-workloads/blob/main/.github/workflows/destroy-environment.yml) |
+| Feature Development | .github/workflows/feature-development.yml | [view](https://github.com/frasermolyneux/platform-workloads/blob/main/.github/workflows/feature-development.yml) |
+| PR Verify | .github/workflows/pr-verify.yml | [view](https://github.com/frasermolyneux/platform-workloads/blob/main/.github/workflows/pr-verify.yml) |
+
+## Azure Pipelines
+
+| Name | Link |
+| --- | --- |
+| - | - |
+
+
+---
+Generated by scripts/estate-sync/estate_sync.py
+<!-- Auto-generated file; do not edit directly. -->
+Last updated: 2026-08-31 11:27 UTC

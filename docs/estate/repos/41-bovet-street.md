@@ -1,11 +1,11 @@
 🏠 [Home](../../index.html) | 📦 [Workloads](../workloads.html) | 🧪 [Pipelines](../pipelines.html) | ⏰ [Scheduling](../pipeline-scheduling.html) | 📚 [Repos](./index.html)
 
-# status-pages
+# 41-bovet-street
 
 Summary:
-- 📁 GitHub: [status-pages](https://github.com/frasermolyneux/status-pages)
-- 🗂️ Workflows: https://github.com/frasermolyneux/status-pages/tree/main/.github/workflows
-- 🗂️ Azure Pipelines YAML: https://github.com/frasermolyneux/status-pages/tree/main/.azure-pipelines
+- 📁 GitHub: [41-bovet-street](https://github.com/frasermolyneux/41-bovet-street)
+- 🗂️ Workflows: https://github.com/frasermolyneux/41-bovet-street/tree/main/.github/workflows
+- 🗂️ Azure Pipelines YAML: https://github.com/frasermolyneux/41-bovet-street/tree/main/.azure-pipelines
 
 ## Badges
 
