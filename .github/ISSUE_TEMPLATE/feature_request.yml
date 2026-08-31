@@ -23,7 +23,7 @@ body:
     id: alternatives
     attributes:
       label: Alternatives considered
-      description: What else did you think about? Why not those?
+      description: What alternatives did you consider, and why were they rejected? Note relevant tradeoffs or constraints.
 
   - type: textarea
     id: scope
