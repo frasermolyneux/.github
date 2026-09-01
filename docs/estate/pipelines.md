@@ -75,13 +75,6 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/.github/workflows/copilot-setup-steps.yml"><img src="https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg" alt="Copilot Setup Steps"></a></td>
 </tr>
 <tr>
-<td>Copilot coding agent</td>
-<td><a href="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot coding agent"></a></td>
-<td class="no-workflow">—</td>
-<td class="no-workflow">—</td>
-<td class="no-workflow">—</td>
-</tr>
-<tr>
 <td>Copilot code review</td>
 <td><a href="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/dynamic/copilot-pull-request-reviewer/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/dynamic/copilot-pull-request-reviewer/copilot-pull-request-reviewer/badge.svg" alt="Copilot code review"></a></td>
 <td class="no-workflow">—</td>
@@ -93,7 +86,14 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td><a href="https://github.com/frasermolyneux/dotnet-caching/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/dotnet-caching/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td><a href="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
-<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
+</tr>
+<tr>
+<td>Copilot cloud agent</td>
+<td><a href="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/api-client-abstractions/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot cloud agent"></a></td>
+<td><a href="https://github.com/frasermolyneux/dotnet-caching/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/dotnet-caching/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot cloud agent"></a></td>
+<td><a href="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/observability-appinsights/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot cloud agent"></a></td>
+<td><a href="https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/observability-opentelemetry/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot cloud agent"></a></td>
 </tr>
 </tbody>
 </table>
@@ -362,9 +362,9 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 </tr>
 <tr>
 <td>Copilot coding agent</td>
-<td><a href="https://github.com/frasermolyneux/invision-api-client/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/invision-api-client/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot coding agent"></a></td>
+<td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/molyneux-me/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/molyneux-me/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot coding agent"></a></td>
-<td><a href="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot coding agent"></a></td>
+<td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/twenty-one/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/twenty-one/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot coding agent"></a></td>
 </tr>
 <tr>
@@ -380,6 +380,13 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/molyneux-me/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/molyneux-me/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td><a href="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td><a href="https://github.com/frasermolyneux/twenty-one/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/twenty-one/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
+</tr>
+<tr>
+<td>Copilot cloud agent</td>
+<td><a href="https://github.com/frasermolyneux/invision-api-client/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/invision-api-client/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot cloud agent"></a></td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot cloud agent"></a></td>
+<td class="no-workflow">—</td>
 </tr>
 </tbody>
 </table>
@@ -621,7 +628,7 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
-<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/platform-notifications/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/platform-notifications/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot cloud agent"></a></td>
 <td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot cloud agent"></a></td>
 <td><a href="https://github.com/frasermolyneux/platform-status-web/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/platform-status-web/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot cloud agent"></a></td>
@@ -827,11 +834,11 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/portal-core/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/portal-core/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot coding agent"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-environments/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/portal-environments/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot coding agent"></a></td>
 <td class="no-workflow">—</td>
-<td><a href="https://github.com/frasermolyneux/portal-repository-func/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/portal-repository-func/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot coding agent"></a></td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
-<td><a href="https://github.com/frasermolyneux/portal-sync/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/portal-sync/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot coding agent"></a></td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 </tr>
 <tr>
@@ -866,11 +873,11 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/portal-repository/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/portal-repository/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot cloud agent"></a></td>
-<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/portal-repository-func/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/portal-repository-func/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot cloud agent"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-server-agent/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/portal-server-agent/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot cloud agent"></a></td>
-<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/portal-server-events/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/portal-server-events/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot cloud agent"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot cloud agent"></a></td>
-<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/portal-sync/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/portal-sync/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot cloud agent"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-web/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/portal-web/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot cloud agent"></a></td>
 </tr>
 <tr>
@@ -1256,11 +1263,6 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 </tr>
 <tr>
-<td>Copilot coding agent</td>
-<td><a href="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot coding agent"></a></td>
-<td class="no-workflow">—</td>
-</tr>
-<tr>
 <td>Copilot code review</td>
 <td><a href="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/dynamic/copilot-pull-request-reviewer/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/dynamic/copilot-pull-request-reviewer/copilot-pull-request-reviewer/badge.svg" alt="Copilot code review"></a></td>
 <td class="no-workflow">—</td>
@@ -1269,6 +1271,11 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td>Copilot</td>
 <td><a href="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td><a href="https://github.com/frasermolyneux/demo-manager/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/demo-manager/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
+</tr>
+<tr>
+<td>Copilot cloud agent</td>
+<td><a href="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot cloud agent"></a></td>
+<td class="no-workflow">—</td>
 </tr>
 </tbody>
 </table>
@@ -1279,4 +1286,4 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 ---
 Generated by scripts/estate-sync/estate_sync.py
 <!-- Auto-generated file; do not edit directly. -->
-Last updated: 2026-08-31 19:40 UTC
+Last updated: 2026-09-01 03:39 UTC
