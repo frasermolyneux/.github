@@ -1,11 +1,11 @@
 🏠 [Home](../../index.html) | 📦 [Workloads](../workloads.html) | 🧪 [Pipelines](../pipelines.html) | ⏰ [Scheduling](../pipeline-scheduling.html) | 📚 [Repos](./index.html)
 
-# 41-bovet-street
+# bishops-bees-rehearsal
 
 Summary:
-- 📁 GitHub: [41-bovet-street](https://github.com/frasermolyneux/41-bovet-street)
-- 🗂️ Workflows: https://github.com/frasermolyneux/41-bovet-street/tree/main/.github/workflows
-- 🗂️ Azure Pipelines YAML: https://github.com/frasermolyneux/41-bovet-street/tree/main/.azure-pipelines
+- 📁 GitHub: [bishops-bees-rehearsal](https://github.com/frasermolyneux/bishops-bees-rehearsal)
+- 🗂️ Workflows: https://github.com/frasermolyneux/bishops-bees-rehearsal/tree/main/.github/workflows
+- 🗂️ Azure Pipelines YAML: https://github.com/frasermolyneux/bishops-bees-rehearsal/tree/main/.azure-pipelines
 
 ## Badges
 
