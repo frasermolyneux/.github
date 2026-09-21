@@ -1,11 +1,11 @@
 🏠 [Home](../../index.html) | 📦 [Workloads](../workloads.html) | 🧪 [Pipelines](../pipelines.html) | ⏰ [Scheduling](../pipeline-scheduling.html) | 📚 [Repos](./index.html)
 
-# bqba
+# xi-cdn
 
 Summary:
-- 📁 GitHub: [bqba](https://github.com/frasermolyneux/bqba)
-- 🗂️ Workflows: https://github.com/frasermolyneux/bqba/tree/main/.github/workflows
-- 🗂️ Azure Pipelines YAML: https://github.com/frasermolyneux/bqba/tree/main/.azure-pipelines
+- 📁 GitHub: [xi-cdn](https://github.com/frasermolyneux/xi-cdn)
+- 🗂️ Workflows: https://github.com/frasermolyneux/xi-cdn/tree/main/.github/workflows
+- 🗂️ Azure Pipelines YAML: https://github.com/frasermolyneux/xi-cdn/tree/main/.azure-pipelines
 
 ## Badges
 

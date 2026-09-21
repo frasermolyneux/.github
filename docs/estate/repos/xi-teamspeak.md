@@ -1,11 +1,11 @@
 🏠 [Home](../../index.html) | 📦 [Workloads](../workloads.html) | 🧪 [Pipelines](../pipelines.html) | ⏰ [Scheduling](../pipeline-scheduling.html) | 📚 [Repos](./index.html)
 
-# bqba
+# xi-teamspeak
 
 Summary:
-- 📁 GitHub: [bqba](https://github.com/frasermolyneux/bqba)
-- 🗂️ Workflows: https://github.com/frasermolyneux/bqba/tree/main/.github/workflows
-- 🗂️ Azure Pipelines YAML: https://github.com/frasermolyneux/bqba/tree/main/.azure-pipelines
+- 📁 GitHub: [xi-teamspeak](https://github.com/frasermolyneux/xi-teamspeak)
+- 🗂️ Workflows: https://github.com/frasermolyneux/xi-teamspeak/tree/main/.github/workflows
+- 🗂️ Azure Pipelines YAML: https://github.com/frasermolyneux/xi-teamspeak/tree/main/.azure-pipelines
 
 ## Badges
 

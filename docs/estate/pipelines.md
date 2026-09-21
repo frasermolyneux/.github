@@ -12,7 +12,6 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <thead><tr>
 <th>Workflow</th>
 <th><a href="https://github.com/frasermolyneux/bishops-bees">bishops-bees</a><br><a href="./repos/bishops-bees.html" style="font-size:0.75em">detail</a></th>
-<th><a href="https://github.com/frasermolyneux/bishops-bees-rehearsal">bishops-bees-rehearsal</a><br><a href="./repos/bishops-bees-rehearsal.html" style="font-size:0.75em">detail</a></th>
 <th><a href="https://github.com/frasermolyneux/bishops-bees-staging">bishops-bees-staging</a><br><a href="./repos/bishops-bees-staging.html" style="font-size:0.75em">detail</a></th>
 <th><a href="https://github.com/frasermolyneux/bqba">bqba</a><br><a href="./repos/bqba.html" style="font-size:0.75em">detail</a></th>
 <th><a href="https://github.com/frasermolyneux/dm-electrical-services">dm-electrical-services</a><br><a href="./repos/dm-electrical-services.html" style="font-size:0.75em">detail</a></th>
@@ -1275,67 +1274,184 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <th>Workflow</th>
 <th><a href="https://github.com/frasermolyneux/cod-demo-reader">cod-demo-reader</a><br><a href="./repos/cod-demo-reader.html" style="font-size:0.75em">detail</a></th>
 <th><a href="https://github.com/frasermolyneux/demo-manager">demo-manager</a><br><a href="./repos/demo-manager.html" style="font-size:0.75em">detail</a></th>
+<th><a href="https://github.com/frasermolyneux/xi-casino">xi-casino</a><br><a href="./repos/xi-casino.html" style="font-size:0.75em">detail</a></th>
+<th><a href="https://github.com/frasermolyneux/xi-cdn">xi-cdn</a><br><a href="./repos/xi-cdn.html" style="font-size:0.75em">detail</a></th>
+<th><a href="https://github.com/frasermolyneux/xi-dailygames">xi-dailygames</a><br><a href="./repos/xi-dailygames.html" style="font-size:0.75em">detail</a></th>
+<th><a href="https://github.com/frasermolyneux/xi-forums">xi-forums</a><br><a href="./repos/xi-forums.html" style="font-size:0.75em">detail</a></th>
+<th><a href="https://github.com/frasermolyneux/xi-forums-test">xi-forums-test</a><br><a href="./repos/xi-forums-test.html" style="font-size:0.75em">detail</a></th>
+<th><a href="https://github.com/frasermolyneux/xi-freezetag-stats">xi-freezetag-stats</a><br><a href="./repos/xi-freezetag-stats.html" style="font-size:0.75em">detail</a></th>
+<th><a href="https://github.com/frasermolyneux/xi-powerball">xi-powerball</a><br><a href="./repos/xi-powerball.html" style="font-size:0.75em">detail</a></th>
+<th><a href="https://github.com/frasermolyneux/xi-redirect">xi-redirect</a><br><a href="./repos/xi-redirect.html" style="font-size:0.75em">detail</a></th>
+<th><a href="https://github.com/frasermolyneux/xi-teamspeak">xi-teamspeak</a><br><a href="./repos/xi-teamspeak.html" style="font-size:0.75em">detail</a></th>
 </tr></thead>
 <tbody>
 <tr>
 <td>Code Quality</td>
 <td><a href="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/codequality.yml"><img src="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/codequality.yml/badge.svg" alt="Code Quality"></a></td>
 <td><a href="https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/codequality.yml"><img src="https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/codequality.yml/badge.svg" alt="Code Quality"></a></td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
 </tr>
 <tr>
 <td>Build and Test</td>
 <td><a href="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/build-and-test.yml"><img src="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/build-and-test.yml/badge.svg" alt="Build and Test"></a></td>
 <td><a href="https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/build-and-test.yml"><img src="https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/build-and-test.yml/badge.svg" alt="Build and Test"></a></td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
 </tr>
 <tr>
 <td>PR Verify</td>
 <td><a href="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/pr-verify.yml"><img src="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/pr-verify.yml/badge.svg" alt="PR Verify"></a></td>
 <td><a href="https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/pr-verify.yml"><img src="https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/pr-verify.yml/badge.svg" alt="PR Verify"></a></td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
 </tr>
 <tr>
 <td>Release - Version and Tag</td>
 <td><a href="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/release-version-and-tag.yml"><img src="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/release-version-and-tag.yml/badge.svg" alt="Release - Version and Tag"></a></td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 </tr>
 <tr>
 <td>Release - Publish NuGet</td>
 <td><a href="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/release-publish-nuget.yml"><img src="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/release-publish-nuget.yml/badge.svg" alt="Release - Publish NuGet"></a></td>
 <td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
 </tr>
 <tr>
 <td>Deploy Prd</td>
 <td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/deploy-prd.yml"><img src="https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/deploy-prd.yml/badge.svg" alt="Deploy Prd"></a></td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
 </tr>
-<tr class="separator"><td colspan="3"></td></tr>
+<tr class="separator"><td colspan="12"></td></tr>
 <tr>
 <td>Dependabot Auto-Merge</td>
 <td><a href="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/dependabot-automerge.yml"><img src="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg" alt="Dependabot Auto-Merge"></a></td>
 <td><a href="https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/dependabot-automerge.yml"><img src="https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg" alt="Dependabot Auto-Merge"></a></td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
 </tr>
 <tr>
 <td>Dependabot Updates</td>
 <td><a href="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/dynamic/dependabot/dependabot-updates"><img src="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg" alt="Dependabot Updates"></a></td>
 <td><a href="https://github.com/frasermolyneux/demo-manager/actions/workflows/dynamic/dependabot/dependabot-updates"><img src="https://github.com/frasermolyneux/demo-manager/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg" alt="Dependabot Updates"></a></td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
 </tr>
 <tr>
 <td>Copilot Setup Steps</td>
 <td><a href="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/copilot-setup-steps.yml"><img src="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg" alt="Copilot Setup Steps"></a></td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 </tr>
 <tr>
 <td>Copilot code review</td>
 <td><a href="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/dynamic/copilot-pull-request-reviewer/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/dynamic/copilot-pull-request-reviewer/copilot-pull-request-reviewer/badge.svg" alt="Copilot code review"></a></td>
 <td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
 </tr>
 <tr>
 <td>Copilot</td>
 <td><a href="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td><a href="https://github.com/frasermolyneux/demo-manager/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/demo-manager/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
 </tr>
 <tr>
 <td>Copilot cloud agent</td>
 <td><a href="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot cloud agent"></a></td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 </tr>
 </tbody>
@@ -1347,4 +1463,4 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 ---
 Generated by scripts/estate-sync/estate_sync.py
 <!-- Auto-generated file; do not edit directly. -->
-Last updated: 2026-09-20 03:39 UTC
+Last updated: 2026-09-21 03:41 UTC
