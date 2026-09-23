@@ -1,11 +1,11 @@
 🏠 [Home](../../index.html) | 📦 [Workloads](../workloads.html) | 🧪 [Pipelines](../pipelines.html) | ⏰ [Scheduling](../pipeline-scheduling.html) | 📚 [Repos](./index.html)
 
-# bqba
+# platform-baremetal-ns512615
 
 Summary:
-- 📁 GitHub: [bqba](https://github.com/frasermolyneux/bqba)
-- 🗂️ Workflows: https://github.com/frasermolyneux/bqba/tree/main/.github/workflows
-- 🗂️ Azure Pipelines YAML: https://github.com/frasermolyneux/bqba/tree/main/.azure-pipelines
+- 📁 GitHub: [platform-baremetal-ns512615](https://github.com/frasermolyneux/platform-baremetal-ns512615)
+- 🗂️ Workflows: https://github.com/frasermolyneux/platform-baremetal-ns512615/tree/main/.github/workflows
+- 🗂️ Azure Pipelines YAML: https://github.com/frasermolyneux/platform-baremetal-ns512615/tree/main/.azure-pipelines
 
 ## Badges
 
