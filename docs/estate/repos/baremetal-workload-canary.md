@@ -1,11 +1,13 @@
 🏠 [Home](../../index.html) | 📦 [Workloads](../workloads.html) | 🧪 [Pipelines](../pipelines.html) | ⏰ [Scheduling](../pipeline-scheduling.html) | 📚 [Repos](./index.html)
 
-# bqba
+# baremetal-workload-canary
 
 Summary:
-- 📁 GitHub: [bqba](https://github.com/frasermolyneux/bqba)
-- 🗂️ Workflows: https://github.com/frasermolyneux/bqba/tree/main/.github/workflows
-- 🗂️ Azure Pipelines YAML: https://github.com/frasermolyneux/bqba/tree/main/.azure-pipelines
+- 📁 GitHub: [baremetal-workload-canary](https://github.com/frasermolyneux/baremetal-workload-canary)
+- 🌍 Environments: Production
+- 🔑 Subscriptions: sub-platform-management
+- 🗂️ Workflows: https://github.com/frasermolyneux/baremetal-workload-canary/tree/main/.github/workflows
+- 🗂️ Azure Pipelines YAML: https://github.com/frasermolyneux/baremetal-workload-canary/tree/main/.azure-pipelines
 
 ## Badges
 
