@@ -1,13 +1,11 @@
 🏠 [Home](../../index.html) | 📦 [Workloads](../workloads.html) | 🧪 [Pipelines](../pipelines.html) | ⏰ [Scheduling](../pipeline-scheduling.html) | 📚 [Repos](./index.html)
 
-# xi-powerball
+# baremetal-workload-template
 
 Summary:
-- 📁 GitHub: [xi-powerball](https://github.com/frasermolyneux/xi-powerball)
-- 🌍 Environments: Production
-- 🔑 Subscriptions: sub-platform-management
-- 🗂️ Workflows: https://github.com/frasermolyneux/xi-powerball/tree/main/.github/workflows
-- 🗂️ Azure Pipelines YAML: https://github.com/frasermolyneux/xi-powerball/tree/main/.azure-pipelines
+- 📁 GitHub: [baremetal-workload-template](https://github.com/frasermolyneux/baremetal-workload-template)
+- 🗂️ Workflows: https://github.com/frasermolyneux/baremetal-workload-template/tree/main/.github/workflows
+- 🗂️ Azure Pipelines YAML: https://github.com/frasermolyneux/baremetal-workload-template/tree/main/.azure-pipelines
 
 ## Badges
 
