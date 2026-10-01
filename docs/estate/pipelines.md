@@ -1224,6 +1224,17 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 </tr>
 <tr>
+<td>Lint</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/actions/actions/workflows/.github/workflows/lint.yml"><img src="https://github.com/frasermolyneux/actions/actions/workflows/.github/workflows/lint.yml/badge.svg" alt="Lint"></a></td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+</tr>
+<tr>
 <td>MCP Server CI</td>
 <td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/.github-copilot/actions/workflows/.github/workflows/mcp-server-ci.yml"><img src="https://github.com/frasermolyneux/.github-copilot/actions/workflows/.github/workflows/mcp-server-ci.yml/badge.svg" alt="MCP Server CI"></a></td>
@@ -1345,6 +1356,7 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <th>Workflow</th>
 <th><a href="https://github.com/frasermolyneux/cod-demo-reader">cod-demo-reader</a><br><a href="./repos/cod-demo-reader.html" style="font-size:0.75em">detail</a></th>
 <th><a href="https://github.com/frasermolyneux/demo-manager">demo-manager</a><br><a href="./repos/demo-manager.html" style="font-size:0.75em">detail</a></th>
+<th><a href="https://github.com/frasermolyneux/xi-arcade">xi-arcade</a><br><a href="./repos/xi-arcade.html" style="font-size:0.75em">detail</a></th>
 <th><a href="https://github.com/frasermolyneux/xi-casino">xi-casino</a><br><a href="./repos/xi-casino.html" style="font-size:0.75em">detail</a></th>
 <th><a href="https://github.com/frasermolyneux/xi-cdn">xi-cdn</a><br><a href="./repos/xi-cdn.html" style="font-size:0.75em">detail</a></th>
 <th><a href="https://github.com/frasermolyneux/xi-dailygames">xi-dailygames</a><br><a href="./repos/xi-dailygames.html" style="font-size:0.75em">detail</a></th>
@@ -1369,11 +1381,13 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
 </tr>
 <tr>
 <td>Build and Test</td>
 <td><a href="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/build-and-test.yml"><img src="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/build-and-test.yml/badge.svg" alt="Build and Test"></a></td>
 <td><a href="https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/build-and-test.yml"><img src="https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/build-and-test.yml/badge.svg" alt="Build and Test"></a></td>
+<td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
@@ -1397,10 +1411,12 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
 </tr>
 <tr>
 <td>Release - Version and Tag</td>
 <td><a href="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/release-version-and-tag.yml"><img src="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/release-version-and-tag.yml/badge.svg" alt="Release - Version and Tag"></a></td>
+<td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
@@ -1425,6 +1441,7 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
 </tr>
 <tr>
 <td>Deploy Prd</td>
@@ -1439,12 +1456,14 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
 </tr>
-<tr class="separator"><td colspan="12"></td></tr>
+<tr class="separator"><td colspan="13"></td></tr>
 <tr>
 <td>Dependabot Auto-Merge</td>
 <td><a href="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/dependabot-automerge.yml"><img src="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg" alt="Dependabot Auto-Merge"></a></td>
 <td><a href="https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/dependabot-automerge.yml"><img src="https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg" alt="Dependabot Auto-Merge"></a></td>
+<td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
@@ -1468,10 +1487,12 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
 </tr>
 <tr>
 <td>Copilot Setup Steps</td>
 <td><a href="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/copilot-setup-steps.yml"><img src="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg" alt="Copilot Setup Steps"></a></td>
+<td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
@@ -1496,11 +1517,13 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
 </tr>
 <tr>
 <td>Copilot</td>
 <td><a href="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/cod-demo-reader/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td><a href="https://github.com/frasermolyneux/demo-manager/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/demo-manager/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
+<td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
@@ -1524,6 +1547,7 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
 </tr>
 </tbody>
 </table>
@@ -1534,4 +1558,4 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 ---
 Generated by scripts/estate-sync/estate_sync.py
 <!-- Auto-generated file; do not edit directly. -->
-Last updated: 2026-09-30 03:43 UTC
+Last updated: 2026-10-01 03:46 UTC
