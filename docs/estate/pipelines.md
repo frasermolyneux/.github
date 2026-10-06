@@ -1220,6 +1220,17 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 </tr>
 <tr>
+<td>Analysis workflow contracts</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/actions/actions/workflows/.github/workflows/repository-analysis-workflow-tests.yml"><img src="https://github.com/frasermolyneux/actions/actions/workflows/.github/workflows/repository-analysis-workflow-tests.yml/badge.svg" alt="Analysis workflow contracts"></a></td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+</tr>
+<tr>
 <td>build</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
@@ -1227,6 +1238,17 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/CoD4x_Server/actions/workflows/.github/workflows/build.yml"><img src="https://github.com/frasermolyneux/CoD4x_Server/actions/workflows/.github/workflows/build.yml/badge.svg" alt="build"></a></td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+</tr>
+<tr>
+<td>CodeQL native integration</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/actions/actions/workflows/.github/workflows/repository-analysis-codeql-tests.yml"><img src="https://github.com/frasermolyneux/actions/actions/workflows/.github/workflows/repository-analysis-codeql-tests.yml/badge.svg" alt="CodeQL native integration"></a></td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 </tr>
@@ -1319,6 +1341,17 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 </tr>
 <tr>
+<td>Native analysis contracts</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/actions/actions/workflows/.github/workflows/repository-analysis-native-tests.yml"><img src="https://github.com/frasermolyneux/actions/actions/workflows/.github/workflows/repository-analysis-native-tests.yml/badge.svg" alt="Native analysis contracts"></a></td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+</tr>
+<tr>
 <td>pages-build-deployment</td>
 <td><a href="https://github.com/frasermolyneux/.github/actions/workflows/dynamic/pages/pages-build-deployment"><img src="https://github.com/frasermolyneux/.github/actions/workflows/dynamic/pages/pages-build-deployment/badge.svg" alt="pages-build-deployment"></a></td>
 <td class="no-workflow">—</td>
@@ -1363,6 +1396,28 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 </tr>
 <tr>
+<td>Repository local analysis</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/actions/actions/workflows/.github/workflows/repository-analysis-local.yml"><img src="https://github.com/frasermolyneux/actions/actions/workflows/.github/workflows/repository-analysis-local.yml/badge.svg" alt="Repository local analysis"></a></td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+</tr>
+<tr>
+<td>Repository Sonar analysis</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/actions/actions/workflows/.github/workflows/repository-analysis-sonar.yml"><img src="https://github.com/frasermolyneux/actions/actions/workflows/.github/workflows/repository-analysis-sonar.yml/badge.svg" alt="Repository Sonar analysis"></a></td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+</tr>
+<tr>
 <td>reusable-code-quality</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
@@ -1379,6 +1434,17 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/actions/actions/workflows/.github/workflows/devops-secure-scanning.yml"><img src="https://github.com/frasermolyneux/actions/actions/workflows/.github/workflows/devops-secure-scanning.yml/badge.svg" alt="reusable-devops-secure-scanning"></a></td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+</tr>
+<tr>
+<td>Sonar analysis contracts</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/actions/actions/workflows/.github/workflows/repository-analysis-sonar-tests.yml"><img src="https://github.com/frasermolyneux/actions/actions/workflows/.github/workflows/repository-analysis-sonar-tests.yml/badge.svg" alt="Sonar analysis contracts"></a></td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
@@ -1688,4 +1754,4 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 ---
 Generated by scripts/estate-sync/estate_sync.py
 <!-- Auto-generated file; do not edit directly. -->
-Last updated: 2026-10-05 03:50 UTC
+Last updated: 2026-10-06 03:43 UTC
