@@ -193,6 +193,10 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td>Copilot cloud agent</td>
 <td><a href="https://github.com/frasermolyneux/geo-location/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/geo-location/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot cloud agent"></a></td>
 </tr>
+<tr>
+<td>Terraform Toolchain</td>
+<td><a href="https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/terraform-toolchain.yml"><img src="https://github.com/frasermolyneux/geo-location/actions/workflows/.github/workflows/terraform-toolchain.yml/badge.svg" alt="Terraform Toolchain"></a></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -274,6 +278,11 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td>Copilot cloud agent</td>
 <td><a href="https://github.com/frasermolyneux/craftpledge/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/craftpledge/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot cloud agent"></a></td>
 <td><a href="https://github.com/frasermolyneux/talkwithtiles/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/talkwithtiles/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot cloud agent"></a></td>
+</tr>
+<tr>
+<td>Terraform Toolchain</td>
+<td><a href="https://github.com/frasermolyneux/craftpledge/actions/workflows/.github/workflows/terraform-toolchain.yml"><img src="https://github.com/frasermolyneux/craftpledge/actions/workflows/.github/workflows/terraform-toolchain.yml/badge.svg" alt="Terraform Toolchain"></a></td>
+<td><a href="https://github.com/frasermolyneux/talkwithtiles/actions/workflows/.github/workflows/terraform-toolchain.yml"><img src="https://github.com/frasermolyneux/talkwithtiles/actions/workflows/.github/workflows/terraform-toolchain.yml/badge.svg" alt="Terraform Toolchain"></a></td>
 </tr>
 </tbody>
 </table>
@@ -405,6 +414,13 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/molyneux-me/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/molyneux-me/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot cloud agent"></a></td>
 <td><a href="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot cloud agent"></a></td>
 <td class="no-workflow">—</td>
+</tr>
+<tr>
+<td>Terraform Toolchain</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/molyneux-me/actions/workflows/.github/workflows/terraform-toolchain.yml"><img src="https://github.com/frasermolyneux/molyneux-me/actions/workflows/.github/workflows/terraform-toolchain.yml/badge.svg" alt="Terraform Toolchain"></a></td>
+<td><a href="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/terraform-toolchain.yml"><img src="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/terraform-toolchain.yml/badge.svg" alt="Terraform Toolchain"></a></td>
+<td><a href="https://github.com/frasermolyneux/twenty-one/actions/workflows/.github/workflows/terraform-toolchain.yml"><img src="https://github.com/frasermolyneux/twenty-one/actions/workflows/.github/workflows/terraform-toolchain.yml/badge.svg" alt="Terraform Toolchain"></a></td>
 </tr>
 </tbody>
 </table>
@@ -788,7 +804,7 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/platform-devex/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/platform-devex/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td><a href="https://github.com/frasermolyneux/platform-hosting/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/platform-hosting/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
-<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/platform-landing-zones/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/platform-landing-zones/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/platform-monitoring/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/platform-monitoring/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td><a href="https://github.com/frasermolyneux/platform-notifications/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/platform-notifications/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
@@ -913,6 +929,25 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 </tr>
 <tr>
+<td>Reviewed Terraform CLI Updates</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/platform-devex/actions/workflows/.github/workflows/terraform-cli-updates.yml"><img src="https://github.com/frasermolyneux/platform-devex/actions/workflows/.github/workflows/terraform-cli-updates.yml/badge.svg" alt="Reviewed Terraform CLI Updates"></a></td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+</tr>
+<tr>
 <td>Status Edge</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
@@ -948,6 +983,25 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+</tr>
+<tr>
+<td>Terraform Toolchain</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/platform-connectivity/actions/workflows/.github/workflows/terraform-toolchain.yml"><img src="https://github.com/frasermolyneux/platform-connectivity/actions/workflows/.github/workflows/terraform-toolchain.yml/badge.svg" alt="Terraform Toolchain"></a></td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/platform-hosting/actions/workflows/.github/workflows/terraform-toolchain.yml"><img src="https://github.com/frasermolyneux/platform-hosting/actions/workflows/.github/workflows/terraform-toolchain.yml/badge.svg" alt="Terraform Toolchain"></a></td>
+<td><a href="https://github.com/frasermolyneux/platform-landing-zones/actions/workflows/.github/workflows/terraform-toolchain.yml"><img src="https://github.com/frasermolyneux/platform-landing-zones/actions/workflows/.github/workflows/terraform-toolchain.yml/badge.svg" alt="Terraform Toolchain"></a></td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/platform-monitoring/actions/workflows/.github/workflows/terraform-toolchain.yml"><img src="https://github.com/frasermolyneux/platform-monitoring/actions/workflows/.github/workflows/terraform-toolchain.yml/badge.svg" alt="Terraform Toolchain"></a></td>
+<td><a href="https://github.com/frasermolyneux/platform-notifications/actions/workflows/.github/workflows/terraform-toolchain.yml"><img src="https://github.com/frasermolyneux/platform-notifications/actions/workflows/.github/workflows/terraform-toolchain.yml/badge.svg" alt="Terraform Toolchain"></a></td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/platform-registry/actions/workflows/.github/workflows/terraform-toolchain.yml"><img src="https://github.com/frasermolyneux/platform-registry/actions/workflows/.github/workflows/terraform-toolchain.yml/badge.svg" alt="Terraform Toolchain"></a></td>
+<td><a href="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/.github/workflows/terraform-toolchain.yml"><img src="https://github.com/frasermolyneux/platform-sitewatch-func/actions/workflows/.github/workflows/terraform-toolchain.yml/badge.svg" alt="Terraform Toolchain"></a></td>
+<td><a href="https://github.com/frasermolyneux/platform-status-web/actions/workflows/.github/workflows/terraform-toolchain.yml"><img src="https://github.com/frasermolyneux/platform-status-web/actions/workflows/.github/workflows/terraform-toolchain.yml/badge.svg" alt="Terraform Toolchain"></a></td>
 <td class="no-workflow">—</td>
 </tr>
 <tr>
@@ -1191,7 +1245,7 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 </tr>
 <tr>
 <td>Copilot</td>
-<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/portal-cod4x-plugin/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/portal-cod4x-plugin/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-core/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/portal-core/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-environments/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/portal-environments/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td><a href="https://github.com/frasermolyneux/portal-repository/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/portal-repository/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
@@ -1227,6 +1281,19 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
+</tr>
+<tr>
+<td>Terraform Toolchain</td>
+<td><a href="https://github.com/frasermolyneux/portal-cod4x-plugin/actions/workflows/.github/workflows/terraform-toolchain.yml"><img src="https://github.com/frasermolyneux/portal-cod4x-plugin/actions/workflows/.github/workflows/terraform-toolchain.yml/badge.svg" alt="Terraform Toolchain"></a></td>
+<td><a href="https://github.com/frasermolyneux/portal-core/actions/workflows/.github/workflows/terraform-toolchain.yml"><img src="https://github.com/frasermolyneux/portal-core/actions/workflows/.github/workflows/terraform-toolchain.yml/badge.svg" alt="Terraform Toolchain"></a></td>
+<td><a href="https://github.com/frasermolyneux/portal-environments/actions/workflows/.github/workflows/terraform-toolchain.yml"><img src="https://github.com/frasermolyneux/portal-environments/actions/workflows/.github/workflows/terraform-toolchain.yml/badge.svg" alt="Terraform Toolchain"></a></td>
+<td><a href="https://github.com/frasermolyneux/portal-repository/actions/workflows/.github/workflows/terraform-toolchain.yml"><img src="https://github.com/frasermolyneux/portal-repository/actions/workflows/.github/workflows/terraform-toolchain.yml/badge.svg" alt="Terraform Toolchain"></a></td>
+<td><a href="https://github.com/frasermolyneux/portal-repository-func/actions/workflows/.github/workflows/terraform-toolchain.yml"><img src="https://github.com/frasermolyneux/portal-repository-func/actions/workflows/.github/workflows/terraform-toolchain.yml/badge.svg" alt="Terraform Toolchain"></a></td>
+<td><a href="https://github.com/frasermolyneux/portal-server-agent/actions/workflows/.github/workflows/terraform-toolchain.yml"><img src="https://github.com/frasermolyneux/portal-server-agent/actions/workflows/.github/workflows/terraform-toolchain.yml/badge.svg" alt="Terraform Toolchain"></a></td>
+<td><a href="https://github.com/frasermolyneux/portal-server-events/actions/workflows/.github/workflows/terraform-toolchain.yml"><img src="https://github.com/frasermolyneux/portal-server-events/actions/workflows/.github/workflows/terraform-toolchain.yml/badge.svg" alt="Terraform Toolchain"></a></td>
+<td><a href="https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/.github/workflows/terraform-toolchain.yml"><img src="https://github.com/frasermolyneux/portal-servers-integration/actions/workflows/.github/workflows/terraform-toolchain.yml/badge.svg" alt="Terraform Toolchain"></a></td>
+<td><a href="https://github.com/frasermolyneux/portal-sync/actions/workflows/.github/workflows/terraform-toolchain.yml"><img src="https://github.com/frasermolyneux/portal-sync/actions/workflows/.github/workflows/terraform-toolchain.yml/badge.svg" alt="Terraform Toolchain"></a></td>
+<td><a href="https://github.com/frasermolyneux/portal-web/actions/workflows/.github/workflows/terraform-toolchain.yml"><img src="https://github.com/frasermolyneux/portal-web/actions/workflows/.github/workflows/terraform-toolchain.yml/badge.svg" alt="Terraform Toolchain"></a></td>
 </tr>
 <tr>
 <td>Test and publish</td>
@@ -1435,7 +1502,7 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/.github-copilot/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/.github-copilot/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/actions/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/actions/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
-<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/ado-pipeline-templates/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/ado-pipeline-templates/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/platform-workloads/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/platform-workloads/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td class="no-workflow">—</td>
@@ -1639,6 +1706,17 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 </tr>
 <tr>
+<td>Rotate Status Monitoring Reader Certificate</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/status-monitoring-certificate.yml"><img src="https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/status-monitoring-certificate.yml/badge.svg" alt="Rotate Status Monitoring Reader Certificate"></a></td>
+<td class="no-workflow">—</td>
+</tr>
+<tr>
 <td>Sonar analysis contracts</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
@@ -1647,6 +1725,28 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+</tr>
+<tr>
+<td>Terraform standards contracts</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/actions/actions/workflows/.github/workflows/terraform-standards-tests.yml"><img src="https://github.com/frasermolyneux/actions/actions/workflows/.github/workflows/terraform-standards-tests.yml/badge.svg" alt="Terraform standards contracts"></a></td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+</tr>
+<tr>
+<td>Terraform Toolchain</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/terraform-toolchain.yml"><img src="https://github.com/frasermolyneux/platform-workloads/actions/workflows/.github/workflows/terraform-toolchain.yml/badge.svg" alt="Terraform Toolchain"></a></td>
 <td class="no-workflow">—</td>
 </tr>
 <tr>
@@ -1723,6 +1823,10 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <tr>
 <td>Copilot cloud agent</td>
 <td><a href="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot cloud agent"></a></td>
+</tr>
+<tr>
+<td>Terraform Toolchain</td>
+<td><a href="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/terraform-toolchain.yml"><img src="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/terraform-toolchain.yml/badge.svg" alt="Terraform Toolchain"></a></td>
 </tr>
 </tbody>
 </table>
@@ -1957,6 +2061,23 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 </tr>
+<tr>
+<td>Terraform Toolchain</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/terraform-toolchain.yml"><img src="https://github.com/frasermolyneux/demo-manager/actions/workflows/.github/workflows/terraform-toolchain.yml/badge.svg" alt="Terraform Toolchain"></a></td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -1966,4 +2087,4 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 ---
 Generated by scripts/estate-sync/estate_sync.py
 <!-- Auto-generated file; do not edit directly. -->
-Last updated: 2026-10-25 03:43 UTC
+Last updated: 2026-10-26 03:46 UTC
