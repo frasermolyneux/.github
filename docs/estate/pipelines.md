@@ -241,7 +241,7 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <tr>
 <td>Destroy Development</td>
 <td><a href="https://github.com/frasermolyneux/craftpledge/actions/workflows/.github/workflows/destroy-development.yml"><img src="https://github.com/frasermolyneux/craftpledge/actions/workflows/.github/workflows/destroy-development.yml/badge.svg" alt="Destroy Development"></a></td>
-<td><a href="https://github.com/frasermolyneux/talkwithtiles/actions/workflows/.github/workflows/destroy-development.yml"><img src="https://github.com/frasermolyneux/talkwithtiles/actions/workflows/.github/workflows/destroy-development.yml/badge.svg" alt="Destroy Development"></a></td>
+<td class="no-workflow">—</td>
 </tr>
 <tr>
 <td>Destroy Environment</td>
@@ -873,7 +873,7 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/platform-devex/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/platform-devex/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td><a href="https://github.com/frasermolyneux/platform-hosting/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/platform-hosting/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td><a href="https://github.com/frasermolyneux/platform-landing-zones/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/platform-landing-zones/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
-<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/platform-letsencrypt-iis/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/platform-letsencrypt-iis/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td><a href="https://github.com/frasermolyneux/platform-monitoring/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/platform-monitoring/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td><a href="https://github.com/frasermolyneux/platform-notifications/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/platform-notifications/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td class="no-workflow">—</td>
@@ -1016,6 +1016,25 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 </tr>
 <tr>
+<td>Retire Unreferenced Travel Monitoring Group</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/platform-monitoring/actions/workflows/.github/workflows/retire-travel-monitoring.yml"><img src="https://github.com/frasermolyneux/platform-monitoring/actions/workflows/.github/workflows/retire-travel-monitoring.yml/badge.svg" alt="Retire Unreferenced Travel Monitoring Group"></a></td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+</tr>
+<tr>
 <td>Reviewed Terraform CLI Updates</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
@@ -1027,6 +1046,25 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+</tr>
+<tr>
+<td>Shared Smart Detection Handover</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/platform-monitoring/actions/workflows/.github/workflows/smart-detection-handover.yml"><img src="https://github.com/frasermolyneux/platform-monitoring/actions/workflows/.github/workflows/smart-detection-handover.yml/badge.svg" alt="Shared Smart Detection Handover"></a></td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
@@ -1585,7 +1623,7 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 </tr>
 <tr>
 <td>Copilot</td>
-<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/.github/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/.github/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td><a href="https://github.com/frasermolyneux/.github-copilot/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/.github-copilot/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/actions/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/actions/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
@@ -1771,6 +1809,17 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 </tr>
 <tr>
+<td>Repository validation</td>
+<td><a href="https://github.com/frasermolyneux/.github/actions/workflows/.github/workflows/repository-validation.yml"><img src="https://github.com/frasermolyneux/.github/actions/workflows/.github/workflows/repository-validation.yml/badge.svg" alt="Repository validation"></a></td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+</tr>
+<tr>
 <td>reusable-code-quality</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
@@ -1883,10 +1932,6 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/deploy-prd.yml"><img src="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/deploy-prd.yml/badge.svg" alt="Deploy Prd"></a></td>
 </tr>
 <tr>
-<td>Destroy Development</td>
-<td><a href="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/destroy-development.yml"><img src="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/destroy-development.yml/badge.svg" alt="Destroy Development"></a></td>
-</tr>
-<tr>
 <td>Destroy Environment</td>
 <td><a href="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/destroy-environment.yml"><img src="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/destroy-environment.yml/badge.svg" alt="Destroy Environment"></a></td>
 </tr>
@@ -1938,6 +1983,10 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <tr>
 <td>Renew Origin TLS</td>
 <td><a href="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/renew-origin-tls.yml"><img src="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/renew-origin-tls.yml/badge.svg" alt="Renew Origin TLS"></a></td>
+</tr>
+<tr>
+<td>Retire Travel Google Federation</td>
+<td><a href="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/retire-travel-gcp.yml"><img src="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/retire-travel-gcp.yml/badge.svg" alt="Retire Travel Google Federation"></a></td>
 </tr>
 <tr>
 <td>Runtime Bootstrap Tests</td>
@@ -2214,4 +2263,4 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 ---
 Generated by scripts/estate-sync/estate_sync.py
 <!-- Auto-generated file; do not edit directly. -->
-Last updated: 2026-10-28 03:34 UTC
+Last updated: 2026-10-28 08:14 UTC
