@@ -30,3 +30,7 @@ and its synchronization.
 The scheduled and manually dispatchable estate workflow reads
 `platform-workloads` metadata, queries GitHub and Azure DevOps, regenerates
 `docs/estate/`, and commits changed generated pages.
+
+The read-only repository-validation workflow parses repository YAML, checks the
+managed Checkov configuration shape, and checks changed-file whitespace for
+relevant pull requests and main pushes. It never runs estate synchronization.
