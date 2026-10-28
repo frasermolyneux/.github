@@ -270,6 +270,11 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/talkwithtiles/actions/workflows/dynamic/copilot-pull-request-reviewer/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/talkwithtiles/actions/workflows/dynamic/copilot-pull-request-reviewer/copilot-pull-request-reviewer/badge.svg" alt="Copilot code review"></a></td>
 </tr>
 <tr>
+<td>Bootstrap and Rotate Runtime Credentials</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/talkwithtiles/actions/workflows/.github/workflows/bootstrap-runtime.yml"><img src="https://github.com/frasermolyneux/talkwithtiles/actions/workflows/.github/workflows/bootstrap-runtime.yml/badge.svg" alt="Bootstrap and Rotate Runtime Credentials"></a></td>
+</tr>
+<tr>
 <td>Copilot</td>
 <td><a href="https://github.com/frasermolyneux/craftpledge/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/craftpledge/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td><a href="https://github.com/frasermolyneux/talkwithtiles/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/talkwithtiles/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
@@ -280,9 +285,44 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/talkwithtiles/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/talkwithtiles/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot cloud agent"></a></td>
 </tr>
 <tr>
+<td>Promote Image</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/talkwithtiles/actions/workflows/.github/workflows/promote-image.yml"><img src="https://github.com/frasermolyneux/talkwithtiles/actions/workflows/.github/workflows/promote-image.yml/badge.svg" alt="Promote Image"></a></td>
+</tr>
+<tr>
+<td>Publish Image</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/talkwithtiles/actions/workflows/.github/workflows/publish-image.yml"><img src="https://github.com/frasermolyneux/talkwithtiles/actions/workflows/.github/workflows/publish-image.yml/badge.svg" alt="Publish Image"></a></td>
+</tr>
+<tr>
+<td>Renew Origin TLS</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/talkwithtiles/actions/workflows/.github/workflows/renew-origin-tls.yml"><img src="https://github.com/frasermolyneux/talkwithtiles/actions/workflows/.github/workflows/renew-origin-tls.yml/badge.svg" alt="Renew Origin TLS"></a></td>
+</tr>
+<tr>
+<td>Runtime Bootstrap Tests</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/talkwithtiles/actions/workflows/.github/workflows/runtime-bootstrap-tests.yml"><img src="https://github.com/frasermolyneux/talkwithtiles/actions/workflows/.github/workflows/runtime-bootstrap-tests.yml/badge.svg" alt="Runtime Bootstrap Tests"></a></td>
+</tr>
+<tr>
+<td>Runtime Infrastructure</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/talkwithtiles/actions/workflows/.github/workflows/runtime-infrastructure.yml"><img src="https://github.com/frasermolyneux/talkwithtiles/actions/workflows/.github/workflows/runtime-infrastructure.yml/badge.svg" alt="Runtime Infrastructure"></a></td>
+</tr>
+<tr>
+<td>Runtime Quality</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/talkwithtiles/actions/workflows/.github/workflows/runtime-quality.yml"><img src="https://github.com/frasermolyneux/talkwithtiles/actions/workflows/.github/workflows/runtime-quality.yml/badge.svg" alt="Runtime Quality"></a></td>
+</tr>
+<tr>
 <td>Terraform Toolchain</td>
 <td><a href="https://github.com/frasermolyneux/craftpledge/actions/workflows/.github/workflows/terraform-toolchain.yml"><img src="https://github.com/frasermolyneux/craftpledge/actions/workflows/.github/workflows/terraform-toolchain.yml/badge.svg" alt="Terraform Toolchain"></a></td>
 <td><a href="https://github.com/frasermolyneux/talkwithtiles/actions/workflows/.github/workflows/terraform-toolchain.yml"><img src="https://github.com/frasermolyneux/talkwithtiles/actions/workflows/.github/workflows/terraform-toolchain.yml/badge.svg" alt="Terraform Toolchain"></a></td>
+</tr>
+<tr>
+<td>Validate Workload Contract</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/talkwithtiles/actions/workflows/.github/workflows/validate-workload-contract.yml"><img src="https://github.com/frasermolyneux/talkwithtiles/actions/workflows/.github/workflows/validate-workload-contract.yml/badge.svg" alt="Validate Workload Contract"></a></td>
 </tr>
 </tbody>
 </table>
@@ -413,6 +453,34 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/invision-api-client/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/invision-api-client/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot cloud agent"></a></td>
 <td><a href="https://github.com/frasermolyneux/molyneux-me/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/molyneux-me/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot cloud agent"></a></td>
 <td><a href="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot cloud agent"></a></td>
+<td class="no-workflow">—</td>
+</tr>
+<tr>
+<td>Enable Trip Side Kick GCP Federation</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/gcp-trip-handover.yml"><img src="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/gcp-trip-handover.yml/badge.svg" alt="Enable Trip Side Kick GCP Federation"></a></td>
+<td class="no-workflow">—</td>
+</tr>
+<tr>
+<td>Forget Retained Google API Ownership</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/gcp-api-handover.yml"><img src="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/gcp-api-handover.yml/badge.svg" alt="Forget Retained Google API Ownership"></a></td>
+<td class="no-workflow">—</td>
+</tr>
+<tr>
+<td>GCP Handover Audit</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/gcp-handover-audit.yml"><img src="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/gcp-handover-audit.yml/badge.svg" alt="GCP Handover Audit"></a></td>
+<td class="no-workflow">—</td>
+</tr>
+<tr>
+<td>Google Retirement Guard Tests</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/gcp-handover-tests.yml"><img src="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/gcp-handover-tests.yml/badge.svg" alt="Google Retirement Guard Tests"></a></td>
 <td class="no-workflow">—</td>
 </tr>
 <tr>
@@ -907,6 +975,25 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/platform-status-web/actions/workflows/.github/workflows/deploy-prd.yml"><img src="https://github.com/frasermolyneux/platform-status-web/actions/workflows/.github/workflows/deploy-prd.yml/badge.svg" alt="Publish Status Images"></a></td>
+<td class="no-workflow">—</td>
+</tr>
+<tr>
+<td>Reconcile Managed Repository Standards</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/platform-devex/actions/workflows/.github/workflows/repository-standards.yml"><img src="https://github.com/frasermolyneux/platform-devex/actions/workflows/.github/workflows/repository-standards.yml/badge.svg" alt="Reconcile Managed Repository Standards"></a></td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 </tr>
 <tr>
@@ -1817,6 +1904,14 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/copilot-setup-steps.yml"><img src="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg" alt="Copilot Setup Steps"></a></td>
 </tr>
 <tr>
+<td>Bootstrap and Rotate Runtime Credentials</td>
+<td><a href="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/bootstrap-runtime.yml"><img src="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/bootstrap-runtime.yml/badge.svg" alt="Bootstrap and Rotate Runtime Credentials"></a></td>
+</tr>
+<tr>
+<td>Complete Initial Database Bootstrap</td>
+<td><a href="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/complete-runtime-bootstrap.yml"><img src="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/complete-runtime-bootstrap.yml/badge.svg" alt="Complete Initial Database Bootstrap"></a></td>
+</tr>
+<tr>
 <td>Copilot</td>
 <td><a href="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 </tr>
@@ -1825,8 +1920,40 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot cloud agent"></a></td>
 </tr>
 <tr>
+<td>Deliver Retained Google Maps Key</td>
+<td><a href="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/deliver-google-maps.yml"><img src="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/deliver-google-maps.yml/badge.svg" alt="Deliver Retained Google Maps Key"></a></td>
+</tr>
+<tr>
+<td>PostgreSQL and Containers</td>
+<td><a href="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/postgres-containers.yml"><img src="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/postgres-containers.yml/badge.svg" alt="PostgreSQL and Containers"></a></td>
+</tr>
+<tr>
+<td>Promote Image</td>
+<td><a href="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/promote-image.yml"><img src="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/promote-image.yml/badge.svg" alt="Promote Image"></a></td>
+</tr>
+<tr>
+<td>Publish Image</td>
+<td><a href="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/publish-image.yml"><img src="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/publish-image.yml/badge.svg" alt="Publish Image"></a></td>
+</tr>
+<tr>
+<td>Renew Origin TLS</td>
+<td><a href="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/renew-origin-tls.yml"><img src="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/renew-origin-tls.yml/badge.svg" alt="Renew Origin TLS"></a></td>
+</tr>
+<tr>
+<td>Runtime Bootstrap Tests</td>
+<td><a href="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/runtime-bootstrap-tests.yml"><img src="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/runtime-bootstrap-tests.yml/badge.svg" alt="Runtime Bootstrap Tests"></a></td>
+</tr>
+<tr>
+<td>Runtime Infrastructure</td>
+<td><a href="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/runtime-infrastructure.yml"><img src="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/runtime-infrastructure.yml/badge.svg" alt="Runtime Infrastructure"></a></td>
+</tr>
+<tr>
 <td>Terraform Toolchain</td>
 <td><a href="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/terraform-toolchain.yml"><img src="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/terraform-toolchain.yml/badge.svg" alt="Terraform Toolchain"></a></td>
+</tr>
+<tr>
+<td>Validate Workload Contract</td>
+<td><a href="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/validate-workload-contract.yml"><img src="https://github.com/frasermolyneux/trip-side-kick/actions/workflows/.github/workflows/validate-workload-contract.yml/badge.svg" alt="Validate Workload Contract"></a></td>
 </tr>
 </tbody>
 </table>
@@ -2087,4 +2214,4 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 ---
 Generated by scripts/estate-sync/estate_sync.py
 <!-- Auto-generated file; do not edit directly. -->
-Last updated: 2026-10-27 03:43 UTC
+Last updated: 2026-10-28 03:34 UTC
