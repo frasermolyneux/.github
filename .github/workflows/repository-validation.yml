@@ -1,0 +1,83 @@
+name: Repository validation
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+    paths:
+      - '.checkov.yml'
+      - '.github/**/*.yml'
+      - '.github/**/*.yaml'
+  push:
+    branches: [main]
+    paths:
+      - '.checkov.yml'
+      - '.github/**/*.yml'
+      - '.github/**/*.yaml'
+
+permissions: {}
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout reviewed source
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+
+      - name: Set up Python
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405
+        with:
+          python-version: '3.x'
+
+      - name: Ensure existing YAML parser is available
+        run: python -c "import yaml" || python -m pip install pyyaml
+
+      - name: Parse YAML and validate Checkov configuration
+        run: |
+          python - <<'PY'
+          import re
+          from pathlib import Path
+
+          import yaml
+
+          paths = {Path(".checkov.yml")}
+          paths.update(Path(".github").rglob("*.yml"))
+          paths.update(Path(".github").rglob("*.yaml"))
+          for path in sorted(paths):
+              yaml.safe_load(path.read_text(encoding="utf-8"))
+
+          config = yaml.safe_load(Path(".checkov.yml").read_text(encoding="utf-8"))
+          if not isinstance(config, dict) or set(config) != {"soft-fail", "compact", "skip-check"}:
+              raise SystemExit("Unexpected managed Checkov configuration shape")
+          if config["soft-fail"] is not False or config["compact"] is not True:
+              raise SystemExit("Managed Checkov must fail closed with compact output")
+          rules = config["skip-check"]
+          if not isinstance(rules, list) or not rules or any(
+              not isinstance(rule, str) or not re.fullmatch(r"CKV(?:2)?_[A-Z0-9]+(?:_[A-Z0-9]+)*", rule)
+              for rule in rules
+          ):
+              raise SystemExit("Checkov exclusions must be a nonempty list of rule IDs")
+          if len(rules) != len(set(rules)):
+              raise SystemExit("Duplicate Checkov exclusions")
+          print(f"Parsed {len(paths)} YAML files and validated managed Checkov shape")
+          PY
+
+      - name: Check changed-file whitespace
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          if [[ -z "$BASE_SHA" || "$BASE_SHA" =~ ^0+$ ]]; then
+            BASE_SHA="$(git hash-object -t tree --stdin </dev/null)"
+          fi
+          git diff --check "$BASE_SHA" "$HEAD_SHA"
