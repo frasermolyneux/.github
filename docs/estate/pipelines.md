@@ -338,7 +338,6 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <th>Workflow</th>
 <th><a href="https://github.com/frasermolyneux/invision-api-client">invision-api-client</a><br><a href="./repos/invision-api-client.html" style="font-size:0.75em">detail</a></th>
 <th><a href="https://github.com/frasermolyneux/molyneux-me">molyneux-me</a><br><a href="./repos/molyneux-me.html" style="font-size:0.75em">detail</a></th>
-<th><a href="https://github.com/frasermolyneux/travel-itinerary">travel-itinerary</a><br><a href="./repos/travel-itinerary.html" style="font-size:0.75em">detail</a></th>
 <th><a href="https://github.com/frasermolyneux/twenty-one">twenty-one</a><br><a href="./repos/twenty-one.html" style="font-size:0.75em">detail</a></th>
 </tr></thead>
 <tbody>
@@ -346,27 +345,23 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td>Code Quality</td>
 <td><a href="https://github.com/frasermolyneux/invision-api-client/actions/workflows/.github/workflows/codequality.yml"><img src="https://github.com/frasermolyneux/invision-api-client/actions/workflows/.github/workflows/codequality.yml/badge.svg" alt="Code Quality"></a></td>
 <td><a href="https://github.com/frasermolyneux/molyneux-me/actions/workflows/.github/workflows/codequality.yml"><img src="https://github.com/frasermolyneux/molyneux-me/actions/workflows/.github/workflows/codequality.yml/badge.svg" alt="Code Quality"></a></td>
-<td><a href="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/codequality.yml"><img src="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/codequality.yml/badge.svg" alt="Code Quality"></a></td>
 <td><a href="https://github.com/frasermolyneux/twenty-one/actions/workflows/.github/workflows/codequality.yml"><img src="https://github.com/frasermolyneux/twenty-one/actions/workflows/.github/workflows/codequality.yml/badge.svg" alt="Code Quality"></a></td>
 </tr>
 <tr>
 <td>Build and Test</td>
 <td><a href="https://github.com/frasermolyneux/invision-api-client/actions/workflows/.github/workflows/build-and-test.yml"><img src="https://github.com/frasermolyneux/invision-api-client/actions/workflows/.github/workflows/build-and-test.yml/badge.svg" alt="Build and Test"></a></td>
 <td><a href="https://github.com/frasermolyneux/molyneux-me/actions/workflows/.github/workflows/build-and-test.yml"><img src="https://github.com/frasermolyneux/molyneux-me/actions/workflows/.github/workflows/build-and-test.yml/badge.svg" alt="Build and Test"></a></td>
-<td><a href="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/build-and-test.yml"><img src="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/build-and-test.yml/badge.svg" alt="Build and Test"></a></td>
 <td><a href="https://github.com/frasermolyneux/twenty-one/actions/workflows/.github/workflows/build-and-test.yml"><img src="https://github.com/frasermolyneux/twenty-one/actions/workflows/.github/workflows/build-and-test.yml/badge.svg" alt="Build and Test"></a></td>
 </tr>
 <tr>
 <td>PR Verify</td>
 <td><a href="https://github.com/frasermolyneux/invision-api-client/actions/workflows/.github/workflows/pr-verify.yml"><img src="https://github.com/frasermolyneux/invision-api-client/actions/workflows/.github/workflows/pr-verify.yml/badge.svg" alt="PR Verify"></a></td>
 <td><a href="https://github.com/frasermolyneux/molyneux-me/actions/workflows/.github/workflows/pr-verify.yml"><img src="https://github.com/frasermolyneux/molyneux-me/actions/workflows/.github/workflows/pr-verify.yml/badge.svg" alt="PR Verify"></a></td>
-<td><a href="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/pr-verify.yml"><img src="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/pr-verify.yml/badge.svg" alt="PR Verify"></a></td>
 <td><a href="https://github.com/frasermolyneux/twenty-one/actions/workflows/.github/workflows/pr-verify.yml"><img src="https://github.com/frasermolyneux/twenty-one/actions/workflows/.github/workflows/pr-verify.yml/badge.svg" alt="PR Verify"></a></td>
 </tr>
 <tr>
 <td>Release - Version and Tag</td>
 <td><a href="https://github.com/frasermolyneux/invision-api-client/actions/workflows/.github/workflows/release-version-and-tag.yml"><img src="https://github.com/frasermolyneux/invision-api-client/actions/workflows/.github/workflows/release-version-and-tag.yml/badge.svg" alt="Release - Version and Tag"></a></td>
-<td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 </tr>
@@ -375,61 +370,52 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/invision-api-client/actions/workflows/.github/workflows/release-publish-nuget.yml"><img src="https://github.com/frasermolyneux/invision-api-client/actions/workflows/.github/workflows/release-publish-nuget.yml/badge.svg" alt="Release - Publish NuGet"></a></td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
-<td class="no-workflow">—</td>
 </tr>
 <tr>
 <td>Deploy Dev</td>
 <td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/molyneux-me/actions/workflows/.github/workflows/deploy-dev.yml"><img src="https://github.com/frasermolyneux/molyneux-me/actions/workflows/.github/workflows/deploy-dev.yml/badge.svg" alt="Deploy Dev"></a></td>
-<td><a href="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/deploy-dev.yml"><img src="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/deploy-dev.yml/badge.svg" alt="Deploy Dev"></a></td>
 <td><a href="https://github.com/frasermolyneux/twenty-one/actions/workflows/.github/workflows/deploy-dev.yml"><img src="https://github.com/frasermolyneux/twenty-one/actions/workflows/.github/workflows/deploy-dev.yml/badge.svg" alt="Deploy Dev"></a></td>
 </tr>
 <tr>
 <td>Deploy Prd</td>
 <td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/molyneux-me/actions/workflows/.github/workflows/deploy-prd.yml"><img src="https://github.com/frasermolyneux/molyneux-me/actions/workflows/.github/workflows/deploy-prd.yml/badge.svg" alt="Deploy Prd"></a></td>
-<td><a href="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/deploy-prd.yml"><img src="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/deploy-prd.yml/badge.svg" alt="Deploy Prd"></a></td>
 <td><a href="https://github.com/frasermolyneux/twenty-one/actions/workflows/.github/workflows/deploy-prd.yml"><img src="https://github.com/frasermolyneux/twenty-one/actions/workflows/.github/workflows/deploy-prd.yml/badge.svg" alt="Deploy Prd"></a></td>
 </tr>
 <tr>
 <td>Destroy Development</td>
 <td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/molyneux-me/actions/workflows/.github/workflows/destroy-development.yml"><img src="https://github.com/frasermolyneux/molyneux-me/actions/workflows/.github/workflows/destroy-development.yml/badge.svg" alt="Destroy Development"></a></td>
-<td><a href="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/destroy-development.yml"><img src="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/destroy-development.yml/badge.svg" alt="Destroy Development"></a></td>
 <td><a href="https://github.com/frasermolyneux/twenty-one/actions/workflows/.github/workflows/destroy-development.yml"><img src="https://github.com/frasermolyneux/twenty-one/actions/workflows/.github/workflows/destroy-development.yml/badge.svg" alt="Destroy Development"></a></td>
 </tr>
 <tr>
 <td>Destroy Environment</td>
 <td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/molyneux-me/actions/workflows/.github/workflows/destroy-environment.yml"><img src="https://github.com/frasermolyneux/molyneux-me/actions/workflows/.github/workflows/destroy-environment.yml/badge.svg" alt="Destroy Environment"></a></td>
-<td><a href="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/destroy-environment.yml"><img src="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/destroy-environment.yml/badge.svg" alt="Destroy Environment"></a></td>
 <td><a href="https://github.com/frasermolyneux/twenty-one/actions/workflows/.github/workflows/destroy-environment.yml"><img src="https://github.com/frasermolyneux/twenty-one/actions/workflows/.github/workflows/destroy-environment.yml/badge.svg" alt="Destroy Environment"></a></td>
 </tr>
-<tr class="separator"><td colspan="5"></td></tr>
+<tr class="separator"><td colspan="4"></td></tr>
 <tr>
 <td>Dependabot Auto-Merge</td>
 <td><a href="https://github.com/frasermolyneux/invision-api-client/actions/workflows/.github/workflows/dependabot-automerge.yml"><img src="https://github.com/frasermolyneux/invision-api-client/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg" alt="Dependabot Auto-Merge"></a></td>
 <td><a href="https://github.com/frasermolyneux/molyneux-me/actions/workflows/.github/workflows/dependabot-automerge.yml"><img src="https://github.com/frasermolyneux/molyneux-me/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg" alt="Dependabot Auto-Merge"></a></td>
-<td><a href="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/dependabot-automerge.yml"><img src="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg" alt="Dependabot Auto-Merge"></a></td>
 <td><a href="https://github.com/frasermolyneux/twenty-one/actions/workflows/.github/workflows/dependabot-automerge.yml"><img src="https://github.com/frasermolyneux/twenty-one/actions/workflows/.github/workflows/dependabot-automerge.yml/badge.svg" alt="Dependabot Auto-Merge"></a></td>
 </tr>
 <tr>
 <td>Dependabot Updates</td>
 <td><a href="https://github.com/frasermolyneux/invision-api-client/actions/workflows/dynamic/dependabot/dependabot-updates"><img src="https://github.com/frasermolyneux/invision-api-client/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg" alt="Dependabot Updates"></a></td>
 <td><a href="https://github.com/frasermolyneux/molyneux-me/actions/workflows/dynamic/dependabot/dependabot-updates"><img src="https://github.com/frasermolyneux/molyneux-me/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg" alt="Dependabot Updates"></a></td>
-<td><a href="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/dynamic/dependabot/dependabot-updates"><img src="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg" alt="Dependabot Updates"></a></td>
 <td><a href="https://github.com/frasermolyneux/twenty-one/actions/workflows/dynamic/dependabot/dependabot-updates"><img src="https://github.com/frasermolyneux/twenty-one/actions/workflows/dynamic/dependabot/dependabot-updates/badge.svg" alt="Dependabot Updates"></a></td>
 </tr>
 <tr>
 <td>Copilot Setup Steps</td>
 <td><a href="https://github.com/frasermolyneux/invision-api-client/actions/workflows/.github/workflows/copilot-setup-steps.yml"><img src="https://github.com/frasermolyneux/invision-api-client/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg" alt="Copilot Setup Steps"></a></td>
 <td class="no-workflow">—</td>
-<td><a href="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/copilot-setup-steps.yml"><img src="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/copilot-setup-steps.yml/badge.svg" alt="Copilot Setup Steps"></a></td>
 <td class="no-workflow">—</td>
 </tr>
 <tr>
 <td>Copilot coding agent</td>
-<td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/twenty-one/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/twenty-one/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot coding agent"></a></td>
@@ -438,56 +424,24 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td>Copilot code review</td>
 <td><a href="https://github.com/frasermolyneux/invision-api-client/actions/workflows/dynamic/copilot-pull-request-reviewer/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/invision-api-client/actions/workflows/dynamic/copilot-pull-request-reviewer/copilot-pull-request-reviewer/badge.svg" alt="Copilot code review"></a></td>
 <td><a href="https://github.com/frasermolyneux/molyneux-me/actions/workflows/dynamic/copilot-pull-request-reviewer/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/molyneux-me/actions/workflows/dynamic/copilot-pull-request-reviewer/copilot-pull-request-reviewer/badge.svg" alt="Copilot code review"></a></td>
-<td><a href="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/dynamic/copilot-pull-request-reviewer/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/dynamic/copilot-pull-request-reviewer/copilot-pull-request-reviewer/badge.svg" alt="Copilot code review"></a></td>
 <td><a href="https://github.com/frasermolyneux/twenty-one/actions/workflows/dynamic/copilot-pull-request-reviewer/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/twenty-one/actions/workflows/dynamic/copilot-pull-request-reviewer/copilot-pull-request-reviewer/badge.svg" alt="Copilot code review"></a></td>
 </tr>
 <tr>
 <td>Copilot</td>
 <td><a href="https://github.com/frasermolyneux/invision-api-client/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/invision-api-client/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td><a href="https://github.com/frasermolyneux/molyneux-me/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/molyneux-me/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
-<td><a href="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 <td><a href="https://github.com/frasermolyneux/twenty-one/actions/workflows/dynamic/agents/copilot-pull-request-reviewer"><img src="https://github.com/frasermolyneux/twenty-one/actions/workflows/dynamic/agents/copilot-pull-request-reviewer/badge.svg" alt="Copilot"></a></td>
 </tr>
 <tr>
 <td>Copilot cloud agent</td>
 <td><a href="https://github.com/frasermolyneux/invision-api-client/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/invision-api-client/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot cloud agent"></a></td>
 <td><a href="https://github.com/frasermolyneux/molyneux-me/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/molyneux-me/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot cloud agent"></a></td>
-<td><a href="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot cloud agent"></a></td>
-<td class="no-workflow">—</td>
-</tr>
-<tr>
-<td>Enable Trip Side Kick GCP Federation</td>
-<td class="no-workflow">—</td>
-<td class="no-workflow">—</td>
-<td><a href="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/gcp-trip-handover.yml"><img src="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/gcp-trip-handover.yml/badge.svg" alt="Enable Trip Side Kick GCP Federation"></a></td>
-<td class="no-workflow">—</td>
-</tr>
-<tr>
-<td>Forget Retained Google API Ownership</td>
-<td class="no-workflow">—</td>
-<td class="no-workflow">—</td>
-<td><a href="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/gcp-api-handover.yml"><img src="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/gcp-api-handover.yml/badge.svg" alt="Forget Retained Google API Ownership"></a></td>
-<td class="no-workflow">—</td>
-</tr>
-<tr>
-<td>GCP Handover Audit</td>
-<td class="no-workflow">—</td>
-<td class="no-workflow">—</td>
-<td><a href="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/gcp-handover-audit.yml"><img src="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/gcp-handover-audit.yml/badge.svg" alt="GCP Handover Audit"></a></td>
-<td class="no-workflow">—</td>
-</tr>
-<tr>
-<td>Google Retirement Guard Tests</td>
-<td class="no-workflow">—</td>
-<td class="no-workflow">—</td>
-<td><a href="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/gcp-handover-tests.yml"><img src="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/gcp-handover-tests.yml/badge.svg" alt="Google Retirement Guard Tests"></a></td>
 <td class="no-workflow">—</td>
 </tr>
 <tr>
 <td>Terraform Toolchain</td>
 <td class="no-workflow">—</td>
 <td><a href="https://github.com/frasermolyneux/molyneux-me/actions/workflows/.github/workflows/terraform-toolchain.yml"><img src="https://github.com/frasermolyneux/molyneux-me/actions/workflows/.github/workflows/terraform-toolchain.yml/badge.svg" alt="Terraform Toolchain"></a></td>
-<td><a href="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/terraform-toolchain.yml"><img src="https://github.com/frasermolyneux/travel-itinerary/actions/workflows/.github/workflows/terraform-toolchain.yml/badge.svg" alt="Terraform Toolchain"></a></td>
 <td><a href="https://github.com/frasermolyneux/twenty-one/actions/workflows/.github/workflows/terraform-toolchain.yml"><img src="https://github.com/frasermolyneux/twenty-one/actions/workflows/.github/workflows/terraform-toolchain.yml/badge.svg" alt="Terraform Toolchain"></a></td>
 </tr>
 </tbody>
@@ -1395,6 +1349,19 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 <td><a href="https://github.com/frasermolyneux/portal-web/actions/workflows/dynamic/copilot-swe-agent/copilot"><img src="https://github.com/frasermolyneux/portal-web/actions/workflows/dynamic/copilot-swe-agent/copilot/badge.svg" alt="Copilot cloud agent"></a></td>
 </tr>
 <tr>
+<td>Map consolidation checks</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td><a href="https://github.com/frasermolyneux/portal-repository/actions/workflows/.github/workflows/map-consolidation-checks.yml"><img src="https://github.com/frasermolyneux/portal-repository/actions/workflows/.github/workflows/map-consolidation-checks.yml/badge.svg" alt="Map consolidation checks"></a></td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+<td class="no-workflow">—</td>
+</tr>
+<tr>
 <td>Release - Publish Plugin</td>
 <td><a href="https://github.com/frasermolyneux/portal-cod4x-plugin/actions/workflows/.github/workflows/release-publish-plugin.yml"><img src="https://github.com/frasermolyneux/portal-cod4x-plugin/actions/workflows/.github/workflows/release-publish-plugin.yml/badge.svg" alt="Release - Publish Plugin"></a></td>
 <td class="no-workflow">—</td>
@@ -2263,4 +2230,4 @@ Workflow status per workload, grouped by category. Repos run across the top; wor
 ---
 Generated by scripts/estate-sync/estate_sync.py
 <!-- Auto-generated file; do not edit directly. -->
-Last updated: 2026-10-28 08:14 UTC
+Last updated: 2026-10-29 03:35 UTC
