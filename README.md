@@ -12,3 +12,7 @@ This repository uses concise local Copilot guidance from
 `.github/copilot-instructions.md`.
 
 Keep inherited content short, technology-neutral, and broadly applicable.
+
+The [lightweight engineering standards](docs/standards.md) summarize practical
+development, testing, deployment, security, documentation, and observability
+approaches already used across the current repositories.

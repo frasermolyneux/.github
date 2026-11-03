@@ -11,6 +11,9 @@ This is the personal-account default community-health repository for
   guidance.
 - Never add secrets, credentials, tokens, private connection details, or
   sensitive external data.
+- Use [the lightweight engineering standards](../docs/standards.md) when
+  changing shared guidance. Apply only the sections supported by the target
+  repository and task; repository-specific instructions remain authoritative.
 
 For Markdown or template changes, inspect the rendered structure, verify
 changed relative links, and run `git diff --check`.
