@@ -30,11 +30,3 @@ body:
     attributes:
       label: Out of scope
       description: Things this issue is not asking for.
-
-  - type: markdown
-    attributes:
-      value: |
-        ---
-        If this is ready as a bounded implementation task, use the
-        **Delegate to coding agent** form to capture acceptance criteria,
-        relevant paths, exclusions, and targeted validation.
