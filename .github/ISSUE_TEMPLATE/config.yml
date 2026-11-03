@@ -1,5 +1,1 @@
 blank_issues_enabled: false
-contact_links:
-  - name: Engineering Estate dashboard
-    url: https://github.com/frasermolyneux/.github
-    about: Route-to-production status, workload catalog, and pipeline badges across the personal account.
