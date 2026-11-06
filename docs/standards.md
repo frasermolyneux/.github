@@ -13,8 +13,9 @@ working implementations remain authoritative.
   [`frasermolyneux/actions`](https://github.com/frasermolyneux/actions) when an
   existing action covers the required build, test, Terraform, deployment, or
   reporting behavior.
-- Pin third-party actions to immutable commit SHAs. Use versioned releases for
-  trusted first-party actions so upgrades are deliberate.
+- Pin all GitHub Actions, including trusted first-party actions, to immutable
+  full 40-character commit SHAs. Add the corresponding reviewed versioned
+  release as a comment so upgrades remain deliberate and reviewable.
 - Keep application code, infrastructure code, and environment configuration
   reviewable together when they form one deployable workload.
 - Use repository-local Copilot instructions only for context that materially
